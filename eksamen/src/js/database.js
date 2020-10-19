@@ -33,7 +33,7 @@ let users = [
     },
 ];
 
-var menu = [
+let menu = [
     {
         coffee: [
             {
