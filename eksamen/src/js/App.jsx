@@ -9,6 +9,7 @@ function App() {
 
     return (
         <div>
+            {/*
             <div>
                 {
                     users.map(user => {
@@ -16,6 +17,7 @@ function App() {
                     })
                 }
             </div>
+            */}
             <div>
                 {
                     hotcoffee.map(hotcoffee => {
