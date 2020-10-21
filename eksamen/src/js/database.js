@@ -5,7 +5,7 @@ let users = [
         lastName: "Eilertsen",
         userName: "tinaeile",
         password: "qwerty1234",
-        userimg: "female.png",
+        userimg: require("../img/user/female.png"),
     },
     {
         id: 2,

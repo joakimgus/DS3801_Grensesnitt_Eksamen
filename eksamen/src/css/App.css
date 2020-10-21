@@ -8,3 +8,8 @@
     box-shadow: 10px 10px 21px -7px rgba(0,0,0,0.44);
     margin: 5px;
 }
+
+img {
+    max-width: 80%;
+    max-height: 80%;
+}
