@@ -1,0 +1,10 @@
+.productCard {
+    font-family: avenir;
+    width: 150px;
+    height: 100px;
+    background-color: rgb(201, 172, 113);
+    -webkit-box-shadow: 10px 10px 21px -7px rgba(0,0,0,0.44);
+    -moz-box-shadow: 10px 10px 21px -7px rgba(0,0,0,0.44);
+    box-shadow: 10px 10px 21px -7px rgba(0,0,0,0.44);
+    margin: 5px;
+}

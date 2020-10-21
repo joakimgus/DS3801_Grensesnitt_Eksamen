@@ -5,7 +5,7 @@ let users = [
         lastName: "Eilertsen",
         userName: "tinaeile",
         password: "qwerty1234",
-        userimg: "src/img/user/female.png",
+        userimg: "female.png",
     },
     {
         id: 2,
@@ -265,3 +265,5 @@ let menu = [
         ],
     }
 ];
+
+export {users, menu};
