@@ -33,129 +33,139 @@ let users = [
     },
 ];
 
-let coffee = [
+let hotcoffee = [
     {
-        hot: [
-            {
-                productId: 1,
-                productName: "Black Coffee",
-                productImage: require("../img/app_POS/black-coffee.jpeg"),
-                price: [28, 32, 36],
-                allergies: "none",
-                description: "to be continued..",
-                favourite: false
-            },
-            {
-                productId: 2,
-                productName: "Americano",
-                productImage: require("../img/app_POS/americano.jpg"),
-                price: [32, 36, 40],
-                allergies: "none",
-                description: "to be continued..",
-                favourite: false
-            },
-            {
-                productId: 3,
-                productName: "Espresso",
-                productImage: require("../img/app_POS/espresso.jpg"),
-                price: [34, 38, 42],
-                allergies: "none",
-                description: "to be continued..",
-                favourite: false
-            },
-            {
-                productId: 4,
-                productName: "Cortado",
-                productImage: require("../img/app_POS/cortado.jpg"),
-                price: [36, 40, 44],
-                allergies: "none",
-                description: "to be continued..",
-                favourite: false
-            },
-            {
-                productId: 5,
-                productName: "Café Latte",
-                productImage: require("../img/app_POS/Café-Latte.jpeg"),
-                price: [38, 44, 48],
-                allergies: "Milk",
-                description: "to be continued..",
-                favourite: true
-            },
-            {
-                productId: 6,
-                productName: "Cappuccino",
-                productImage: require("../img/app_POS/cappuccino.jpeg"),
-                price: [38, 42, 46],
-                allergies: "Milk",
-                description: "to be continued..",
-                favourite: false
-            },
-            {
-                productId: 7,
-                productName: "Café Mocha",
-                productImage: require("../img/app_POS/Café-Mocha.jpg"),
-                price: [38, 42, 46],
-                allergies: "Milk, Cocoa powder",
-                description: "to be continued..",
-                favourite: true
-            },
-            {
-                productId: 8,
-                productName: "Caramel Macchiato",
-                productImage: require("../img/app_POS/Caramel-Macchiato.jpg"),
-                price: [45, 48, 51],
-                allergies: "Milk",
-                description: "to be continued..",
-                favourite: true
-            },
-        ],
-        cold: [
-            {
-                productId: 9,
-                productName: "Iced Coffee",
-                productImage: require("../img/app_POS/Iced-Coffee.jpg"),
-                price: [36, 42, 50],
-                allergies: "none",
-                description: "to be continued..",
-                favourite: false
-            },
-            {
-                productId: 10,
-                productName: "Iced Latte",
-                productImage: require("../img/app_POS/Iced-Latte.jpg"),
-                price: [38, 44, 48],
-                allergies: "Milk",
-                description: "to be continued..",
-                favourite: false
-            },
-            {
-                productId: 11,
-                productName: "Iced Cappuccino",
-                productImage: require("../img/app_POS/Iced-cappuccino.jpg"),
-                price: [38, 42, 46],
-                allergies: "Milk",
-                description: "to be continued..",
-                favourite: false
-            },
-            {
-                productId: 12,
-                productName: "Iced Mocha",
-                productImage: require("../img/app_POS/Iced-mocha.jpg"),
-                price: [38, 42, 46],
-                allergies: "Milk, Cocoa powder",
-                description: "to be continued..",
-                favourite: true
-            },
-            {
-                productId: 13,
-                productName: "Iced Caramel Macchiato",
-                productImage: require("../img/app_POS/Iced-caramel-macchiato.jpg"),
-                price: [45, 48, 51],
-                allergies: "Milk",
-                description: "to be continued..",
-                favourite: true
-            },
-        ]
+        productId: 1,
+        productName: "Black Coffee",
+        productImage: require("../img/app_POS/black-coffee.jpeg"),
+        price: [28, 32, 36],
+        allergies: "none",
+        description: "to be continued..",
+        favourite: false,
+        category: "hot"
+    },
+    {
+        productId: 2,
+        productName: "Americano",
+        productImage: require("../img/app_POS/americano.jpg"),
+        price: [32, 36, 40],
+        allergies: "none",
+        description: "to be continued..",
+        favourite: false,
+        category: "hot"
+    },
+    {
+        productId: 3,
+        productName: "Espresso",
+        productImage: require("../img/app_POS/espresso.jpg"),
+        price: [34, 38, 42],
+        allergies: "none",
+        description: "to be continued..",
+        favourite: false,
+        category: "hot"
+    },
+    {
+        productId: 4,
+        productName: "Cortado",
+        productImage: require("../img/app_POS/cortado.jpg"),
+        price: [36, 40, 44],
+        allergies: "none",
+        description: "to be continued..",
+        favourite: false,
+        category: "hot"
+    },
+    {
+        productId: 5,
+        productName: "Café Latte",
+        productImage: require("../img/app_POS/Café-Latte.jpeg"),
+        price: [38, 44, 48],
+        allergies: "Milk",
+        description: "to be continued..",
+        favourite: true,
+        category: "hot"
+    },
+    {
+        productId: 6,
+        productName: "Cappuccino",
+        productImage: require("../img/app_POS/cappuccino.jpeg"),
+        price: [38, 42, 46],
+        allergies: "Milk",
+        description: "to be continued..",
+        favourite: false,
+        category: "hot"
+    },
+    {
+        productId: 7,
+        productName: "Café Mocha",
+        productImage: require("../img/app_POS/Café-Mocha.jpg"),
+        price: [38, 42, 46],
+        allergies: "Milk, Cocoa powder",
+        description: "to be continued..",
+        favourite: true,
+        category: "hot"
+    },
+    {
+        productId: 8,
+        productName: "Caramel Macchiato",
+        productImage: require("../img/app_POS/Caramel-Macchiato.jpg"),
+        price: [45, 48, 51],
+        allergies: "Milk",
+        description: "to be continued..",
+        favourite: true,
+        category: "hot"
+    }
+];
+
+let coldcoffee = [
+    {
+        productId: 9,
+        productName: "Iced Coffee",
+        productImage: require("../img/app_POS/Iced-Coffee.jpg"),
+        price: [36, 42, 50],
+        allergies: "none",
+        description: "to be continued..",
+        favourite: false,
+        category: "cold"
+    },
+    {
+        productId: 10,
+        productName: "Iced Latte",
+        productImage: require("../img/app_POS/Iced-Latte.jpg"),
+        price: [38, 44, 48],
+        allergies: "Milk",
+        description: "to be continued..",
+        favourite: false,
+        category: "cold"
+    },
+    {
+        productId: 11,
+        productName: "Iced Cappuccino",
+        productImage: require("../img/app_POS/Iced-cappuccino.jpg"),
+        price: [38, 42, 46],
+        allergies: "Milk",
+        description: "to be continued..",
+        favourite: false,
+        category: "cold"
+    },
+    {
+        productId: 12,
+        productName: "Iced Mocha",
+        productImage: require("../img/app_POS/Iced-mocha.jpg"),
+        price: [38, 42, 46],
+        allergies: "Milk, Cocoa powder",
+        description: "to be continued..",
+        favourite: true,
+        category: "cold"
+    },
+    {
+        productId: 13,
+        productName: "Iced Caramel Macchiato",
+        productImage: require("../img/app_POS/Iced-caramel-macchiato.jpg"),
+        price: [45, 48, 51],
+        allergies: "Milk",
+        description: "to be continued..",
+        favourite: true,
+        category: "cold"
     }
 ];
 
@@ -264,4 +274,4 @@ let food = [
     }
 ];
 
-export {users, coffee, drinks, food};
+export {users, hotcoffee, coldcoffee, drinks, food};
