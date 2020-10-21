@@ -1,9 +1,8 @@
 import React from 'react';
 import '../css/App.css';
 import Text from './components/Text';
-import Menu from './components/Menu';
-
-import {menu, users} from './database';
+import {users, coffee, drinks, food} from './database';
+import Coffee from './components/Coffee';
 
 function App() {
 
@@ -19,8 +18,8 @@ function App() {
             </div>
             <div>
                 {
-                    menu.map(menu => {
-                        return <Menu menu={menu}/>
+                    coffee.map(coffee => {
+                        return <Coffee coffee={coffee.hot}/>
                     })
                 }
             </div>
