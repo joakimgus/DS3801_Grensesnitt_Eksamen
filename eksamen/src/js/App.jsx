@@ -1,8 +1,8 @@
 import React from 'react';
 import '../css/App.css';
 import Text from './components/Text';
-import {users, coffee, drinks, food} from './database';
-import Coffee from './components/Coffee';
+import {users, hotcoffee, coldcoffee, drinks, food} from './database';
+import HotCoffee from './components/HotCoffee';
 
 function App() {
 
@@ -18,8 +18,8 @@ function App() {
             </div>
             <div>
                 {
-                    coffee.map(coffee => {
-                        return <Coffee coffee={coffee.hot}/>
+                    hotcoffee.map(hotcoffee => {
+                        return <HotCoffee hotcoffee={hotcoffee}/>
                     })
                 }
             </div>
