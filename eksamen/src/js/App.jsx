@@ -3,9 +3,9 @@ import '../css/App.css';
 import Text from './components/Text';
 import {users, hotcoffee, coldcoffee, drinks, food} from './database';
 import HotCoffee from './components/HotCoffee';
+import Footer from './components/Footer';
 
 function App() {
-
 
     return (
         <div>
@@ -25,6 +25,7 @@ function App() {
                     })
                 }
             </div>
+            <Footer />
         </div>
     );
 }
