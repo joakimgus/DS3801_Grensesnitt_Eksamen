@@ -1,21 +1,8 @@
 import React from 'react';
 import icons from "../../img/footer-icons/footer-icons";
 
-
-/* function Footer(){
-    return(
-        <footer>
-//             <div className="home"><img src={icons[0].image}></img></div>
-//             <div className="profile">🙍‍♂️</div>
-//             <div className="favorites">🧡</div>
-//             <div className="shopping-cart">🛒</div>
-//             <div className="options">•••</div>
-//         </footer>
-//     );
-// } */
-
 const Footer = () =>{
-    console.log(icons);
+    //console.log(icons);
     return(
         <footer>
             <div className="home"><img src={icons[0].image} alt={icons[0].alt}></img></div>
@@ -26,6 +13,5 @@ const Footer = () =>{
         </footer>
     );
 }
-
 
 export default Footer;

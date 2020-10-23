@@ -1,4 +1,4 @@
-let icons = [
+const icons = [
     {
         key: 1,
         name: "home",
