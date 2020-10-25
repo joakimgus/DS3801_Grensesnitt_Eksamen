@@ -1,7 +1,7 @@
 import React from 'react';
 import {menuItems} from '../database.js';
 
-const MenuFilter = () => {
+const ProductRender = () => {
 
   const filterHotCoffee = menuItems.filter(menuItem => menuItem.category === "hotCoffee");
 
@@ -20,4 +20,4 @@ const MenuFilter = () => {
   )
 }
 
-export default MenuFilter
+export default ProductRender
