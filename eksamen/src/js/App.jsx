@@ -8,7 +8,7 @@ import MainMenu from './components/MainMenu.jsx';
 const App = () => {
   return(
     <>
-      <MainMenu />
+      <ProductRender />
       <Footer />
     </>
   )
