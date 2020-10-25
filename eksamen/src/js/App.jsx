@@ -6,7 +6,9 @@ import HotCoffee from './components/HotCoffee';
 import Footer from './components/Footer';
 
 function App() {
-
+    const handleIconClick = (props) => {
+        console.log("Hei!" + props);
+    }
     return (
         <div>
             {/*
@@ -25,9 +27,9 @@ function App() {
                     })
                 }
             </div>
-
-                {/* Footer element */}
-            <Footer/>
+            <Footer 
+                onClick={handleIconClick}
+            />
         </div>
     );
 }
