@@ -30,6 +30,8 @@ body {
     }
 
     .productTitle {
+        font-family: 'Big Caslon';
+        font-weight: 500;
         text-transform: uppercase;
         font-size: small;
         grid-column: 2 / 3;
@@ -38,6 +40,8 @@ body {
     }
 
     .productPrice {
+        font-weight: 300;
+        font-family: 'Helvetica Neue';
         font-size: small;
         text-transform: capitalize;
         margin-top: 0px;
