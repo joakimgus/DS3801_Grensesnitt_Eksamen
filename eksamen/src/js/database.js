@@ -276,4 +276,37 @@ let menuItems = [
     }
 ];
 
-export {users, menuItems};
+const footerIcons = [
+    {
+        id: 1,
+        name: "home",
+        image: require("../img/footer_icons/home.png"),
+        alt: "navigate home"
+    },
+    {
+        id: 2,
+        name: "user",
+        image: require("../img/footer_icons/user.png"),
+        alt: "go to user profile"
+    },
+    {
+        id: 3,
+        name: "favorite",
+        image: require("../img/footer_icons/favorite.png"),
+        alt: "show your favorite items"
+    },
+    {
+        id: 4,
+        name: "cart",
+        image: require("../img/footer_icons/cart.png"),
+        alt: "navigate to your shopping cart"
+    },
+    {
+        id: 5,
+        name: "options",
+        image: require("../img/footer_icons/more.png"),
+        alt: "display your user settings"
+    }
+];
+
+export {users, menuItems, footerIcons};
