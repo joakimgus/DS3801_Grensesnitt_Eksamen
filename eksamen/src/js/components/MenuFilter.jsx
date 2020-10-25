@@ -20,4 +20,4 @@ const MenuFilter = () => {
   )
 }
 
-export default MenuFilter
+export default MenuFilter;
