@@ -1,14 +1,14 @@
 import React from 'react';
 import '../css/App.css';
 import MenuFilter from './components/MenuFilter.jsx';
-import LogIn from './components/LogIn.jsx';
+import Login from './components/Login.jsx';
 
 const App = () => {
   return(
     <>
-      <MenuFilter />
+      <Login />
     </>
   )
 }
 
-export default App
+export default App;
