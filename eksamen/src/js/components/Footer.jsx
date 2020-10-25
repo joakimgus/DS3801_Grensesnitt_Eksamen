@@ -1,5 +1,6 @@
 import React from 'react';
 import icons from "../../img/footer-icons/footer-icons";
+import '../../css/Footer.css';
 
 
 const Footer = (props) =>{
