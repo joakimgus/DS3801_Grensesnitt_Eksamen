@@ -20,4 +20,4 @@ const ProductRender = () => {
   )
 }
 
-export default ProductRender
+export default ProductRender;
