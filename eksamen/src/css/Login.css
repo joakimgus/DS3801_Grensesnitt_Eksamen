@@ -1,18 +1,18 @@
 /* For iPhone X - App solution */
 @media screen and (max-width : 812px) {
 
-    .logoBody {
+    div.loginpage {
         text-align: center;
     }
     /* Style for Login.jsx */
-    img#logo {
+    img.loginpage {
         grid-column: 2;
         grid-row: 2 / span 3;
         width: 150px;
         margin-top: 30%;
     }
 
-    h1 {
+    h1.loginpage {
         margin-top: -1px;
         font-family: 'Big Caslon';
         font-size: 70px;
@@ -24,7 +24,7 @@
         margin-top: -40px;
     }
 
-    label {
+    label.loginpage {
         display: block;
         margin-bottom: -15px;
         width: 220px;
@@ -34,7 +34,7 @@
         color: rgb(60, 60, 60);
     }
 
-    input {
+    input.loginpage {
         border-radius: 5px;
         margin-bottom: 10px;
         border: none;
@@ -45,7 +45,7 @@
         color: rgba(60, 60, 60);
     }
 
-    input::placeholder {
+    input.loginpage::placeholder {
         color: rgba(42, 42, 42, 0.35);
     }
 
@@ -53,7 +53,7 @@
         margin-right: 14px;
     }
 
-    button {
+    button.loginpage {
         font-weight: 300;
         font-family: 'Helvetica Neue';
         color: white;
