@@ -14,8 +14,6 @@ const Footer = (props) =>{
             <div className="shopping-cart"><img src={icons[3].image} alt={icons[3].alt}></img></div>
             <div className="options"><img src={icons[4].image} alt={icons[4].alt}></img></div>
         </footer>
-
-        
     );
 }
 
