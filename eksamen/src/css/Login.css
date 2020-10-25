@@ -1,0 +1,73 @@
+/* For iPhone X - App solution */
+@media screen and (max-width : 812px) {
+
+    .logoBody {
+        text-align: center;
+    }
+    /* Style for Login.jsx */
+    img#logo {
+        grid-column: 2;
+        grid-row: 2 / span 3;
+        width: 150px;
+        margin-top: 30%;
+    }
+
+    h1 {
+        margin-top: -1px;
+        font-family: 'Big Caslon';
+        font-size: 70px;
+        font-weight: 300;
+        color: rgb(60, 60, 60);
+    }
+
+    #unameLabel {
+        margin-top: -40px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: -15px;
+        width: 220px;
+        font-family: 'Big Caslon';
+        font-size: large;
+        font-weight: lighter;
+        color: rgb(60, 60, 60);
+    }
+
+    input {
+        border-radius: 5px;
+        margin-bottom: 10px;
+        border: none;
+        height: 35px;
+        width: 260px;
+        padding-left: 5px;
+        font-family: 'Helvetica Neue';
+        color: rgba(60, 60, 60);
+    }
+
+    input::placeholder {
+        color: rgba(42, 42, 42, 0.35);
+    }
+
+    #login-btn {
+        margin-right: 14px;
+    }
+
+    button {
+        font-weight: 300;
+        font-family: 'Helvetica Neue';
+        color: white;
+        
+        background-color: rgb(60, 60, 60);
+        border-radius: 5px;
+        border: none;
+
+        height: 35px;
+        width: 125px;
+        margin-bottom: 15px;
+    }
+
+    a:link, a:visited {
+        color: rgb(60, 60, 60);
+    }
+}
