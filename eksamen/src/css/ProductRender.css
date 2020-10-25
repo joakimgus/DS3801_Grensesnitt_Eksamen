@@ -31,7 +31,8 @@
         font-size: small;
         grid-column: 2 / 3;
         grid-row: 2;
-        margin-bottom: 0px;
+        margin-top: 25px;
+        margin-bottom: 5px;
     }
 
     .productPrice {
