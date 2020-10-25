@@ -5,7 +5,7 @@ body {
 
 /* For iPhone X - App solution */
 @media screen 
-    and (max-width : 375px) {
+    and (max-width : 812px) {
 
     .productCard {
         display: grid;
