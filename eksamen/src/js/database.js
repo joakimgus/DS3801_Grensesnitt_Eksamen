@@ -33,7 +33,7 @@ let users = [
     },
 ];
 
-let hotcoffee = [
+let menuItems = [
     {
         productId: 1,
         productName: "Black Coffee",
@@ -42,7 +42,7 @@ let hotcoffee = [
         allergies: "none",
         description: "to be continued..",
         favourite: false,
-        category: "hot"
+        category: "hotCoffee"
     },
     {
         productId: 2,
@@ -52,7 +52,7 @@ let hotcoffee = [
         allergies: "none",
         description: "to be continued..",
         favourite: false,
-        category: "hot"
+        category: "hotCoffee"
     },
     {
         productId: 3,
@@ -62,7 +62,7 @@ let hotcoffee = [
         allergies: "none",
         description: "to be continued..",
         favourite: false,
-        category: "hot"
+        category: "hotCoffee"
     },
     {
         productId: 4,
@@ -72,7 +72,7 @@ let hotcoffee = [
         allergies: "none",
         description: "to be continued..",
         favourite: false,
-        category: "hot"
+        category: "hotCoffee"
     },
     {
         productId: 5,
@@ -82,7 +82,7 @@ let hotcoffee = [
         allergies: "Milk",
         description: "to be continued..",
         favourite: true,
-        category: "hot"
+        category: "hotCoffee"
     },
     {
         productId: 6,
@@ -92,7 +92,7 @@ let hotcoffee = [
         allergies: "Milk",
         description: "to be continued..",
         favourite: false,
-        category: "hot"
+        category: "hotCoffee"
     },
     {
         productId: 7,
@@ -102,7 +102,7 @@ let hotcoffee = [
         allergies: "Milk, Cocoa powder",
         description: "to be continued..",
         favourite: true,
-        category: "hot"
+        category: "hotCoffee"
     },
     {
         productId: 8,
@@ -112,11 +112,8 @@ let hotcoffee = [
         allergies: "Milk",
         description: "to be continued..",
         favourite: true,
-        category: "hot"
-    }
-];
-
-let coldcoffee = [
+        category: "hotCoffee"
+    },
     {
         productId: 9,
         productName: "Iced Coffee",
@@ -125,7 +122,7 @@ let coldcoffee = [
         allergies: "none",
         description: "to be continued..",
         favourite: false,
-        category: "cold"
+        category: "coldCoffee"
     },
     {
         productId: 10,
@@ -135,7 +132,7 @@ let coldcoffee = [
         allergies: "Milk",
         description: "to be continued..",
         favourite: false,
-        category: "cold"
+        category: "coldCoffee"
     },
     {
         productId: 11,
@@ -145,7 +142,7 @@ let coldcoffee = [
         allergies: "Milk",
         description: "to be continued..",
         favourite: false,
-        category: "cold"
+        category: "coldCoffee"
     },
     {
         productId: 12,
@@ -155,7 +152,7 @@ let coldcoffee = [
         allergies: "Milk, Cocoa powder",
         description: "to be continued..",
         favourite: true,
-        category: "cold"
+        category: "coldCoffee"
     },
     {
         productId: 13,
@@ -165,11 +162,8 @@ let coldcoffee = [
         allergies: "Milk",
         description: "to be continued..",
         favourite: true,
-        category: "cold"
-    }
-];
-
-let drinks = [
+        category: "coldCoffee"
+    },
     {
         productId: 14,
         productName: "Lemon Iced Tea",
@@ -177,7 +171,8 @@ let drinks = [
         price: [38, 47, 55],
         allergies: "Lemon",
         description: "to be continued",
-        favourite: false
+        favourite: false,
+        category: "drink"
     },
     {
         productId: 15,
@@ -186,7 +181,8 @@ let drinks = [
         price: [38, 47, 55],
         allergies: "Peach",
         description: "to be continued",
-        favourite: true
+        favourite: true,
+        category: "drink"
     },
     {
         productId: 16,
@@ -195,7 +191,8 @@ let drinks = [
         price: [38, 47, 55],
         allergies: "Raspberry",
         description: "to be continued",
-        favourite: false
+        favourite: false,
+        category: "drink"
     },
     {
         productId: 17,
@@ -204,11 +201,9 @@ let drinks = [
         price: [38, 47, 55],
         allergies: "Pineapple",
         description: "to be continued",
-        favourite: false
-    }
-];
-
-let food = [
+        favourite: false,
+        category: "drink"
+    },
     {
         productId: 18,
         productName: "Scones",
@@ -216,7 +211,8 @@ let food = [
         price: 37,
         allergies: "Wheat, Milk, Eggs, Butter, Cocoa powder",
         description: "to be continued",
-        favourite: false
+        favourite: false,
+        category: "food"
     },
     {
         productId: 19,
@@ -225,7 +221,8 @@ let food = [
         price: 38,
         allergies: "Wheat, Milk, Eggs, Butter",
         description: "to be continued",
-        favourite: false
+        favourite: false,
+        category: "food"
     },
     {
         productId: 20,
@@ -234,7 +231,8 @@ let food = [
         price: 44,
         allergies: "Wheat, Milk, Eggs, Butter",
         description: "to be continued",
-        favourite: false
+        favourite: false,
+        category: "food"
     },
     {
         productId: 21,
@@ -243,7 +241,8 @@ let food = [
         price: 46,
         allergies: "Wheat, Milk, Eggs, Butter, Cinnamon",
         description: "to be continued",
-        favourite: true
+        favourite: true,
+        category: "food"
     },
     {
         productId: 22,
@@ -252,7 +251,8 @@ let food = [
         price: 44,
         allergies: "Wheat, Milk, Eggs, Butter, Cocoa powder",
         description: "to be continued",
-        favourite: false
+        favourite: false,
+        category: "food"
     },
     {
         productId: 23,
@@ -261,7 +261,8 @@ let food = [
         price: 54,
         allergies: "Wheat, Milk, Eggs, Butter, but can also contain: Soy, Crustacean Shellfish, Peanuts, Tree nuts, Lupin, Mollusks, Sesame seeds",
         description: "to be continued",
-        favourite: false
+        favourite: false,
+        category: "food"
     },
     {
         productId: 24,
@@ -270,8 +271,9 @@ let food = [
         price: 42,
         allergies: "Chia seeds, Coconut, Cocoa powder",
         description: "to be continued",
-        favourite: false
+        favourite: false,
+        category: "food"
     }
 ];
 
-export {users, hotcoffee, coldcoffee, drinks, food};
+export {users, menuItems};
