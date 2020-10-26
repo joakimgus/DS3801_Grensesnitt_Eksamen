@@ -55,12 +55,14 @@ const UserProfile = (props) =>{
                         <p>🧾My receipts</p>
                     </div>
                 </div>
-
+{/**test */} 
                 <div>
                     <button type="button" name="logout" className="logout-button"> 👋 LOGOUT</button>
                 </div>
             </div>
         </div>
+
+        
     );
 }
 
