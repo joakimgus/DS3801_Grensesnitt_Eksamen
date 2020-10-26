@@ -1,0 +1,49 @@
+/* For iPhone X - App solution */
+@media screen and (max-width : 812px) {
+
+    .cardContainer {
+        display: grid;
+        grid-template-columns: 2fr 5fr 2fr;
+        grid-template-rows: repeat(6, 1fr);
+        font-family: avenir;
+        width: 97%;
+        height: 752px;
+        background-color: rgba(77, 77, 77, 0.244);
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    .imgProduct {
+        grid-column: 2;
+        grid-row: 1;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-top: 8px;
+    }
+
+    h3.productName {
+        grid-column: 2;
+        grid-row: 2;
+        font-family: 'Big Caslon';
+        text-align: center;
+        font-weight: 500;
+        font-size: larger;
+        text-transform: uppercase;
+
+    }
+
+    .productDescription {
+        text-align: center;
+        grid-row: 3;
+        grid-column: 1 / span 3;
+        font-family: 'Helvetica Neue';
+    }
+
+    .quantityLabel {
+        grid-column: 1;
+        grid-row: 4;
+        font-family: 'Helvetica Neue';
+        text-transform: capitalize;
+    }
+  }

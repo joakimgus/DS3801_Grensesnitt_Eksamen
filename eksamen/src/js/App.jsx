@@ -5,13 +5,13 @@ import ProductRender from './components/ProductRender.jsx';
 import Login from './components/Login.jsx';
 import Footer from './components/Footer.jsx';
 import MainMenu from './components/MainMenu.jsx';
+import ProductView from './components/ProductView.jsx';
 
 
 const App = () => {
   return(
     <>
-      <Header />
-      <ProductRender />
+      <ProductView />
       <Footer />
     </>
   )
