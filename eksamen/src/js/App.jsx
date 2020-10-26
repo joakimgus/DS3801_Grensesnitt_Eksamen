@@ -1,20 +1,20 @@
-  
 import React from 'react';
 import '../css/App.css';
-import Header from './components/Header.jsx';
-import Login from './components/Login.jsx';
-import MainMenu from './components/MainMenu.jsx';
-import ProductView from './components/ProductView.jsx';
 import ProductRender from './components/ProductRender.jsx';
+import Login from './components/Login.jsx';
 import Footer from './components/Footer.jsx';
+import MainMenu from './components/MainMenu.jsx';
+import UserProfile from './components/UserProfile.jsx';
 
 
 const App = () => {
   return(
     <>
-      <ProductView />
+      <ProductRender />
+
       <Footer />
     </>
   )
 }
+
 export default App;
