@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Big Caslon';
+  src: url(../fonts/Adobe-Caslon-Pro_2006.ttf);
+  font-weight: Regular;
+}
+
 body {
     margin: 0;
     background-color: #C39D7D;
