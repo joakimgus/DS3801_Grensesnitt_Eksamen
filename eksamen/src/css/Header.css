@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1em 1fr;
-  background-color: rgb(206, 167, 136);
+  background-color: rgb(209, 170, 139);
 }
 
 .headerBtn{
