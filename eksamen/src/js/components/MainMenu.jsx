@@ -3,10 +3,6 @@ import '../../css/MainMenu.css';
 
 const MainMenu = () => {
 
-  const coffeeImg = require("../../img/app_POS/Hot-drinks.jpeg");
-  const drinksImg = require("../../img/app_POS/Cold-drinks.jpeg");
-  const foodImg = require("../../img/app_POS/food.jpeg");
-
   return(
     <div className="homepage" id="menuCardContainer">
 

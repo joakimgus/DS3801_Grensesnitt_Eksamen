@@ -2,19 +2,27 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1em 1fr;
-  background-color: rgb(206, 167, 136);
+  background-color: rgb(209, 170, 139);
 }
 
 .headerBtn{
+  padding: 5px;
   grid-row: 2;
   height: 30px;
-  background-color: rgb(206, 167, 136);
-  border: none;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  font-family: 'Big Caslon';
 }
 
-.headerBtn:active{
+#lightBtn{
+  background-color: rgb(206, 167, 136);
+  border: 1px solid #C39D7D;
+  color: rgb(88, 88, 88);
+}
+
+#darkBtn{
   background-color: #C39D7D;
+  border: none;
+  font-weight: 800;
+  color: rgb(60, 60, 60);
 }
-

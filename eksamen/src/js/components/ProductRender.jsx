@@ -6,7 +6,8 @@ const ProductRender = () => {
 
   const filterHotCoffee = menuItems.filter(menuItem => menuItem.category === "hotCoffee");
 
-  const arrowimg = require("../../img/app_POS/arrow.png")
+  const arrowimg = require("../../img/app_POS/arrow.png");
+
   return(
       <div>
         {filterHotCoffee.map(menuItem => {
