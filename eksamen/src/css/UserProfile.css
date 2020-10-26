@@ -1,0 +1,88 @@
+.profile-container{
+    padding-top: 20px;
+    margin: auto;
+    height: 750px;
+    width: 350px;
+    background-color: rgb(163, 133, 108);
+    text-align: center;
+}
+
+.picture-container{
+    height: 190px;
+    width: 80%;
+    border: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.picture-container img{
+    object-fit: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+h1{
+    font-size: 20px;
+}
+
+hr{
+    border: 1px solid black;
+}
+
+#hr-name{
+    width: 60%;
+}
+
+.contact-container{
+    text-align: center;
+}
+
+.e-mail, .password-manager{
+    border-top: 1px solid black;
+}
+
+.password-manager{
+        border-bottom: 1px solid black;
+}
+
+/* styling for rewards-container -- extract this to independent component css?*/
+.reward-card-container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    margin: auto;
+}
+.reward-card{
+    margin: 5px;
+    height: 110px;
+    width: 55px;
+    background-color: rgba(39, 34, 34, 0.544); /*rgba(96, 83, 69, 0, 0.244);*/
+    border-radius: 10px;
+}
+
+/*Needs to be centered vertically*/
+.reward-card-container::before{
+    content: "⬅";
+}
+
+.reward-card-container::after{
+    content: "➡";
+}
+
+.logout-button{
+    color: white;
+    background-color: rgb(38, 39, 39);
+    border-radius: 10px;
+    width: 150px;
+    margin: 20px;
+}
+
+.manage-payment-options, .user-receipts{
+    border-top: 1px solid black;
+}
+
+.user-receipts{
+    border-bottom: 1px solid black;
+}
