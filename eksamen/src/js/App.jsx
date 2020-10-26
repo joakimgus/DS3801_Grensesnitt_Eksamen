@@ -11,8 +11,7 @@ import Footer from './components/Footer.jsx';
 const App = () => {
   return(
     <>
-      <ProductView />
-      <Footer />
+      <Login />
     </>
   )
 }

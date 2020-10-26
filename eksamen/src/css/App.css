@@ -1,13 +1,33 @@
+/* Adding Montserrat Font */
 @font-face {
-  font-family: 'Big Caslon';
-  src: url(../fonts/Adobe-Caslon-Pro_2006.ttf) format('truetype');
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-VF.ttf);
+  font-weight: 1 999;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Helvetica Neue';
-  src: url(../fonts/HelveticaNeue.ttf) format('truetype');
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Italic-VF.ttf);
+  font-weight: 1 999;
+  font-style: italic;
 }
 
+/* Adding PlayfairDisplay font */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf) format('truetype-variations');
+  font-weight: 1 999;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(../fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf) format('truetype-variations');
+  font-weight: 1 999;
+  font-style: italic;
+}
+
+/* Style generic for all pages rendered through body */
 body {
     margin: 0;
     background-color: #C39D7D;
