@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Big Caslon';
-  src: url(../fonts/Adobe-Caslon-Pro_2006.ttf);
+  src: url(../fonts/Adobe-Caslon-Pro_2006.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Big Caslon Semi Bold';
-  src: url(../fonts/Adobe-Caslon-Pro-Semibold_2005.ttf);
+  font-family: 'Helvetica Neue';
+  src: url(../fonts/HelveticaNeue.ttf) format('truetype');
 }
 
 body {
