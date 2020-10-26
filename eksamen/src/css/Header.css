@@ -2,13 +2,13 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1em 1fr;
-  background-color: #fccca6;
+  background-color: rgb(206, 167, 136);
 }
 
 .headerBtn{
   grid-row: 2;
   height: 30px;
-  background-color: #fccca6;
+  background-color: rgb(206, 167, 136);
   border: none;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
