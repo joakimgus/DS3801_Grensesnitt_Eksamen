@@ -8,9 +8,13 @@
 .headerBtn{
   grid-row: 2;
   height: 30px;
-  background-color: #C39D7D;
+  background-color: #fccca6;
   border: none;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+
+.headerBtn:active{
+  background-color: #C39D7D;
 }
 
