@@ -1,0 +1,38 @@
+@media screen and (min-width: 813px) {
+  nav {
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #454545;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr 1fr 1fr;
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    bottom: 0px;
+  }
+
+  .POS_Footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+
+  nav > div.POS_Footer > img {
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 90px;
+  }
+
+  #food > img {
+    height: 20px;
+    margin-left: 85px;
+    margin-top: 20px;
+  }
+
+  nav > div.POS_Footer > img.POS_Button {
+    margin-left: 50px;
+  }
+}
