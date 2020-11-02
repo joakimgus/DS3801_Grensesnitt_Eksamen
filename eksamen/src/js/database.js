@@ -318,33 +318,33 @@ const posFooterIcons = [
     },
     {
         id: 2,
-        name: "coffee",
+        name: "drinks",
         image: require("../img/POS_footer_icons/drink.png"),
-        alt: "coffee"
+        alt: "drinks"
     },
     {
         id: 3,
-        name: "coffee",
+        name: "orders",
         image: require("../img/POS_footer_icons/Orders.png"),
-        alt: "coffee"
+        alt: "orders"
     },
     {
         id: 4,
-        name: "coffee",
+        name: "food",
         image: require("../img/POS_footer_icons/bakery-15.png"),
-        alt: "coffee"
+        alt: "food"
     },
     {
         id: 5,
-        name: "coffee",
+        name: "calculator",
         image: require("../img/POS_footer_icons/Calculator.png"),
-        alt: "coffee"
+        alt: "calculator"
     },
     {
         id: 6,
-        name: "coffee",
+        name: "receipts",
         image: require("../img/POS_footer_icons/Receipt.png"),
-        alt: "coffee"
+        alt: "receipts"
     }
 ];
 
