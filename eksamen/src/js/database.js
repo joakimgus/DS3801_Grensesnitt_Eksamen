@@ -306,7 +306,46 @@ const footerIcons = [
         name: "options",
         image: require("../img/footer_icons/more.png"),
         alt: "display your user settings"
+    },
+];
+
+const posFooterIcons = [
+    {
+        id: 1,
+        name: "coffee",
+        image: require("../img/POS_footer_icons/coffeebean.png"),
+        alt: "coffee"
+    },
+    {
+        id: 2,
+        name: "drinks",
+        image: require("../img/POS_footer_icons/drink.png"),
+        alt: "drinks"
+    },
+    {
+        id: 3,
+        name: "orders",
+        image: require("../img/POS_footer_icons/Orders.png"),
+        alt: "orders"
+    },
+    {
+        id: 4,
+        name: "food",
+        image: require("../img/POS_footer_icons/bakery-15.png"),
+        alt: "food"
+    },
+    {
+        id: 5,
+        name: "calculator",
+        image: require("../img/POS_footer_icons/Calculator.png"),
+        alt: "calculator"
+    },
+    {
+        id: 6,
+        name: "receipts",
+        image: require("../img/POS_footer_icons/Receipt.png"),
+        alt: "receipts"
     }
 ];
 
-export {users, menuItems, footerIcons};
+export {users, menuItems, footerIcons, posFooterIcons};
