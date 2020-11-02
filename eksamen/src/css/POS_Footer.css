@@ -1,15 +1,9 @@
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url(../fonts/HelveticaNeue.ttf) format("truetype");
-}
-
 /* For iPad Pro - POS solution */
 @media screen and (min-width: 813px) {
   /* Styles for the main bar */
   nav {
-    font-family: "Helvetica Neue";
-    font-size: 20px;
-    font-weight: bold;
+    font-family: "Montserrat";
+
     background-color: #454545;
     color: white;
     display: grid;
@@ -28,6 +22,10 @@
     text-align: left;
   }
 
+  .POS_Footer > p {
+    margin-top: 25px;
+  }
+
   /* Icon Customization */
   nav > div.POS_Footer > img {
     height: 30px;
@@ -38,8 +36,8 @@
   /* Custom settings because of larger icon */
   #food > img {
     height: 20px;
-    margin-left: 85px;
-    margin-top: 20px;
+    margin-left: 70px;
+    margin-top: 22px;
   }
 
   /* Settings for non-categorical icons */
