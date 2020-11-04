@@ -15,7 +15,7 @@ const ProductRender = () => {
             <div className="productCard" key={menuItem.productId}>
               <img className="productImage" src={menuItem.productImage} alt={menuItem.productName} />
               <h1 className="productTitle">{menuItem.productName}</h1>
-              <p className="productPrice">From kr. {menuItem.price[0]},-</p>
+              <p className="productPrice">From {menuItem.price[0]},-</p>
               <img id="arrow" src={arrowimg} alt="arrow-selector"/>
             </div>
           )
