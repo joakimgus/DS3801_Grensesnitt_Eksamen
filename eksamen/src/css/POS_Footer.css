@@ -16,10 +16,19 @@
   }
 
   /* To arrange icons and text */
-  .POS_Footer {
+  nav > button {
+    background-color: #454545;
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: left;
+    color: white;
+    border: none;
+  }
+
+  nav > button:focus {
+    border: 1px solid black;
+    outline: 0;
+    background-color: #2e2e2e;
   }
 
   .POS_Footer > p {
@@ -27,7 +36,7 @@
   }
 
   /* Icon Customization */
-  nav > div.POS_Footer > img {
+  nav > button.POS_Footer > img {
     height: 30px;
     margin-top: 15px;
     margin-left: 90px;
@@ -41,22 +50,7 @@
   }
 
   /* Settings for non-categorical icons */
-  nav > div.POS_Footer > img.POS_Button {
+  nav > button.POS_Footer > img.POS_Button {
     margin-left: 50px;
   }
-
-  /* Optional Borders */
-  /*
-  nav {
-    border: 1px solid black;
-  }
-
-  .POS_Footer {
-    border-left: 1px solid black;
-  }
-
-  #home {
-    border-width: 0px;
-  }
-  */
 }

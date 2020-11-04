@@ -1,30 +1,19 @@
 import React from 'react';
 import '../../css/POS_Header.css';
+import {posFooterIcons} from '../database.js';
 
-class POS_Header extends React.Component {
+const POS_Header = () => {
 
-  constructor(){
-    super()
-
-    this.state = {
-      light: true
-    }
-  }
-
-  changeColor(){
-    this.setState({light: !this.state.light})
-  }
-
-  render(){
+  
 
     return(
       <div id="headerContainer">
         <div id="headerMainBar">
-          <h2 id="currentPageText">CAFÉ</h2>
+          <h2 id="currentPageText">COFFEE</h2>
         </div>
       </div>
     )
   }
-}
+
 
 export default POS_Header;
