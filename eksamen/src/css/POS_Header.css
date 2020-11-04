@@ -1,4 +1,9 @@
-#headerContainer #headerMainBar {
+#headerContainer {
+  position: sticky;
+  top: 0px;
+}
+
+#headerMainBar {
   background-color: #c39d7d;
   border: 1px solid black;
   height: 5em;
