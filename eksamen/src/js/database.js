@@ -1,4 +1,4 @@
-let users = [
+const users = [
     {
         id: 1,
         firstName: "Tina",
@@ -33,7 +33,7 @@ let users = [
     },
 ];
 
-let menuItems = [
+const menuItems = [
     {
         productId: 1,
         productName: "Black Coffee",
