@@ -6,7 +6,7 @@ import '../../css/POS_Footer.css';
 
 const POS_Footer = () => {
     
-
+    
     return(
         <nav>
            <button className="POS_Footer" id="more">

@@ -16,8 +16,8 @@
     position: relative;
     text-align: center;
     color: rgb(60, 60, 60);
-    width: 375px;
-    height: 254px;
+    width: 100%;
+    min-height: 267px;
     background-size: cover;
     background-repeat: no-repeat;
   }
