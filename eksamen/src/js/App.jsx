@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../css/App.css';
 import ProductRender from './components/ProductRender.jsx';
 import Login from './components/Login.jsx';
@@ -9,11 +9,27 @@ import Header from './components/Header.jsx';
 
 
 const App = () => {
+
+  let target;
+  function handleClick(e){
+      target = e.target.getAttribute('data-render');
+      setTarget(target);
+      console.log(target + "skrevet fra app.jsx(handleClick()")
+  }
+
+  let [where, setWhere] = useState(target);
+  function setTarget(){
+      setWhere(target);
+  }
+
+
   return(
     <>
-      <Header />
-      <ProductRender />
-      <Footer />
+      {(where) === 'renderProfile' ? <UserProfile /> : (where) === 'home' ? <ProductRender /> : <ProductRender />} 
+      <Footer
+        data={`${where}`}
+        onClick={handleClick}
+       />
     </>
   )
 }
