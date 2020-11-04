@@ -7,7 +7,7 @@
   background-color: #c39d7d;
   border: 1px solid black;
   height: 5em;
-  width: 100%;
+  width: fill;
 }
 
 #currentPageText {
