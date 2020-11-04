@@ -25,7 +25,7 @@ const App = () => {
 
   return(
     <>
-      {(where) === 'renderProfile' ? <UserProfile /> : (where) === 'home' ? <MainMenu /> : <MainMenu />} 
+      {(where) === 'renderProfile' ? <UserProfile /> : (where) === 'renderHome' ? <MainMenu /> : <ProductRender />} 
       <Footer
         data={`${where}`}
         onClick={handleClick}
