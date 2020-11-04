@@ -1,0 +1,33 @@
+#shoppingCartContainer {
+  display: grid;
+  grid-template-rows: 5fr 1fr;
+  width: 30%;
+  height: 60em;
+  background-color: white;
+  float: right;
+  border-left: 2px solid black;
+}
+
+#cartTextContainer {
+  background-color: white;
+}
+
+#cartButtonsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cartButton {
+  background-color: #c39d7d;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.cartButton:focus {
+  outline: 0;
+  background-color: #a3734b;
+}
+
+body {
+  background-color: wheat;
+}
