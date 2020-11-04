@@ -1,0 +1,17 @@
+#headerContainer #headerMainBar {
+  background-color: #c39d7d;
+  border: 1px solid black;
+  height: 5em;
+  width: 100%;
+}
+
+#currentPageText {
+  color: black;
+  display: grid;
+  place-items: center;
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-size: 30pt;
+  letter-spacing: 3px;
+  margin-top: 15px;
+}
