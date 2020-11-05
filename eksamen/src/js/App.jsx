@@ -7,6 +7,10 @@ import MainMenu from './components/MainMenu.jsx';
 import UserProfile from './components/UserProfile.jsx';
 import Header from './components/Header.jsx';
 import POS_Footer from './components/POS_Footer';
+import More from './components/More.jsx';
+import Settings from './components/Settings.jsx';
+import Placeholder from './components/PlaceholderComponent.jsx';
+import PreviousOrders from './components/PreviousOrders.jsx';
 
 
 const App = () => {
@@ -26,11 +30,22 @@ const App = () => {
 
   return(
     <>
-      {(where) === 'renderProfile' ? <UserProfile /> : (where) === 'renderHome' ? <MainMenu /> : <ProductRender />} 
-      <POS_Footer 
+      {
+
+        (where) === 'renderProfile' ? <UserProfile /> :
+        (where) === 'renderHome' ? <MainMenu /> :
+        (where === 'renderMore') ? <More onClick = {handleClick}/> :
+        (where) === 'settingsRender' ? <Settings /> :
+        (where) === 'placeholderRender' ? <Placeholder /> :
+        (where) === 'previousOrdersRender' ? <PreviousOrders /> :
+        <ProductRender />
+      } 
+
+      <Footer 
         data={`${where}`}
         onClick={handleClick}
        />
+       
     </>
   )
 }

@@ -8,11 +8,11 @@ let Footer = (props) =>{
     return(
             <footer data-clicked={props.data}>
                 <div className="footer" id="home">
-                    <img src={footerIcons[0].image} onClick={props.onClick} alt={footerIcons[0].alt} data-render="renderHome"/>
+                    <img src={footerIcons[0].image} onClick={props.onClick} alt={footerIcons[0].alt} data-render="renderHome" />
                 </div>
 
                 <div className="footer" id="user" >
-                    <img src={footerIcons[1].image} onClick={props.onClick} alt={footerIcons[1].alt} data-render="renderProfile"/>
+                    <img src={footerIcons[1].image} onClick={props.onClick} alt={footerIcons[1].alt} data-render="renderProfile" />
                 </div>
 
                 <div className="footer" id="favorites">
@@ -24,7 +24,8 @@ let Footer = (props) =>{
                 </div>
 
                 <div className="footer" id="options">
-                    <img src={footerIcons[4].image} onClick={props.onClick} alt={footerIcons[4].alt} data-render="renderOptions" />
+                    <img src={footerIcons[4].image} onClick={props.onClick} alt={footerIcons[4].alt} data-render="renderMore" />
+
                 </div>
             </footer>
         );
