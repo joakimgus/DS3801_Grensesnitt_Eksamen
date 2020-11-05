@@ -11,7 +11,6 @@ import More from './components/More.jsx';
 import Settings from './components/Settings.jsx';
 import Placeholder from './components/PlaceholderComponent.jsx';
 import PreviousOrders from './components/PreviousOrders.jsx';
-
 import Cart from './components/Cart.jsx';
 
 const App = () => {
@@ -39,6 +38,7 @@ const App = () => {
         (where) === 'settingsRender' ? <Settings /> :
         (where) === 'placeholderRender' ? <Placeholder /> :
         (where) === 'previousOrdersRender' ? <PreviousOrders /> :
+        (where) === 'renderShoppingCart' ? <Cart /> :
         <ProductRender /> /*<-- standard render if nothing is selectes */
       } 
       <Footer 
