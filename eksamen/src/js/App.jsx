@@ -30,6 +30,7 @@ const App = () => {
 
   return(
     <>
+    <Header />
       {
 
         (where) === 'renderProfile' ? <UserProfile /> :
