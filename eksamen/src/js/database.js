@@ -392,4 +392,22 @@ const orderHistory = [
     }
 ];
 
-export {users, menuItems, footerIcons, posFooterIcons, orderHistory};
+const cartIcons = [
+    {
+        id: 1,
+        name: "Add",
+        image: require("../img/app_POS/add.png"),
+    },
+    {
+        id: 2,
+        name: "Subtract",
+        image: require("../img/app_POS/sub.png"),
+    },
+    {
+        id: 3,
+        name: "Discard",
+        image: require("../img/app_POS/bin.png"),
+    }
+]
+
+export {users, menuItems, footerIcons, posFooterIcons, cartIcons, orderHistory};

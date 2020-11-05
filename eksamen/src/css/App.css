@@ -30,6 +30,7 @@
 /* Style generic for all pages rendered through body */
 body {
     margin: 0;
+    padding: 0;
     background-color: #C39D7D;
     overflow: scroll;
   }

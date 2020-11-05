@@ -12,6 +12,7 @@ import Settings from './components/Settings.jsx';
 import Placeholder from './components/PlaceholderComponent.jsx';
 import PreviousOrders from './components/PreviousOrders.jsx';
 
+import Cart from './components/Cart.jsx';
 
 const App = () => {
 
