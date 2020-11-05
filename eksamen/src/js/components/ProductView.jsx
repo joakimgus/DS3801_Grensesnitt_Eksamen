@@ -15,6 +15,7 @@ const ProductView = () => {
                 <div className="tweakContainer">
                 <label className="quantityLabel">Quantity :</label>
                 {/* Insert button component here for +/- quantity */}
+                
                 <label className="sizeLabel">Size :</label>
                 </div>
 

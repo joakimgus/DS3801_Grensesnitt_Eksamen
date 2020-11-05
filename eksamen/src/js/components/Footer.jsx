@@ -16,15 +16,15 @@ let Footer = (props) =>{
                 </div>
 
                 <div className="footer" id="favorites">
-                    <img src={footerIcons[2].image} onClick={props.onClick} alt={footerIcons[2].alt} data-render="renderFavorites"></img>
+                    <img src={footerIcons[2].image} onClick={props.onClick} alt={footerIcons[2].alt} data-render="renderFavorites" />
                 </div>
 
                 <div className="footer" id="shopping-cart">
-                    <img src={footerIcons[3].image} onClick={props.onClick} alt={footerIcons[3].alt} data-render="renderShoppingCart"></img>
+                    <img src={footerIcons[3].image} onClick={props.onClick} alt={footerIcons[3].alt} data-render="renderShoppingCart" />
                 </div>
 
                 <div className="footer" id="options">
-                    <img src={footerIcons[4].image} onClick={props.onClick} alt={footerIcons[4].alt} data-render="renderOptions"></img>
+                    <img src={footerIcons[4].image} onClick={props.onClick} alt={footerIcons[4].alt} data-render="renderOptions" />
                 </div>
             </footer>
         );
