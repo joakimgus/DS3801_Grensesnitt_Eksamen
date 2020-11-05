@@ -38,9 +38,8 @@ const App = () => {
         (where) === 'settingsRender' ? <Settings /> :
         (where) === 'placeholderRender' ? <Placeholder /> :
         (where) === 'previousOrdersRender' ? <PreviousOrders /> :
-        <ProductRender />
+        <ProductRender /> /*<-- standard render if nothing is selectes */
       } 
-
       <Footer 
         data={`${where}`}
         onClick={handleClick}
