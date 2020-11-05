@@ -1,23 +1,24 @@
-.more-container{
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: -50px;
-    height: 100vh;
-    width: 350px;
-    background-color: rgb(163, 133, 108);
-    text-align: center;
-    display: grid;
-    grid-template-rows: auto;
-}
 
-.button-container{
-}
+@media screen and (max-width : 812px) {
+    .more-container{
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: -50px;
+        height: 100vh;
+        width: 350px;
+        background-color: rgb(163, 133, 108);
+        text-align: center;
+        display: grid;
+        grid-template-rows: auto;
+    }
 
-button{
-    color: white;
-    background-color: rgb(38, 39, 39);
-    border-radius: 10px;
-    height: 40px;
-    width: 250px;
-    margin: 30px;
+
+    button{
+        color: white;
+        background-color: rgb(38, 39, 39);
+        border-radius: 10px;
+        height: 40px;
+        width: 250px;
+        margin: 30px;
+    }
 }
