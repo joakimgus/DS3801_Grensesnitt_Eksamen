@@ -12,8 +12,11 @@ const ProductView = () => {
                 <p className="productDescription">{menuItems[0].description}</p>
                 
                 {/* Buttons for Quantity/Shots/Size/Milk */}
+                <div className="tweakContainer">
                 <label className="quantityLabel">Quantity :</label>
-
+                {/* Insert button component here for +/- quantity */}
+                <label className="sizeLabel">Size :</label>
+                </div>
 
 
             </div>
