@@ -24,7 +24,7 @@ let Footer = (props) =>{
                 </div>
 
                 <div className="footer" id="options">
-                    <img src={footerIcons[4].image} onClick={props.onClick} alt={footerIcons[4].alt} data-render="renderOptions"></img>
+                    <img src={footerIcons[4].image} onClick={props.onClick} alt={footerIcons[4].alt} data-render="renderMore"></img>
                 </div>
             </footer>
         );
