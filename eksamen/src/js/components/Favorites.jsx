@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { menuItems } from '../database';
 import '../../css/Favorites.css';
-import Header from './components/Header.jsx';
-import Footer from './components/Footer.jsx';
+import Header from './Header.jsx';
+import Footer from './Footer.jsx';
 
 const Favorites = (props) => {
 
@@ -25,8 +25,8 @@ const Favorites = (props) => {
             </div>
           )
         })}
-      <Footer />  
-      </>
+      <Footer />
+    </>
   )
 }
 
