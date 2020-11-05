@@ -27,7 +27,7 @@ const App = () => {
   return(
     <>
     <Header />
-      {/*(where) === 'renderProfile' ? <UserProfile /> : (where) === 'renderHome' ? <MainMenu /> : <ProductRender />*/}
+      {(where) === 'renderProfile' ? <UserProfile /> : (where) === 'renderHome' ? <MainMenu /> : <ProductRender />}
       <Cart /> 
       <Footer 
         data={`${where}`}
