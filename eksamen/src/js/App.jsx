@@ -4,13 +4,13 @@ import ProductRender from './components/ProductRender.jsx';
 import Login from './components/Login.jsx';
 import MainMenu from './components/MainMenu.jsx';
 import UserProfile from './components/UserProfile.jsx';
-import Favorites from './components/Favorites.jsx';
+import FavoritesPage from './components/FavoritesPage.jsx';
 
 
 const App = () => {
   return(
     <>
-      <Favorites /> 
+      <FavoritesPage /> 
     </>
   )
 }
