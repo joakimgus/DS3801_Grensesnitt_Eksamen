@@ -7,7 +7,7 @@ import MainMenu from './components/MainMenu.jsx';
 import UserProfile from './components/UserProfile.jsx';
 import Header from './components/Header.jsx';
 import POS_Footer from './components/POS_Footer';
-
+import Cart from './components/Cart.jsx';
 
 const App = () => {
 
@@ -26,8 +26,10 @@ const App = () => {
 
   return(
     <>
-      {(where) === 'renderProfile' ? <UserProfile /> : (where) === 'renderHome' ? <MainMenu /> : <ProductRender />} 
-      <POS_Footer 
+    <Header />
+      {/*(where) === 'renderProfile' ? <UserProfile /> : (where) === 'renderHome' ? <MainMenu /> : <ProductRender />*/}
+      <Cart /> 
+      <Footer 
         data={`${where}`}
         onClick={handleClick}
        />

@@ -1,0 +1,21 @@
+/* For iPhone X - App solution */
+@media screen and (max-width : 812px) {
+
+    .cart {
+        width: 100%;
+        min-height: 47em;
+        background-color: goldenrod;
+    }
+
+    .cardContainer {
+        display: grid;
+        grid-template-columns: 3fr 5fr 2fr;
+        grid-template-rows: repeat(4, 1fr);
+        width: 98%;
+        height: 150px;
+        background-color: rgba(77, 77, 77, 0.244);
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+  }

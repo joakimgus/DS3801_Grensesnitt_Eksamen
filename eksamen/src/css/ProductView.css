@@ -14,6 +14,7 @@
     }
 
     .imgProduct {
+        justify-self: center;
         grid-column: 2;
         grid-row: 1;
         width: 200px;
