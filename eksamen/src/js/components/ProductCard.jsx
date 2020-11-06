@@ -31,7 +31,7 @@ const List = ({list, setList, filteredList}) => {
           <img className="productImage" src={menuItem.productImage} alt={menuItem.productName} />
           <h1 className="productTitle">{menuItem.productName}</h1>
           <p className="productPrice">From {menuItem.price[0]},-</p>
-          <img id="arrow" alt="arrow" src={require("../../img/app_POS/arrow.png")} alt="arrow-selector" />
+          <img id="arrow" alt="arrow" src={require("../../img/app_POS/arrow.png")} />
           <img 
             id="favorite"
             alt="favorite"

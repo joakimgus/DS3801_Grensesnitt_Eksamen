@@ -1,7 +1,7 @@
 /* For iPhone X - App solution */
 @media screen and (max-width : 812px) {
 
-  #menuCardContainer{
+  #menuCardContainer {
     display: grid;
     grid-row-gap: 0px;
     grid-template-columns: repeat(1, 1fr);
@@ -12,7 +12,9 @@
     margin: 0px;
   }
 
-  #coffeeContainer, #drinksContainer, #foodContainer {
+  #coffeeContainer,
+  #drinksContainer,
+  #foodContainer {
     position: relative;
     text-align: center;
     color: rgb(60, 60, 60);
@@ -22,28 +24,25 @@
     background-repeat: no-repeat;
   }
 
-  #coffeeContainer{
-    background-image: linear-gradient(
-      rgba(255, 255, 255, 0.45), 
-      rgba(255, 255, 255, 0.45)),
-       url(../img/app_POS/Hot-drinks.jpeg);
+  #coffeeContainer {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.45),
+        rgba(255, 255, 255, 0.45)),
+      url(../img/app_POS/Hot-drinks.jpeg);
     grid-column: 1;
     grid-row: 1;
   }
 
-  #drinksContainer{
-    background-image: linear-gradient(
-      rgba(255, 255, 255, 0.45), 
-      rgba(255, 255, 255, 0.45)),
+  #drinksContainer {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.45),
+        rgba(255, 255, 255, 0.45)),
       url(../img/app_POS/Cold-drinks.jpeg);
     grid-column: 1;
     grid-row: 2;
   }
 
-  #foodContainer{
-    background-image: linear-gradient(
-      rgba(255, 255, 255, 0.45), 
-      rgba(255, 255, 255, 0.45)),
+  #foodContainer {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.45),
+        rgba(255, 255, 255, 0.45)),
       url(../img/app_POS/food.jpeg);
     grid-column: 1;
     grid-row: 3;
