@@ -348,6 +348,7 @@ const posFooterIcons = [
     }
 ];
 
+
 const orderHistory = [
     {
         id: 1,
