@@ -2,6 +2,9 @@
 @media screen and (max-width : 812px) {
 
     div.cart {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 3.5em 3.5em;
         margin: 0;
         padding: 0;
         width: 100%;
@@ -9,6 +12,11 @@
     }
 
     div.productCartContainer {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+    }
+
+    .prodCard {
         display: grid;
         grid-template-columns: 70px 4fr 1fr 2fr;
         grid-template-rows: 2em 1fr 1em 2em;
@@ -66,13 +74,10 @@
         text-transform: capitalize;
     }
 
-    p.itemPrice {
-        grid-row: 3;
-        grid-column: 3;
+    .itemPrice {
         font-size: 20px;
         font-family: 'Playfair Display';
         font-variant: small-caps;
-        padding-left: 15px;
     }
 
     .cartBtnContainer {
@@ -86,7 +91,9 @@
 
     div.cartBtnContainer > .addBtn {
         grid-row: 1;
-        border-top-right-radius: 5px;
+        border-radius: 5px;
+        background-color: rgb(28, 28, 28);
+        margin: 3px;
     }
 
     div.cartBtnContainer > .addBtn:hover > img {
@@ -99,11 +106,14 @@
 
     .addBtn > img {
         width: 30px;
-        padding-top: 14px;
+        padding-top: 8px;
     }
 
     div.cartBtnContainer > .subBtn {
         grid-row: 2;
+        border-radius: 5px;
+        background-color: rgb(28, 28, 28);
+        margin: 3px;
     }
 
     div.cartBtnContainer > .subBtn:hover > img {
@@ -116,12 +126,14 @@
 
     .subBtn > img {
         width: 30px;
-        padding-top: 14px;
+        padding-top: 8px;
     }
 
     div.cartBtnContainer > .discardBtn {
         grid-row: 3;
-        border-bottom-right-radius: 5px;
+        border-radius: 5px;
+        background-color: rgb(28, 28, 28);
+        margin: 3px;
     }
 
     div.cartBtnContainer > .discardBtn:hover > img {
@@ -133,8 +145,33 @@
     }
 
     .discardBtn > img {
-        width: 30px;
-        padding-top: 14px;
+        width: 28px;
+        padding-top: 8px;
+    }
+
+    .mTotal {
+        grid-column: 2;
+        grid-row: 2;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-variant: small-caps;
+        font-size: 20px;
+    }
+
+    .mTotal>span {
+        font-family: 'Playfair Display';
+    }
+
+    .mCheckoutBtn {
+        grid-row: 3;
+        grid-column: 2;
+        font-family: 'Montserrat';
+        width: 30em;
+        height: 3em;
+        color: white;
+        background-color: rgb(28, 28, 28);
+        border-radius: 5px;
+        outline: none;
     }
 
 
