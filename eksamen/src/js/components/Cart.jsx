@@ -59,9 +59,12 @@ const Cart = () => {
     
 
     //Denne funker ikke gaddamn brainfarts
-    let priceee = itemsArray.map((item, total) => {
-        return parseInt(total + item.price);
-    })
+    let total = 0;
+    let priceee = itemsArray.map((item => {
+        total = total + (item.price * item.amount);
+        console.log(total);
+        return total;
+    }))
 
 
     function handleCartClick(e){
@@ -129,7 +132,7 @@ const Cart = () => {
 
                     {/*pladeholder $sum forreløpig. frem til jeg lærer meg å plusse sammen */}
             <p className="mTotal">Total: 
-                <span className="mTotal" id="mTotalSpan"> {priceee} </span>,-
+                <span className="mTotal" id="mTotalSpan"> {total} </span>,-
             </p>
             <button className="mCheckoutBtn">Checkout</button>
         </div>
