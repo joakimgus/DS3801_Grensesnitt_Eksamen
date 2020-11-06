@@ -411,6 +411,7 @@ const cartIcons = [
     }
 ]
 
+
 const posCartIcons = [
 {
     id: 1,
