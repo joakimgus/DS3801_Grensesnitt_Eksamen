@@ -2,7 +2,7 @@
 @media screen and (max-width : 812px) {
 
     .morepage {
-        min-height: 47em;
+        min-height: 44.5em;
         position: relative;
     }
 
@@ -39,7 +39,7 @@
         height: 1px;
         border: none;
         background-color: rgb(28, 28, 28);
-        margin-bottom: 5em;
+        margin-bottom: 3em;
     }
     
     .more-options > button {
