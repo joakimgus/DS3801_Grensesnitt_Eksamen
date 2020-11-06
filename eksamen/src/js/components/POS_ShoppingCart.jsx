@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../../css/POS_ShoppingCart.css';
 import {posCartIcons} from '../database.js';
+import {cartIcons} from '../database.js';
 
 let POS_ShoppingCart = () =>{
     
@@ -18,10 +19,10 @@ let POS_ShoppingCart = () =>{
                         </div>
                         <div id="orderCustomButtonContainer">
                             <button className="orderCustomButton" id="trashButton">
-                                <img src={posCartIcons[2].image} alt={posCartIcons[2].alt}/>
+                                <img src={posCartIcons[3].image} alt={posCartIcons[3].alt}/>
                             </button>
                             <button className="orderCustomButton">
-                                <img src={posCartIcons[3].image} alt={posCartIcons[3].alt}/>
+                                <img src={posCartIcons[2].image} alt={posCartIcons[2].alt}/>
                             </button>
                         </div>
                     </div>
