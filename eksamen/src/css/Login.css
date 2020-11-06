@@ -57,6 +57,7 @@
         font-weight: 300;
         font-family: 'Montserrat';
         color: white;
+        outline: none;
         
         background-color: rgb(60, 60, 60);
         border-radius: 5px;
