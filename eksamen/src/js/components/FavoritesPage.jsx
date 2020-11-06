@@ -15,15 +15,13 @@ import ProductCard from './ProductCard';
 
       return (
         <>
-          <Header />
-              <ProductCard
-              list={list}
-              setList={setList}
-              initialList={initialList}
-              key={menuItem.productId}
-              filteredList={filteredList} 
-              />
-          <Footer />
+          <ProductCard
+          list={list}
+          setList={setList}
+          initialList={initialList}
+          key={menuItem.productId}
+          filteredList={filteredList} 
+          />
         </>
       )
 }

@@ -15,15 +15,13 @@ const ProductRender = (menuItem) => {
 
   return(
       <div>
-        <Header />
-            <ProductCard
-            list={list}
-            setList={setList}
-            initialList={initialList}
-            key={menuItem.productId}
-            filteredList={filteredList}
-            />
-          <Footer />
+        <ProductCard
+        list={list}
+        setList={setList}
+        initialList={initialList}
+        key={menuItem.productId}
+        filteredList={filteredList}
+        />
       </div>
     )
   }
