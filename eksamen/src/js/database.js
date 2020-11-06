@@ -408,7 +408,6 @@ const cartIcons = [
         name: "Discard",
         image: require("../img/app_POS/bin.png"),
     }
-];
-
+]
 
 export {users, menuItems, footerIcons, posFooterIcons, cartIcons, orderHistory};
