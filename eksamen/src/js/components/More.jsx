@@ -36,7 +36,7 @@ const More = (props) =>{
                         <button onClick={props.onClick} data-render="placeholderRender">Placeholder</button>
                     </div>
                     <div className="more-options">
-                        <button onClick={props.onClick} data-render="placeholderRender">Log out</button>
+                        <button onClick={props.onClick} data-render="logoutRender">Log out</button>
                     </div>
                 </div>
             </div>
