@@ -16,8 +16,8 @@ class Header extends React.Component {
   }
 
   render(){
-    let btnId = this.state.light ? "darkBtn" : "lightBtn";
-    let btnId2 = this.state.light ? "lightBtn" : "darkBtn";
+    let btnId = this.state.light ? "lightBtn" : "darkBtn";
+    let btnId2 = this.state.light ? "darkBtn" : "lightBtn";
 
     return(
       <div id="mHeaderContainer">
