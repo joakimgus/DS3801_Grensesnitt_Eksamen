@@ -1,33 +1,101 @@
-#shoppingCartContainer {
-  display: grid;
-  grid-template-rows: 5fr 1fr;
-  width: 30%;
-  height: 60em;
-  background-color: white;
-  float: right;
-  border-left: 2px solid black;
-}
+/* For iPad Pro - POS solution */
+@media screen and (min-width: 813px) {
+  /* Main Container */
+  #shoppingCartContainer {
+    display: grid;
+    grid-template-rows: 12fr 1fr;
+    width: 30%;
+    height: 885px; /* For ipad Pro */
+    position: sticky;
+    background-color: white;
+    float: right;
+    border-left: 2px solid black;
+  }
 
-#cartTextContainer {
-  background-color: white;
-}
+  /* Text Outout Div */
+  #cartTextContainer {
+    background-color: white;
+    font-family: "Montserrat";
+    font-weight: normal;
+    overflow: scroll;
+  }
 
-#cartButtonsContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+  /* Park and CHeckout Butoons */
+  #cartButtonsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-.cartButton {
-  background-color: #c39d7d;
-  border-top: 1px solid black;
-  border-right: 1px solid black;
-}
+  /*Styling for Park and Checkout */
+  .cartButton {
+    background-color: #c39d7d;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    height: 100%;
+  }
 
-.cartButton:focus {
-  outline: 0;
-  background-color: #a3734b;
-}
+  .cartButton:focus {
+    outline: 0;
+    background-color: #a3734b;
+  }
 
-body {
-  background-color: wheat;
+  button.cartButton > img {
+    justify-self: center;
+    margin: 0;
+    height: 40px;
+  }
+
+  #orderNumber {
+    border-bottom: 1px solid black;
+    margin-left: 15px;
+    width: 90%;
+    font-size: 20pt;
+    padding-bottom: 10px;
+    font-weight: normal;
+  }
+
+  #cartTextContainer > p {
+    margin-left: 15px;
+    font-size: 16pt;
+  }
+
+  #orderCustomDiv {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding-left: 35px;
+    margin-top: -20px;
+  }
+
+  #orderCustomDiv > p {
+    margin-top: -10px;
+  }
+
+  *#orderSum {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 5px;
+  }
+
+  #amount {
+    float: right;
+  }
+
+  #orderCustomButtonContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 30px;
+    margin-top: -30px;
+  }
+
+  .orderCustomButton {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+  }
+
+  #trashButton {
+    background-color: #c39d7d;
+  }
 }
