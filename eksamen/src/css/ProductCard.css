@@ -30,7 +30,7 @@
         font-size: large;
         grid-column: 2 / 3;
         grid-row: 2;
-        margin-top: 25px;
+        margin-top: 10px;
         margin-bottom: 5px;
         margin-left: 10px;
     }
@@ -55,4 +55,13 @@
         margin-top: 15px;
         padding-left: 20px;
     }
+    
+    #favorite {
+        grid-column: 3 / 4;
+        grid-row: 1 / 1;
+        height: 30px;
+        width: 30px;
+        margin-top: 5px;
+        padding-left: 20px;
+      }
 }

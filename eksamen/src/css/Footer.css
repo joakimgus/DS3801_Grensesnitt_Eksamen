@@ -9,7 +9,7 @@
     height: 50px;
     width: 100%;
     bottom: 0px;
-    position: sticky;
+    position: fixed;
   }
 
   /*Styling for image elements inside the footer-tag*/

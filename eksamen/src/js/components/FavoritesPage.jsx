@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import { menuItems } from '../database';
-import '../../css/Favorites.css';
-import Header from './Header.jsx';
-import Footer from './Footer.jsx';
 import ProductCard from './ProductCard';
 
     const FavoritesPage = (menuItem) => {

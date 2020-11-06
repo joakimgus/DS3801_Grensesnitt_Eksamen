@@ -5,7 +5,7 @@ const Login = () => {
   const imgPath = require("../../img/app_POS/logo.png");
   return(
     <div className="loginpage">
-      <img className="loginpage" id="logo" src={imgPath} />
+      <img className="loginpage" id="logo" src={imgPath} alt="Logo" />
       <h1 className="loginpage" id="Logo">iCafé</h1>
       <label className="loginpage" id="unameLabel">USERNAME</label> <br />
       <input className="loginpage" id="uname" placeholder="Username"></input> <br />
