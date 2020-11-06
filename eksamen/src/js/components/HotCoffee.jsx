@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import {menuItems} from '../database.js';
-import Header from './Header';
-import Footer from './Footer';
 import ProductCard from './ProductCard';
 
 const HotCoffee = (menuItem) => {
