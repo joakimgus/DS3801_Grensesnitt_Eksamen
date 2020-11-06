@@ -5,13 +5,13 @@ import Header from './Header';
 import Footer from './Footer';
 import ProductCard from './ProductCard';
 
-const HotCoffee = (menuItem) => {
+const Foods = (menuItem) => {
 
-  const initialList = menuItems.filter(menuItem => menuItem.category === "hotCoffee");
+  const initialList = menuItems.filter(menuItem => menuItem.category === "food");
 
   const [list, setList] = useState(initialList);
 
-  const filteredList = list.filter(menuItem => menuItem.category === "hotCoffee");
+  const filteredList = list.filter(menuItem => menuItem.category === "food");
 
   return(
       <div>
@@ -26,4 +26,4 @@ const HotCoffee = (menuItem) => {
     )
   }
 
-export default HotCoffee;
+export default Foods;
