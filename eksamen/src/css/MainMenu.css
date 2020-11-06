@@ -6,8 +6,9 @@
     grid-row-gap: 0px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    font-family: 'Big Caslon';
+    font-family: 'Playfair Display';
     font-size: xx-large;
+    font-weight: 600;
     margin: 0px;
   }
 
@@ -15,8 +16,8 @@
     position: relative;
     text-align: center;
     color: rgb(60, 60, 60);
-    width: 375px;
-    height: 254px;
+    width: 100%;
+    min-height: 267px;
     background-size: cover;
     background-repeat: no-repeat;
   }

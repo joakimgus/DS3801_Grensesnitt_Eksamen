@@ -14,7 +14,7 @@
 
     h1.loginpage {
         margin-top: -1px;
-        font-family: 'Big Caslon';
+        font-family: 'Playfair Display';
         font-size: 70px;
         font-weight: 300;
         color: rgb(60, 60, 60);
@@ -27,8 +27,8 @@
     label.loginpage {
         display: block;
         margin-bottom: -15px;
-        width: 220px;
-        font-family: 'Big Caslon';
+        width: 205px;
+        font-family: 'Playfair Display';
         font-size: large;
         font-weight: lighter;
         color: rgb(60, 60, 60);
@@ -41,7 +41,7 @@
         height: 35px;
         width: 260px;
         padding-left: 5px;
-        font-family: 'Helvetica Neue';
+        font-family: 'Montserrat';
         color: rgba(60, 60, 60);
     }
 
@@ -55,7 +55,7 @@
 
     button.loginpage {
         font-weight: 300;
-        font-family: 'Helvetica Neue';
+        font-family: 'Montserrat';
         color: white;
         
         background-color: rgb(60, 60, 60);

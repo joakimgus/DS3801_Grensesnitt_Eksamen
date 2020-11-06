@@ -5,8 +5,7 @@ import {users} from '../database.js';
 
 const UserProfile = (props) =>{
     //console.log(icons);
-
-
+    const arrowimg = require("../../img/app_POS/arrow.png");
     return(
         <div className="placeholder-profile-container">
             <div className="profile-container">

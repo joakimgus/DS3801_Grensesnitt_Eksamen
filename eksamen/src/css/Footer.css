@@ -8,8 +8,8 @@
     text-align: center;
     height: 50px;
     width: 100%;
-    position: sticky;
     bottom: 0px;
+    position: sticky;
   }
 
   /*Styling for image elements inside the footer-tag*/

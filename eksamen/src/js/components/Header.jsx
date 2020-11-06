@@ -20,9 +20,9 @@ class Header extends React.Component {
     let btnId2 = this.state.light ? "darkBtn" : "lightBtn";
 
     return(
-      <div id="HeaderContainer">
-        <button id={btnId} className="headerBtn" onClick={this.changeColor.bind(this)}>BACK</button>
-        <button id={btnId2} className="headerBtn" onClick={this.changeColor.bind(this)}>FAVORITES</button>
+      <div id="mHeaderContainer">
+        <button id={btnId} className="headerBtn" onClick={this.changeColor.bind(this)}>HOT</button>
+        <button id={btnId2} className="headerBtn" onClick={this.changeColor.bind(this)}>ICED</button>
       </div>
     )
   }

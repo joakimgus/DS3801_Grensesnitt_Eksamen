@@ -1,0 +1,43 @@
+
+@media screen and (max-width : 812px) {
+
+    .morepage {
+        min-height: 47em;
+        position: relative;
+    }
+
+    .more-container{
+        width: 97%;
+        height: 97%;
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        -webkit-transform: translate3d(-50%, -50%, 0);
+        -moz-transform: translate3d(-50%, -50%, 0);
+        transform: translate3d(-50%, -50%, 0);
+        background-color: rgba(77, 77, 77, 0.244);
+        text-align: center;
+        border-radius: 5px;
+        font-family: 'Playfair Display';
+        font-variant: small-caps;
+        color: rgb(37, 37, 37);
+    }
+
+    #settingsIcon {
+        justify-self: center;
+        width: 160px;
+        margin-bottom: 1em;
+    }
+    
+    .more-options > button {
+        font-family: 'Montserrat';
+        text-transform: capitalize;
+        font-variant: normal;
+        color: white;
+        background-color: rgb(37, 37, 37);
+        border-radius: 10px;
+        height: 5em;
+        width: 30em;
+        margin: 1em;
+    }
+}

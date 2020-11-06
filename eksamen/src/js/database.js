@@ -1,4 +1,4 @@
-let users = [
+const users = [
     {
         id: 1,
         firstName: "Tina",
@@ -33,7 +33,7 @@ let users = [
     },
 ];
 
-let menuItems = [
+const menuItems = [
     {
         productId: 1,
         productName: "Black Coffee",
@@ -306,7 +306,108 @@ const footerIcons = [
         name: "options",
         image: require("../img/footer_icons/more.png"),
         alt: "display your user settings"
+    },
+];
+
+const posFooterIcons = [
+    {
+        id: 1,
+        name: "Coffee",
+        image: require("../img/POS_footer_icons/Coffee-bean.png"),
+    },
+    {
+        id: 2,
+        name: "Drinks",
+        image: require("../img/POS_footer_icons/Drinks.png"),
+    },
+    {
+        id: 3,
+        name: "Orders",
+        image: require("../img/POS_footer_icons/Orders.png"),
+    },
+    {
+        id: 4,
+        name: "Food",
+        image: require("../img/POS_footer_icons/Croissant.png"),
+    },
+    {
+        id: 5,
+        name: "Calculator",
+        image: require("../img/POS_footer_icons/Calculator.png"),
+    },
+    {
+        id: 6,
+        name: "Receipts",
+        image: require("../img/POS_footer_icons/Receipt.png"),
+    },
+    {
+        id: 7,
+        name: 'Menu',
+        image: require("../img/POS_footer_icons/Menu.png"),
     }
 ];
 
-export {users, menuItems, footerIcons};
+const orderHistory = [
+    {
+        id: 1,
+        number: 1001,
+        items: ["Cafe latée", "Bagel", "Ice Tea"],
+        total: 144
+    },
+    {
+        id: 2,
+        number: 1002,
+        items: ["Brownies", "Bagel", "Black Coffee", "U.S.A."],
+        total: 124
+    },
+    {
+        id: 3,
+        number: 1003,
+        items: ["Cafe mocca", "Toast with cheese", "Hot Chocolate"],
+        total: 314
+    },
+    {
+        id: 4,
+        number: 1004,
+        items: ["placeholde4r", "Bagel4", "Ice Tea4"],
+        total: 44
+    },
+    {
+        id: 5,
+        number: 1005,
+        items: ["Cafe latée5", "Bagel5", "Ice5 Tea"],
+        total: 145
+    },
+    {
+        id: 6,
+        number: 1006,
+        items: ["Cafe 6latée", "Bage6l", "I6ce Tea"],
+        total: 55
+    },
+    {
+        id: 7,
+        number: 1007,
+        items: ["Cafe laté7e", "Bag7el", "Ice7 Tea"],
+        total: 99
+    }
+];
+
+const cartIcons = [
+    {
+        id: 1,
+        name: "Add",
+        image: require("../img/app_POS/add.png"),
+    },
+    {
+        id: 2,
+        name: "Subtract",
+        image: require("../img/app_POS/sub.png"),
+    },
+    {
+        id: 3,
+        name: "Discard",
+        image: require("../img/app_POS/bin.png"),
+    }
+]
+
+export {users, menuItems, footerIcons, posFooterIcons, cartIcons, orderHistory};
