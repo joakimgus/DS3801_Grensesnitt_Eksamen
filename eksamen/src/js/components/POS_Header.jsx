@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../css/POS_Header.css';
+import {posFooterIcons} from '../database.js';
 
 
 const POS_Header = () => {
