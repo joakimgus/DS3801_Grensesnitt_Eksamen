@@ -408,6 +408,29 @@ const cartIcons = [
         name: "Discard",
         image: require("../img/app_POS/bin.png"),
     }
+];
+
+const posCartIcons = [
+    {
+        name: "Park",
+        image: require("../img/app_POS/parking.png"),
+        alt: "Park Icon"
+    },
+    {
+        name: "Checkout",
+        image: require("../img/app_POS/cashRegister.png"),
+        alt: "Register Icon"
+    },
+    {
+        name: "More",
+        image: ("../img/app_POS/more-alt.png"),
+        alt: "More Icon"
+    },
+    {
+        name: "Trash",
+        image: require("../img/app_POS/Trash.png"),
+        alt: "Trash Icon"
+    }
 ]
 
-export {users, menuItems, footerIcons, posFooterIcons, cartIcons, orderHistory};
+export {users, menuItems, footerIcons, posFooterIcons, cartIcons, orderHistory, posCartIcons};
