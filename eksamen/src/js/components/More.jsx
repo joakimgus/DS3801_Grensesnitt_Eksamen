@@ -11,13 +11,14 @@ import '../../css/More.css';
 
 const More = (props) =>{
 
-    const settingsicon = require('../../img/app_POS/settingsicon.png');
+    const settingsicon = require("../../img/app_POS/settingsicon.png");
 
     return(
         <div className="morepage">
             <div className="more-container">
                 <h2>More options</h2>
                 <img id="settingsIcon" src={settingsicon} alt="Settings icon" />
+                <hr id="hrMore" />
                 <div className="button-container">
                     <div className="more-options">
                         <button onClick={props.onClick} data-render="settingsRender">Settings</button>
