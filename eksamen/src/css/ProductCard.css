@@ -63,5 +63,10 @@
         width: 30px;
         margin-top: 5px;
         padding-left: 20px;
-      }
+    }
+
+    div#moveFooter {
+        height: 50px;
+        visibility: hidden;
+    }
 }

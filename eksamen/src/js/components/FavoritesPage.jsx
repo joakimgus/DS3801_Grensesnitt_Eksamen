@@ -19,6 +19,7 @@ import ProductCard from './ProductCard';
           key={menuItem.productId}
           filteredList={filteredList} 
           />
+          <div id="moveFooter"></div>
         </>
       )
 }
