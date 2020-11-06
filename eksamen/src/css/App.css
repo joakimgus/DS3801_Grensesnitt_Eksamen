@@ -33,4 +33,5 @@ body {
     padding: 0;
     background-color: #C39D7D;
     overflow: scroll;
+    max-height: 812px;
   }
