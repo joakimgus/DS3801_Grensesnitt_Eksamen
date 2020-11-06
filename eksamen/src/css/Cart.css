@@ -36,13 +36,13 @@
         text-transform: lowercase;
     }
 
-    div.itemQ > span {
+    div.itemQ>span {
         font-family: 'Montserrat';
         font-style: normal;
         font-size: medium;
     }
 
-    
+
     .itemImage {
         grid-column: 1;
         grid-row: 1;
@@ -52,7 +52,7 @@
         margin-top: 10px;
         margin-left: 3px;
     }
-    
+
 
     ul.itemName {
         grid-column: 2;
@@ -66,7 +66,8 @@
         list-style-type: none;
     }
 
-    li.itemSize, li.addOns {
+    li.itemSize,
+    li.addOns {
         font-family: 'Montserrat';
         font-size: medium;
         font-weight: 400;
@@ -89,14 +90,14 @@
         cursor: pointer;
     }
 
-    div.cartBtnContainer > .addBtn {
+    div.cartBtnContainer>.addBtn {
         grid-row: 1;
         border-radius: 5px;
         background-color: rgb(28, 28, 28);
         margin: 3px;
     }
 
-    div.cartBtnContainer > .addBtn:hover > img {
+    div.cartBtnContainer>.addBtn:hover>img {
         transform: scale(1.1);
         -o-transform: scale(1.1);
         -ms-transform: scale(1.1);
@@ -104,19 +105,19 @@
         -webkit-transform: scale(1.1);
     }
 
-    .addBtn > img {
+    .addBtn>img {
         width: 30px;
         padding-top: 8px;
     }
 
-    div.cartBtnContainer > .subBtn {
+    div.cartBtnContainer>.subBtn {
         grid-row: 2;
         border-radius: 5px;
         background-color: rgb(28, 28, 28);
         margin: 3px;
     }
 
-    div.cartBtnContainer > .subBtn:hover > img {
+    div.cartBtnContainer>.subBtn:hover>img {
         transform: scale(1.1);
         -o-transform: scale(1.1);
         -ms-transform: scale(1.1);
@@ -124,19 +125,19 @@
         -webkit-transform: scale(1.1);
     }
 
-    .subBtn > img {
+    .subBtn>img {
         width: 30px;
         padding-top: 8px;
     }
 
-    div.cartBtnContainer > .discardBtn {
+    div.cartBtnContainer>.discardBtn {
         grid-row: 3;
         border-radius: 5px;
         background-color: rgb(28, 28, 28);
         margin: 3px;
     }
 
-    div.cartBtnContainer > .discardBtn:hover > img {
+    div.cartBtnContainer>.discardBtn:hover>img {
         transform: scale(1.1);
         -o-transform: scale(1.1);
         -ms-transform: scale(1.1);
@@ -144,7 +145,7 @@
         -webkit-transform: scale(1.1);
     }
 
-    .discardBtn > img {
+    .discardBtn>img {
         width: 27px;
         padding-top: 8px;
     }

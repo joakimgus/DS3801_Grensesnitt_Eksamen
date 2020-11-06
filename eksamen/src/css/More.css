@@ -1,4 +1,3 @@
-
 @media screen and (max-width : 812px) {
 
     .morepage {
@@ -6,8 +5,8 @@
         position: relative;
     }
 
-    .more-container{
-        width: 97%;
+    .more-container {
+        width: 85%;
         height: 97%;
         left: 50%;
         top: 50%;
@@ -41,8 +40,8 @@
         background-color: rgb(28, 28, 28);
         margin-bottom: 3em;
     }
-    
-    .more-options > button {
+
+    .more-options>button {
         font-family: 'Montserrat';
         text-transform: capitalize;
         font-variant: normal;

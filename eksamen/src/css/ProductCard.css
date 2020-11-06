@@ -55,7 +55,7 @@
         margin-top: 15px;
         padding-left: 20px;
     }
-    
+
     #favorite {
         grid-column: 3 / 4;
         grid-row: 1 / 1;

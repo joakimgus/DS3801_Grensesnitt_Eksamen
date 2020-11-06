@@ -1,88 +1,119 @@
-.profile-container{
-    padding-top: 20px;
-    margin: auto;
-    height: 750px;
-    width: 350px;
-    background-color: rgb(163, 133, 108);
-    text-align: center;
-}
+/* For iPhone X */
+@media screen and (max-width : 812px) {
 
-.picture-container{
-    height: 190px;
-    width: 80%;
-    border: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
+    .placeholder-profile-page {
+        min-height: 44.5em;
+        position: relative;
+    }
 
-.picture-container img{
-    object-fit: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
+    .profile-container {
+        width: 85%;
+        height: 97%;
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        -webkit-transform: translate3d(-50%, -50%, 0);
+        -moz-transform: translate3d(-50%, -50%, 0);
+        transform: translate3d(-50%, -50%, 0);
+        background-color: rgba(77, 77, 77, 0.244);
+        text-align: center;
+        border-radius: 5px;
+        font-family: 'Playfair Display';
+        color: rgb(37, 37, 37);
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 2fr 3fr 1em;
+    }
 
-h1{
-    font-size: 20px;
-}
+    .edit-container {
+        justify-self: right;
+        grid-row: 1;
+        grid-column: 3;
+        width: 2em;
+        height: 2em;
+        margin-top: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
 
-hr{
-    border: 1px solid black;
-}
+    .picture-container {
+        justify-self: center;
+        grid-column: 2;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: 1em;
+    }
 
-#hr-name{
-    width: 60%;
-}
+    .picture-container img {
+        max-width: 150px;
+        max-height: 150px;
+    }
 
-.contact-container{
-    text-align: center;
-}
+    .user-info-container {
+        grid-row: 2;
+        grid-column: 2;
+        width: 100%;
+        margin-bottom: -30px;
+    }
 
-.e-mail, .password-manager{
-    border-top: 1px solid black;
-}
+    h3.user-name {
+        font-variant: small-caps;
+    }
 
-.password-manager{
+    #hr-name {
+        width: 85%;
+        height: 1px;
+        border: none;
+        background-color: rgb(28, 28, 28);
+        margin-bottom: 3em;
+        ;
+    }
+
+    .contact-container {
+        font-family: 'Montserrat';
+        font-variant: small-caps;
+        font-weight: 300;
+        grid-column: 2;
+        grid-row: 3;
+        justify-self: center;
+    }
+
+    div.email {
+        cursor: pointer;
+        margin-top: -5px;
+        margin-bottom: 5px;
+        padding-bottom: 18px;
         border-bottom: 1px solid black;
-}
+    }
 
-/* styling for rewards-container -- extract this to independent component css?*/
-.reward-card-container{
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(6, 1fr);
-    justify-content: center;
-    margin: auto;
-}
-.reward-card{
-    margin: 5px;
-    height: 110px;
-    width: 55px;
-    background-color: rgba(39, 34, 34, 0.544); /*rgba(96, 83, 69, 0, 0.244);*/
-    border-radius: 10px;
-}
+    div.password-manager {
+        cursor: pointer;
+        margin: 15px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid black;
+    }
 
-/*Needs to be centered vertically*/
-.reward-card-container::before{
-    content: "⬅";
-}
+    div.manage-payment-options {
+        cursor: pointer;
+        margin-bottom: 5px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid black;
+    }
 
-.reward-card-container::after{
-    content: "➡";
-}
+    .rewards-container {
+        grid-column: 2;
+        grid-row: 4;
+        font-variant: small-caps;
+    }
 
-.logout-button{
-    color: white;
-    background-color: rgb(38, 39, 39);
-    border-radius: 10px;
-    width: 150px;
-    margin: 20px;
-}
+    div#moveFooter {
+        height: 50px;
+        visibility: hidden;
+    }
 
-.manage-payment-options, .user-receipts{
-    border-top: 1px solid black;
-}
-
-.user-receipts{
-    border-bottom: 1px solid black;
+    .reward-card > img {
+        width: 150px;
+    }
 }
