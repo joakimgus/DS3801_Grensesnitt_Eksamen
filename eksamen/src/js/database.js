@@ -408,6 +408,35 @@ const cartIcons = [
         name: "Discard",
         image: require("../img/app_POS/bin.png"),
     }
+];
+
+const posCartIcons = [
+{
+    id: 1,
+    name: "Parking",
+    image: require("../img/app_POS/parking.png"),
+    alt: "parking"
+    
+    
+},
+{
+    id: 2,
+    name: "Register",
+    image: require("../img/app_POS/cashRegister.png"),
+    alt: "Register"
+},
+{
+    id: 3,
+    name: "Trash",
+    image: require("../img/app_POS/Trash.png"),
+    alt: "Trash"
+},
+{
+    id: 4,
+    name: "More",
+    image: require("../img/app_POS/more-alt.png"),
+    alt: "More"
+}
 ]
 
 export {users, menuItems, footerIcons, posFooterIcons, cartIcons, orderHistory};
