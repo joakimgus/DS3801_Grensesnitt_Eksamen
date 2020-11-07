@@ -1,4 +1,4 @@
-@media screen and (max-width : 375px) {
+@media screen and (max-width : 376px) {
 
     .morepage {
         min-height: 44.5em;
@@ -57,7 +57,7 @@
     }
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 377px) {
     .morepage {
         min-height: 44.5em;
         position: relative;
@@ -110,7 +110,7 @@
         border-radius: 5px;
         bottom: 0px;
         height: 3em;
-        width: 28em;
+        width: 80%;
         margin: 0.5em;
     }
 }
