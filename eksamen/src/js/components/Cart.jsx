@@ -4,7 +4,7 @@ import { menuItems, cartIcons } from '../database.js';
 
 //import { cartItemsArray } from '../database';
 
-const Cart = () => {
+const Cart = (props) => {
 
     let cartHolder = JSON.parse(localStorage.getItem("cart")) || [];
     /*   menuItems = [
@@ -81,15 +81,15 @@ const Cart = () => {
             case "Discard":
                 //Elementet blir slettet, som man ser i consollen - men elementet blir ikke rendret på nytt. 
                 itemsArray.splice(target, 1);
+                let temp = JSON.parse(localStorage.getItem('cart'));
+                temp.splice(target, 1);
+                localStorage.setItem('cart', JSON.stringify(temp));
                 break;
         }
     }
 
 
-    let hehehe
-    //itemsArray = JSON.parse(localStorage.getItem("cart")) || [];
-
-    //console.log(cartHolder);
+   let [state, setState] = useState("refresh");
 
 
 let id = 0;
@@ -103,6 +103,7 @@ let id = 0;
                         return (
 
                             <div className="prodCard" key={item.productId + " " + id}>
+                            <p>{props.update}</p>
                                 <div className="itemQ">
                                     <span>x</span>{item.amount} 1
                                 </div>
@@ -120,7 +121,7 @@ let id = 0;
                                         <img src={cartIcons[1].image} alt={cartIcons[1].name} onClick={handleCartClick} data-id={`${item.id}`} />
                                     </div>
                                     <div className="discardBtn">
-                                        <img src={cartIcons[2].image} alt={cartIcons[2].name} onClick={handleCartClick} data-id={`${item.id}`} />
+                                        <img src={cartIcons[2].image} alt={cartIcons[2].name} onClick={props.onClick} data-id={cartHolder.indexOf(item)} />
                                     </div>
                                 </div>
                             </div>
