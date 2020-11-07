@@ -1,20 +1,48 @@
 /* For iPhone X - App solution */
 @media screen and (min-width : 813px) {
 
-    .posProductCardContainer {
+    .posProductCard {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: 3fr 5fr 2fr;
         grid-template-rows: repeat(4, 1fr);
-        width: 70%;
-        height: 70%;
-        max-height: 677px;
-        overflow-y: scroll;
+        width: 97%;
+        height: 150px;
+        background-color: rgba(77, 77, 77, 0.244);
+        border-radius: 5px;
+        margin: 5px;
     }
 
     .posProductImage {
+        grid-column: 1 / 2;
+        grid-row: 1 / span 4;
         margin: 10px;
+        margin-top: 15px;
         border-radius: 50%;
-        width: 70px;
-        height: 70px;
+        width: 120px;
+        height: 120px;
+    }
+
+    h1.posProductTitle {
+        font-family: 'Playfair Display';
+        font-weight: 600;
+        font-variant: small-caps;
+        font-size: large;
+        grid-column: 2 / 3;
+        grid-row: 2;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+    }
+
+    .posProductPrice {
+        font-weight: 300;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        font-size: medium;
+        text-transform: capitalize;
+        margin-top: 0px;
+        grid-column: 2 / 3;
+        grid-row: 3;
+        margin-left: 10px;
     }
 }

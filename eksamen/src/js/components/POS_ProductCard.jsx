@@ -5,16 +5,14 @@ const POS_ProductCard = () => {
 
   return(
     <>
-      <div className="posProductCardContainer">
         {menuItems.map((menuItem) => {
           return(
             <div className="posProductCard">
               <img className="posProductImage" src={menuItem.productImage} />
-              <h1>{menuItem.productName}</h1>
-              <p>{menuItem.price[0]}</p>
+              <h1 className="posProductTitle">{menuItem.productName}</h1>
+              <p className="posProuctPrice">{menuItem.price[0]}</p>
             </div>
         )})};
-      </div>
     </>
   )
 
