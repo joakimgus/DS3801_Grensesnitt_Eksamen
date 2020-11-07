@@ -13,45 +13,17 @@ import Placeholder from './components/PlaceholderComponent.jsx';
 import PreviousOrders from './components/PreviousOrders.jsx';
 import Cart from './components/Cart.jsx';
 import FavoritesPage from './components/FavoritesPage';
+import POS_Header from './components/POS_Header';
+import POS_ShoppingCart from './components/POS_ShoppingCart';
 
 const App = () => {
 
-  let target;
-  function handleClick(e){
-      target = e.target.getAttribute('data-render');
-      setTarget(target);
-      console.log(target + "skrevet fra app.jsx(handleClick()")
-  }
-
-  let [where, setWhere] = useState(target);
-  function setTarget(){
-      setWhere(target);
-  }
-
-
-  return(
-    <>
-    <Header />
-      {
-
-        (where) === 'renderProfile' ? <UserProfile /> :
-        (where) === 'renderHome' ? <MainMenu /> :
-        (where === 'renderMore') ? <More onClick = {handleClick}/> :
-        (where) === 'settingsRender' ? <Settings /> :
-        (where) === 'placeholderRender' ? <Placeholder /> :
-        (where) === 'previousOrdersRender' ? <PreviousOrders /> :
-        (where) === 'renderShoppingCart' ? <Cart /> :
-        (where) === 'renderFavorites' ? <FavoritesPage /> :
-        (where) === 'logoutRender' ? <Login /> :
-        <UserProfile /> /*<-- standard render if nothing is selectes */
-      } 
-      <Footer 
-        data={`${where}`}
-        onClick={handleClick}
-       />
-      
-    </>
-  )
+return(
+  <>
+  <POS_Header />
+  <POS_ShoppingCart />
+  <POS_Footer />
+  </>
+)
 }
-
 export default App;
