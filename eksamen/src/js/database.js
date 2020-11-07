@@ -433,7 +433,7 @@ const posCartIcons = [
     }
 ]
 
-let singleItem = [
+let singleItem = 
     {
         productId: 1,
         productName: "Black Coffee",
@@ -444,6 +444,6 @@ let singleItem = [
         favourite: false,
         category: "hotCoffee"
     }
-];
+;
 
 export {users, menuItems, footerIcons, posFooterIcons, cartIcons, orderHistory, posCartIcons, singleItem};

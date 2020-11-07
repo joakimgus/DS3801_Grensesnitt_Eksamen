@@ -1,7 +1,11 @@
 import React, { useState} from 'react';
-import { menuItems } from '../database';
+import { menuItems, singleItem } from '../database';
 import '../../css/ProductCard.css';
+import '../../css/SingleView.css';
 import ProductView from '../components/ProductView';
+
+
+
 
 
 let itemHolder = [];
@@ -49,6 +53,17 @@ const List = ({list, setList, filteredList}) => {
     setAll(false);
   }
 
+function addItemToCart(){
+/*   console.log("Item added!");
+  allCartItems.push(singleItem);
+  console.log(allCartItems); */
+  let temp = JSON.parse(localStorage.getItem("cart")) || [];
+  itemHolder.forEach((item) => temp.push(item));
+  //temp.push(itemHolder);
+  //console.log(temp);
+  localStorage.setItem('cart', JSON.stringify(temp));
+}
+
   return(
     <>
       {all != "single" ? filteredList.map((menuItem) => (
@@ -76,13 +91,12 @@ const List = ({list, setList, filteredList}) => {
             <div className="return-button" onClick={handleSetBackToAll} alt="return to favorites button">⬅ Back</div>
                 <h3 className="productName">{itemHolder[length].productName}</h3>
                 <img className="imgProduct" src={itemHolder[length].productImage} alt={itemHolder[length].productName} />
-                <p className="productDescription">{itemHolder[length].description}</p>
+                <p className="productDescription">{itemHolder[length].description}sss</p>
                 
                 {/* Buttons for Quantity/Shots/Size/Milk */}
                 <div className="tweakContainer">
+                <button onClick={addItemToCart}>add to cart</button>
                 </div>
-
-
             </div>
         </div>
       }
@@ -90,5 +104,4 @@ const List = ({list, setList, filteredList}) => {
     )
 }
 export default List;
-export { itemHolder };
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../css/App.css';
+import '../css/ProductCard.css';
 import HotCoffee from './components/HotCoffee.jsx';
 import Login from './components/Login.jsx';
 import MainMenu from './components/MainMenu.jsx';
@@ -37,7 +38,7 @@ const App = () => {
 
   return(
     <>
-      {where === 'renderFavorites' ? <Header /> : null}
+      {where === 'renderFavorites' ? <Header /> : null} {/**Determines whether header should be rendered or not */}
 
       {
 
@@ -53,7 +54,7 @@ const App = () => {
         (where) === 'coffee' ?  <HotCoffee /> : 
         (where) === 'drinks' ?  <Drinks /> : 
         (where) === 'baked-goods' ?  <Foods /> : 
-        <MainMenu onClick = {handleClick}/>/*<-- standard render if nothing is selectes */
+        <HotCoffee /> /* MainMenu onClick = {handleClick}/ *//*<-- standard render if nothing is selectes */
       } 
       <Footer 
         data={`${where}`}
