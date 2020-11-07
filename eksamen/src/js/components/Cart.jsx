@@ -62,13 +62,12 @@ const Cart = () => {
     let total = 0;
     let priceee = itemsArray.map((item => {
         total = total + (item.price * item.amount);
-        console.log(total);
         return total;
     }))
 
 
     function handleCartClick(e) {
-        console.log(e.target);
+        //console.log(e.target);
         const target = e.target.getAttribute('data-id') - 1;
         const action = e.target.getAttribute('alt')
 
@@ -76,22 +75,15 @@ const Cart = () => {
         //Alle disse fungerer - i consollen - men de blir ikke rendret på nytt. Burde vel bruke useState([]), men det har jeg ikke fått til. 
         switch (action) {
             case "Add":
-                console.log("Add item " + target);
                 itemsArray[target].amount++;
                 //console.log(this.state);
-                console.log(itemsArray[target]);
                 break;
             case "Subtract":
-                console.log("Subtract item " + target);
                 itemsArray[target].amount--;
-                console.log(itemsArray[target]);
                 break;
             case "Discard":
-                console.log("Discard item " + target);
                 //Elementet blir slettet, som man ser i consollen - men elementet blir ikke rendret på nytt. 
-                console.log(itemsArray);
                 itemsArray.splice(target, 1);
-                console.log(itemsArray);
                 break;
         }
     }

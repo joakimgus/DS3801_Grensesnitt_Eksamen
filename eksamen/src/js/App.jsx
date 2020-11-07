@@ -44,7 +44,7 @@ const App = () => {
         (where) === 'placeholderRender' ? <Placeholder /> :
         (where) === 'previousOrdersRender' ? <PreviousOrders /> :
         (where) === 'renderShoppingCart' ? <Cart /> :
-        (where) === 'renderFavorites' ? <FavoritesPage /> && setRenderSingleFalse() :
+        (where) === 'renderFavorites' ? <FavoritesPage /> :
         (where) === 'logoutRender' ? <Login /> :
         <HotCoffee />/*<-- standard render if nothing is selectes */
       } 
