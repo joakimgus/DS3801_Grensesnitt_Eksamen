@@ -1,4 +1,3 @@
-
 @media screen and (min-width : 813px) {
   #mHeaderContainer {
     display: none;
@@ -6,7 +5,7 @@
 }
 
 @media screen and (max-width : 812px) {
-  #mHeaderContainer{
+  #mHeaderContainer {
     margin: 0;
     padding: 0;
     display: grid;
@@ -14,8 +13,8 @@
     grid-template-rows: 1em 1fr;
     background-color: rgb(209, 170, 139);
   }
-  
-  .headerBtn{
+
+  .headerBtn {
     padding: 5px;
     grid-row: 2;
     height: 35px;
@@ -27,13 +26,13 @@
     outline: none;
   }
 
-  #lightBtn{
+  #lightBtn {
     background-color: rgb(206, 167, 136);
     border: 1px solid #C39D7D;
     color: rgb(88, 88, 88);
   }
 
-  #darkBtn{
+  #darkBtn {
     background-color: #C39D7D;
     border: none;
     font-weight: 800;

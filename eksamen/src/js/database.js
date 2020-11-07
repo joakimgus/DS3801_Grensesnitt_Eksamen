@@ -423,7 +423,7 @@ const posCartIcons = [
     },
     {
         name: "More",
-        image: ("../img/app_POS/more-alt.png"),
+        image: require("../img/app_POS/more-alt.png"),
         alt: "More Icon"
     },
     {
