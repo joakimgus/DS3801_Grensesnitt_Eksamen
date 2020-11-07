@@ -33,8 +33,6 @@ const List = ({list, setList, filteredList}) => {
     const productName = e.target.getAttribute('data-product');
     const productList = e.target.getAttribute('data-list');
     setAll("single");
-    console.log(productName);
-    console.log(productList);
     
       filteredList.map((singleItem) => 
         singleItem.productName.includes(productName) ? 
@@ -42,13 +40,14 @@ const List = ({list, setList, filteredList}) => {
         itemHolder.push(singleItem)
         
         : null);
-        console.log("under");
-        console.log(itemHolder); 
-        console.log("over");
+
   }
 
   let length = itemHolder.length-1;
-  console.log(length);
+
+  function handleSetBackToAll(){
+    setAll(false);
+  }
 
   return(
     <>
@@ -74,6 +73,7 @@ const List = ({list, setList, filteredList}) => {
         </div>
       )) : <div>
             <div className="cardContainer" key={itemHolder[length].productId}>
+            <div className="return-button" onClick={handleSetBackToAll} alt="return to favorites button">⬅ Back</div>
                 <h3 className="productName">{itemHolder[length].productName}</h3>
                 <img className="imgProduct" src={itemHolder[length].productImage} alt={itemHolder[length].productName} />
                 <p className="productDescription">{itemHolder[length].description}</p>

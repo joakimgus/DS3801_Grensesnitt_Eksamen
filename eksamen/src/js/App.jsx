@@ -18,7 +18,6 @@ import FavoritesPage from './components/FavoritesPage';
 
 const App = () => {
 
-  let [all, setAll] = useState(false);
   let target;
   function handleClick(e){
       target = e.target.getAttribute('data-render');
@@ -30,6 +29,7 @@ const App = () => {
   function setTarget(){
       setWhere(target);
   }
+
 
 
   return(
@@ -46,7 +46,7 @@ const App = () => {
         (where) === 'renderShoppingCart' ? <Cart /> :
         (where) === 'renderFavorites' ? <FavoritesPage /> :
         (where) === 'logoutRender' ? <Login /> :
-        <HotCoffee /> /*<-- standard render if nothing is selectes */
+        <HotCoffee />/*<-- standard render if nothing is selectes */
       } 
       <Footer 
         data={`${where}`}

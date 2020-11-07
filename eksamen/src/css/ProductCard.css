@@ -67,6 +67,15 @@
         padding-left: 20px;
     }
 
+    /* Styling for return-button on single product*/
+    .return-button{
+        margin: 10px;
+        border: solid 1px black;
+        height: 25px;
+        border-radius: 5px;
+        background-color: rgb(138, 115, 115);
+    }
+
     div#moveFooter {
         height: 50px;
         visibility: hidden;
