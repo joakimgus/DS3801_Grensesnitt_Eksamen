@@ -4,7 +4,7 @@ import '../../css/ProductCard.css';
 import ProductView from '../components/ProductView';
 
 
-
+let itemHolder = [];
 const List = ({list, setList, filteredList}) => { 
   
 
@@ -27,27 +27,28 @@ const List = ({list, setList, filteredList}) => {
     setList(newList);
   }
 
-  let empty = {
-    productId: "heh",
-    productImage: "",
-    productName: "svarte"
-
-  }
 
   function handleProductView(e){
+    itemHolder = [];
     const productName = e.target.getAttribute('data-product');
     const productList = e.target.getAttribute('data-list');
     setAll("single");
     console.log(productName);
     console.log(productList);
     
-      filteredList.map((menuItem) => 
-        menuItem.productName.includes(productName) ? 
-        console.log(menuItem) 
+      filteredList.map((singleItem) => 
+        singleItem.productName.includes(productName) ? 
+
+        itemHolder.push(singleItem)
         
         : null);
+        console.log("under");
+        console.log(itemHolder); 
+        console.log("over");
   }
 
+  let length = itemHolder.length-1;
+  console.log(length);
 
   return(
     <>
@@ -71,14 +72,23 @@ const List = ({list, setList, filteredList}) => {
             onClick={() => handleToggleComplete(menuItem.productId)}
           />
         </div>
-      )) : <ProductView 
-              key={empty.productId}
-              src={empty.productImage}
-              alt={empty.productName}
-              
-          />
+      )) : <div>
+            <div className="cardContainer" key={itemHolder[length].productId}>
+                <h3 className="productName">{itemHolder[length].productName}</h3>
+                <img className="imgProduct" src={itemHolder[length].productImage} alt={itemHolder[length].productName} />
+                <p className="productDescription">{itemHolder[length].description}</p>
+                
+                {/* Buttons for Quantity/Shots/Size/Milk */}
+                <div className="tweakContainer">
+                </div>
+
+
+            </div>
+        </div>
       }
     </>
     )
 }
 export default List;
+export { itemHolder };
+
