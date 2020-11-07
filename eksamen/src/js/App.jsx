@@ -15,12 +15,14 @@ import Cart from './components/Cart.jsx';
 import FavoritesPage from './components/FavoritesPage';
 import POS_Header from './components/POS_Header';
 import POS_ShoppingCart from './components/POS_ShoppingCart';
+import POS_HotCoffee from './components/POS_HotCoffee';
 
 const App = () => {
 
 return(
   <>
   <POS_Header />
+  <POS_HotCoffee />
   <POS_ShoppingCart />
   <POS_Footer />
   </>
