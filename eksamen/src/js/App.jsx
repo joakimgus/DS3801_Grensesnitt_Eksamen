@@ -14,8 +14,11 @@ import PreviousOrders from './components/PreviousOrders.jsx';
 import Cart from './components/Cart.jsx';
 import FavoritesPage from './components/FavoritesPage';
 
+
+
 const App = () => {
 
+  let [all, setAll] = useState(false);
   let target;
   function handleClick(e){
       target = e.target.getAttribute('data-render');
@@ -36,14 +39,14 @@ const App = () => {
 
         (where) === 'renderProfile' ? <UserProfile /> :
         (where) === 'renderHome' ? <MainMenu /> :
-        (where === 'renderMore') ? <More onClick = {handleClick}/> :
+        (where) === 'renderMore' ? <More onClick = {handleClick}/> :
         (where) === 'settingsRender' ? <Settings /> :
         (where) === 'placeholderRender' ? <Placeholder /> :
         (where) === 'previousOrdersRender' ? <PreviousOrders /> :
         (where) === 'renderShoppingCart' ? <Cart /> :
         (where) === 'renderFavorites' ? <FavoritesPage /> :
         (where) === 'logoutRender' ? <Login /> :
-        <UserProfile /> /*<-- standard render if nothing is selectes */
+        <HotCoffee /> /*<-- standard render if nothing is selectes */
       } 
       <Footer 
         data={`${where}`}
