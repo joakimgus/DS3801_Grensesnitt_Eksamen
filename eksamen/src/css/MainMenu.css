@@ -54,4 +54,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  div#moveFooter {
+    height: 50px;
+    visibility: hidden;
+}
 }

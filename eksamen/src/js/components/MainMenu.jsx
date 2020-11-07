@@ -6,6 +6,7 @@ const MainMenu = (props) => {
 
 
   return(
+    <>
     <div className="homepage" id="menuCardContainer">
 
       <div className="homepage" id="coffeeContainer" onClick={props.onClick} data-render="coffee">
@@ -19,8 +20,9 @@ const MainMenu = (props) => {
       <div className="homepage" id="foodContainer"  onClick={props.onClick} data-render="baked-goods">
         <p className="mainMenuText" onClick={props.onClick} data-render="baked-goods">BAKED GOODS</p>
       </div>
-
     </div>
+    <div id="moveFooter"></div>
+    </>
   )
 }
 
