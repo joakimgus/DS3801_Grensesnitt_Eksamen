@@ -35,6 +35,19 @@ const App = () => {
   }
 
 
+  let [refresh, setRefresh] = useState(Math.floor(Math.random()*100));
+  function setUpdate(){
+    setRefresh(Math.floor(Math.random()*100));
+  }
+
+function removeItemFromCart(e){
+  target = e.target.getAttribute('data-id');
+
+  let temp = JSON.parse(localStorage.getItem('cart'));
+  temp.splice(target, 1);
+  localStorage.setItem('cart', JSON.stringify(temp));
+  setUpdate("update");
+}
 
   return(
     <>
@@ -48,7 +61,7 @@ const App = () => {
         (where) === 'settingsRender' ? <Settings /> :
         (where) === 'placeholderRender' ? <Placeholder /> :
         (where) === 'previousOrdersRender' ? <PreviousOrders /> :
-        (where) === 'renderShoppingCart' ? <Cart /> :
+        (where) === 'renderShoppingCart' ? <Cart onClick = {removeItemFromCart} update={refresh}/> :
         (where) === 'renderFavorites' ? <FavoritesPage /> :
         (where) === 'logoutRender' ? <Login /> :
         (where) === 'coffee' ?  <HotCoffee /> : 

@@ -10,7 +10,6 @@ import ProductView from '../components/ProductView';
 
 let itemHolder = [];
 const List = ({list, setList, filteredList}) => { 
-  
 
   let [all, setAll] = useState(false);
 
