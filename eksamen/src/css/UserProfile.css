@@ -2,13 +2,14 @@
 @media screen and (max-width : 812px) {
 
     .placeholder-profile-page {
-        min-height: 44.5em;
+        min-height: 46.5em;
         position: relative;
+        margin-top: 5px;
     }
 
     .profile-container {
         width: 85%;
-        height: 97%;
+        height: 100%;
         left: 50%;
         top: 50%;
         position: absolute;
@@ -97,7 +98,6 @@
 
     div.manage-payment-options {
         cursor: pointer;
-        margin-bottom: 5px;
         padding-bottom: 18px;
         border-bottom: 1px solid black;
     }
@@ -106,14 +106,15 @@
         grid-column: 2;
         grid-row: 4;
         font-variant: small-caps;
+        margin-top: -1em;
+    }
+
+    .reward-card > img {
+        width: 150px;
     }
 
     div#moveFooter {
         height: 50px;
         visibility: hidden;
-    }
-
-    .reward-card > img {
-        width: 150px;
     }
 }

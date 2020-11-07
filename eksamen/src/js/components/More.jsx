@@ -16,7 +16,7 @@ const More = (props) =>{
     return(
         <div className="morepage">
             <div className="more-container">
-                <h2>More options</h2>
+                <p>Options</p>
                 <img id="settingsIcon" src={settingsicon} alt="Settings icon" />
                 <hr id="hrMore" />
                 <div className="button-container">

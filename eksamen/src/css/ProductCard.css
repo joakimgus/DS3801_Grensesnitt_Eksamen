@@ -25,6 +25,7 @@
 
     h1.productTitle {
         font-family: 'Playfair Display';
+        color: rgb(37, 37, 37);
         font-weight: 600;
         font-variant: small-caps;
         font-size: large;
@@ -38,6 +39,7 @@
     .productPrice {
         font-weight: 300;
         font-family: 'Montserrat';
+        color: rgb(37, 37, 37);
         font-weight: 300;
         font-size: medium;
         text-transform: capitalize;
