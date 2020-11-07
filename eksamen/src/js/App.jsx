@@ -12,7 +12,10 @@ import Settings from './components/Settings.jsx';
 import Placeholder from './components/PlaceholderComponent.jsx';
 import PreviousOrders from './components/PreviousOrders.jsx';
 import Cart from './components/Cart.jsx';
-import FavoritesPage from './components/FavoritesPage';
+import FavoritesPage from './components/FavoritesPage.jsx';
+import Drinks from './components/Drinks.jsx';
+import Foods from './components/Foods.jsx';
+
 
 
 
@@ -34,11 +37,12 @@ const App = () => {
 
   return(
     <>
-    <Header />
+      {where === 'renderFavorites' ? <Header /> : null}
+
       {
 
         (where) === 'renderProfile' ? <UserProfile /> :
-        (where) === 'renderHome' ? <MainMenu /> :
+        (where) === 'renderHome' ? <MainMenu onClick = {handleClick}/> :
         (where) === 'renderMore' ? <More onClick = {handleClick}/> :
         (where) === 'settingsRender' ? <Settings /> :
         (where) === 'placeholderRender' ? <Placeholder /> :
@@ -46,7 +50,11 @@ const App = () => {
         (where) === 'renderShoppingCart' ? <Cart /> :
         (where) === 'renderFavorites' ? <FavoritesPage /> :
         (where) === 'logoutRender' ? <Login /> :
-        <PreviousOrders /> /*<-- standard render if nothing is selectes */
+        (where) === 'coffee' ?  <HotCoffee /> : 
+        (where) === 'drinks' ?  <Drinks /> : 
+        (where) === 'baked-goods' ?  <Foods /> : 
+        <MainMenu onClick = {handleClick}/>/*<-- standard render if nothing is selectes */
+
       } 
       <Footer 
         data={`${where}`}
