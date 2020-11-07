@@ -86,16 +86,17 @@ function addItemToCart(){
           />
         </div>
       )) : <div>
-            <div className="cardContainer" key={itemHolder[length].productId}>
-            <div className="return-button" onClick={handleSetBackToAll} alt="return to favorites button">⬅ Back</div>
-                <h3 className="productName">{itemHolder[length].productName}</h3>
+            <div className="single-view-container" key={itemHolder[length].productId}>
+            <button className="return-button" onClick={handleSetBackToAll} alt="return to favorites button">⬅</button>
                 <img className="imgProduct" src={itemHolder[length].productImage} alt={itemHolder[length].productName} />
-                <p className="productDescription">{itemHolder[length].description}sss</p>
-                
+                <h3 className="productName">{itemHolder[length].productName}</h3>
+                <p className="productDescription">{itemHolder[length].description}</p>
+
+
                 {/* Buttons for Quantity/Shots/Size/Milk */}
                 <div className="tweakContainer">
-                <button onClick={addItemToCart}>add to cart</button>
                 </div>
+                <button className="add-to-cart" onClick={addItemToCart}>add to cart</button>
             </div>
         </div>
       }
