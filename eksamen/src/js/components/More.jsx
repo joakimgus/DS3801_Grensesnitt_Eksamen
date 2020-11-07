@@ -29,7 +29,7 @@ const More = (props) =>{
                     </div>
 
                     <div className="more-options">
-                        <button onClick={props.onClick} data-render="placeholderRender">Placeholder</button>
+                        <button onClick={props.onClick} data-render="personalQrRender">QR</button>
                     </div>
 
                     <div className="more-options">
