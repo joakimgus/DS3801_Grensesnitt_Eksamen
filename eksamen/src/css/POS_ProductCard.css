@@ -1,14 +1,20 @@
 /* For iPhone X - App solution */
 @media screen and (min-width : 813px) {
 
-    .productCard {
+    .posProductCardContainer {
         display: grid;
-        grid-template-columns: 3fr 5fr 2fr;
+        grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        width: 97%;
-        height: 150px;
-        background-color: rgba(77, 77, 77, 0.244);
-        border-radius: 5px;
-        margin: 5px;
+        width: 70%;
+        height: 70%;
+        max-height: 677px;
+        overflow-y: scroll;
+    }
+
+    .posProductImage {
+        margin: 10px;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
     }
 }
