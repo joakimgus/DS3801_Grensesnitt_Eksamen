@@ -1,36 +1,96 @@
 @media screen and (max-width : 812px) {
     .previous-orders-page {
+        margin: 0;
+        padding: 0;
         text-align: center;
+        color: rgb(0, 0, 0);
+    }
+
+    .previous-order-title {
+        font-family: 'Playfair Display';
+        font-variant: small-caps;
+        font-size: larger;
     }
 
     .orders-container {
-        height: 100vh;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
+        grid-template-columns: 5px 1fr 1fr 5px;
+    }
+
+    #card-order-ul {
+        list-style-type: none;
+    }
+
+
+    #total-ordercard >span{
+        text-decoration: underline;
+        font-family: 'Playfair Display';
+    }
+
+    .order-card:hover {
+        transform: scale(1.02);
+    }
+
+    #order-hr-container{
+        width: 190px;
+        margin-top: -10px;
+    }
+
+    #order-hr-container>hr {
+        background-color: black;
+        height: 1px;
+        border: none;
+    }
+
+    .receipt-nr,
+    #card-order-ul>li>span,
+    #total-ordercard,
+    li.extras {
+        font-family: 'Montserrat';
+    }
+
+    .receipt-nr >span {
+        font-family: 'Playfair Display';
+    }
+
+    #card-order-ul>li>span {
+        font-size: small;
+    }
+
+    li.extras {
+        font-size: small;
 
     }
 
-    .orders-overview {
-        background-color: rgb(69, 69, 69);
+    .order-card:nth-child(odd) {
+        font-family: 'Playfair Display';
+        font-variant: small-caps;
+        text-align: left;
+        padding-left: 15px;
+        min-height: 100px;
+        grid-column: 2;
+        background-color: rgba(77, 77, 77, 0.244);
+        border: 1px dotted rgba(0, 0, 0, 0.723);
+        border-radius: 5px;
+        margin: 5px;
     }
 
-    .orders-overview>button {
-        width: 100px;
-        margin: 15px;
+    .order-card:nth-child(even){
+        grid-column: 3;
+        min-height: auto;
+        font-family: 'Playfair Display';
+        border: 1px dotted rgba(0, 0, 0, 0.723);
+        font-variant: small-caps;
+        text-align: left;
+        padding-left: 15px;
+        min-height: 100px;
+        background-color: rgba(77, 77, 77, 0.244);
+        border-radius: 5px;
+        margin: 5px;
     }
 
-    .orders-overview>button:active {
-        border: 2px solid green;
+    div#moveFooter {
+        height: 50px;
+        visibility: hidden;
     }
-
-    .orders-display {
-        background-color: rgb(40, 40, 40);
-        grid-column: 2 / 4;
-    }
-
-    .order-receipt {
-        background-color: rgb(100, 100, 100);
-    }
-
 }

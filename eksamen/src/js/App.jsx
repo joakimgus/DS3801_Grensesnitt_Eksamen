@@ -54,7 +54,8 @@ const App = () => {
         (where) === 'coffee' ?  <HotCoffee /> : 
         (where) === 'drinks' ?  <Drinks /> : 
         (where) === 'baked-goods' ?  <Foods /> : 
-        <HotCoffee /> /* MainMenu onClick = {handleClick}/ *//*<-- standard render if nothing is selectes */
+        <MainMenu onClick = {handleClick}/>/*<-- standard render if nothing is selectes */
+
       } 
       <Footer 
         data={`${where}`}
