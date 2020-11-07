@@ -2,13 +2,13 @@ import React from 'react';
 import {menuItems} from '../database.js';
 import '../../css/ProductView.css';
 
-const ProductView = () => {
+const ProductView = (props) => {
     return(
         <div>
-            <div className="cardContainer" key={menuItems[0].productId}>
-                <h3 className="productName">{menuItems[0].productName}</h3>
-                <img className="imgProduct" src={menuItems[0].productImage} alt={menuItems[0].productName} />
-                <p className="productDescription">{menuItems[0].description}</p>
+            <div className="cardContainer" key={props.productId}>
+                <h3 className="productName">{props.productName}</h3>
+                <img className="imgProduct" src={props.productImage} alt={props.productName} />
+                <p className="productDescription">{props.description}</p>
                 
                 {/* Buttons for Quantity/Shots/Size/Milk */}
                 <div className="tweakContainer">
