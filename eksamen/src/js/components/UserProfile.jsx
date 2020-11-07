@@ -64,7 +64,6 @@ const UserProfile = (props) => {
                         </div>
                     </div>
                 </div>
-
             </div>
             <div id="moveFooter"></div>
         </>

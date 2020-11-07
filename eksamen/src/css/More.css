@@ -21,15 +21,15 @@
         color: rgb(37, 37, 37);
     }
 
-    .more-container>h2 {
-        font-size: 35px;
+    .more-container>p {
+        font-size: x-large;
         font-weight: 700;
         font-variant: small-caps;
     }
 
     #settingsIcon {
         justify-self: center;
-        width: 170px;
+        width: 150px;
         margin-bottom: 2em;
     }
 
@@ -38,7 +38,7 @@
         height: 1px;
         border: none;
         background-color: rgb(28, 28, 28);
-        margin-bottom: 3em;
+        margin-bottom: 4em;
     }
 
     .more-options>button {
