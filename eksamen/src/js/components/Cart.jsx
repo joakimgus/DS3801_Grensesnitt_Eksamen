@@ -6,7 +6,7 @@ import { menuItems, cartIcons } from '../database.js';
 
 const Cart = () => {
 
-
+    let cartHolder = JSON.parse(localStorage.getItem("cart")) || [];
     /*   menuItems = [
           {
               productId: 1,
@@ -19,9 +19,6 @@ const Cart = () => {
               category: "hotCoffee"
           }, */
 
-
-    /*get item array - cartItemsArray - produkter må pushes til det arrayet fra handlesiden; så denne "arrayen" er en dud */
-    const [items, setItems] = useState([]);
 
     let itemsArray = [];
 
@@ -60,8 +57,8 @@ const Cart = () => {
 
     //Denne funker ikke gaddamn brainfarts
     let total = 0;
-    let priceee = itemsArray.map((item => {
-        total = total + (item.price * item.amount);
+    let priceee = cartHolder.map((item => {
+        total = total + (item.price[1] === undefined ? item.price : item.price[1]);
         return total;
     }))
 
@@ -88,23 +85,32 @@ const Cart = () => {
         }
     }
 
+
+    let hehehe
+    //itemsArray = JSON.parse(localStorage.getItem("cart")) || [];
+
+    //console.log(cartHolder);
+
+
+let id = 0;
     return (
         <>
             <div className="cart">
                 <div className="productCartContainer">
-                    {itemsArray.map((item) => {
-
+                    {cartHolder.map((item) => {
+                        id++;
+                        console.log(item.price[1]);
                         return (
 
-                            <div className="prodCard" key={item.id}>
+                            <div className="prodCard" key={item.productId + " " + id}>
                                 <div className="itemQ">
-                                    <span>x</span>{item.amount}
+                                    <span>x</span>{item.amount} 1
                                 </div>
-                                <img className="itemImage" src={item.image} alt={item.productName + " image"} />
+                                <img className="itemImage" src={item.productImage} alt={item.productName + " image"} />
                                 <ul className="itemName">{item.productName}
-                                    <li className="itemSize">Size: {item.size}</li>
-                                    <li className="addOns">Extras: {item.extra}sss</li>
-                                    <li className="itemPrice">{item.price * item.amount},-</li>
+                                    <li className="itemSize">Size: XL {item.size}</li>
+                                    <li className="addOns">Extras: {item.extra}none</li>
+                                    <li className="itemPrice">{item.price[1] === undefined ? item.price : item.price[1] /* * item.amount*/ },-</li>
                                 </ul>
                                 <div className='cartBtnContainer'>
                                     <div className="addBtn" >
