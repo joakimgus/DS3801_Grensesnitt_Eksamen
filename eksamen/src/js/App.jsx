@@ -16,6 +16,7 @@ import Cart from './components/Cart.jsx';
 import FavoritesPage from './components/FavoritesPage.jsx';
 import Drinks from './components/Drinks.jsx';
 import Foods from './components/Foods.jsx';
+import QrPage from './components/QrPage';
 
 
 
@@ -59,6 +60,7 @@ function removeItemFromCart(e){
         (where) === 'renderHome' ? <MainMenu onClick = {handleClick}/> :
         (where) === 'renderMore' ? <More onClick = {handleClick}/> :
         (where) === 'settingsRender' ? <Settings /> :
+        (where) === 'personalQrRender' ? <QrPage /> :
         (where) === 'placeholderRender' ? <Placeholder /> :
         (where) === 'previousOrdersRender' ? <PreviousOrders /> :
         (where) === 'renderShoppingCart' ? <Cart onClick = {removeItemFromCart} update={refresh}/> :
