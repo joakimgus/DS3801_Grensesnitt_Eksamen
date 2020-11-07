@@ -16,7 +16,7 @@ const PreviousOrders = () => {
                         return (
                             <>
                                 <div className="order-card">
-                                        <p className='receipt-nr'>Order number: <span>{order.number}</span></p>
+                                        <p className='receipt-nr'>🧾 Order number: <span>{order.number}</span></p>
                                         <div id='order-hr-container'>
                                             <hr  />
                                         </div>
