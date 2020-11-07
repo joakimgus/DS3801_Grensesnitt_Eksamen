@@ -43,7 +43,7 @@ const App = () => {
         (where) === 'renderShoppingCart' ? <Cart /> :
         (where) === 'renderFavorites' ? <FavoritesPage /> :
         (where) === 'logoutRender' ? <Login /> :
-        <UserProfile /> /*<-- standard render if nothing is selectes */
+        <PreviousOrders /> /*<-- standard render if nothing is selectes */
       } 
       <Footer 
         data={`${where}`}

@@ -351,43 +351,130 @@ const orderHistory = [
     {
         id: 1,
         number: 1001,
-        items: ["Cafe latée", "Bagel", "Ice Tea"],
+        items: [
+            {
+                name: "Café Latte",
+                quantity: 1,
+                size: "Small",
+            },
+            {
+                name: "Iced Cappuccino",
+                quantity: 1,
+                size: "Medium",
+            },
+            {
+                name: "Scones",
+                quantity: 1,
+                size: "One size"
+            }
+        ],
         total: 144
     },
     {
         id: 2,
         number: 1002,
-        items: ["Brownies", "Bagel", "Black Coffee", "U.S.A."],
+        items: [
+            {
+                name: "Black Coffee",
+                quantity: 1,
+                size: "Medium",
+            },
+            {
+                name: "Cappuccino",
+                quantity: 1,
+                size: "Large",
+            },
+            {
+                name: "Brownie",
+                quantity: 2,
+                size: "One size"
+            }
+        ],
         total: 124
     },
     {
         id: 3,
         number: 1003,
-        items: ["Cafe mocca", "Toast with cheese", "Hot Chocolate"],
+        items: [
+            {
+                name: "Café Mocha",
+                quantity: 2,
+                size: "Medium",
+            },
+            {
+                name: "Cinnamon Bun",
+                quantity: 1,
+                size: "One size",
+            },
+            {
+                name: "Oreo Slice",
+                quantity: 1,
+                size: "One size"
+            }
+        ],
         total: 314
     },
     {
         id: 4,
         number: 1004,
-        items: ["placeholde4r", "Bagel4", "Ice Tea4"],
+        items: [
+            {
+                name: "Black Coffee",
+                quantity: 2,
+                size: "Medium",
+            },
+            {
+                name: "Brioche",
+                quantity: 2,
+                size: "One size"
+            }
+        ],
         total: 44
     },
     {
         id: 5,
         number: 1005,
-        items: ["Cafe latée5", "Bagel5", "Ice5 Tea"],
+        items: [
+            {
+                name: "Raspberry Iced Tea",
+                quantity: 1,
+                size: "Medium",
+            },
+            {
+                name: "Cinnamon Bun",
+                quantity: 1,
+                size: "One size"
+            }
+        ],
         total: 145
     },
     {
         id: 6,
         number: 1006,
-        items: ["Cafe 6latée", "Bage6l", "I6ce Tea"],
+        items: [
+            {
+                name: "Iced Caramel Macchiato",
+                quantity: 1,
+                size: "Large"
+            }
+        ],
         total: 55
     },
     {
         id: 7,
         number: 1007,
-        items: ["Cafe laté7e", "Bag7el", "Ice7 Tea"],
+        items: [
+            {
+                name: "Espresso",
+                quantity: 1,
+                size: "One size",
+            },
+            {
+                name: "Chia pudding",
+                quantity: 1,
+                size: "One size"
+            }
+        ],
         total: 99
     }
 ];
