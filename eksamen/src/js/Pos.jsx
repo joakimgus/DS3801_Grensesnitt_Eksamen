@@ -52,7 +52,7 @@ const Pos = (props) => {
         <POS_Header />
         <POS_WorkerSelect />
         <POS_ShoppingCart />
-        <POS_Foods />
+        <POS_HotCoffee />
         <POS_Footer />
       </div>
     </>
