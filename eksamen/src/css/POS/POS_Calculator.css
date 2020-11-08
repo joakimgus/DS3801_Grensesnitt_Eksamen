@@ -1,0 +1,82 @@
+@media screen and (min-width: 813px) {
+  .posMainContainer {
+    font-family: 'Montserrat';
+      margin: 0;
+      padding-top: 75px;
+      max-width: 70%;
+      height: 60em;
+      overflow-y: scroll;    
+  }
+
+  .posCalcContainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border: 3px solid black;
+    width: 80%;
+    height: 60%;
+    margin-left: 10%; 
+  }
+
+  #leftDiv {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    background-color: #a27a59;
+    border-right: 1px solid black;
+    place-items: center;
+  }
+
+  .posMainContainer > .posCalcContainer > #leftDiv > p {
+    font-size: 25pt;
+    font-weight: bold;
+  }
+
+  #rightDiv {
+    font-weight: normal;
+    font-size: 30pt;
+    display: grid;
+    place-items: center;
+    background-color: #c39d7d;
+  }
+
+  .posMainContainer > .posCalcContainer > #rightDiv > p {
+    position: inline;
+    font-size: 40pt;
+    
+    
+  }
+
+  .rightBtnContainer {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    width: 300px;
+    height: 400px;
+    margin-top: -60px;
+  }
+
+  .leftBtnContainer {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 200px;
+    height: 300px;
+  }
+
+  button img {
+    width: 40px;
+    height: 40px;
+  }
+
+
+  .calculatorButton {
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16pt;
+    background-color: #e6be9d;
+    border: 1px solid black;
+    border-radius: 10%;
+  }
+}
