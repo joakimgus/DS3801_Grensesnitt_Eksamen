@@ -32,10 +32,18 @@
     .pos-action-window-container {
         grid-column: 1;
         grid-row: 2;
+        width: 100%;
+        background-color: green;
+        height: 100%;
     }
 
     .pos-footer-container {
         grid-column: 1 / span 2;
         grid-row: 3;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 1px;
+        border: 1px solid black;
+        background-color: rgb(60, 60, 60);
     }
 }

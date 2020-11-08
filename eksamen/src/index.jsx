@@ -6,7 +6,6 @@ import POS_App from './js/POS_App';
 
 ReactDOM.render(
   <div>
-    <Render />
     <POS_App />
   </div>,
   document.getElementById('root')
