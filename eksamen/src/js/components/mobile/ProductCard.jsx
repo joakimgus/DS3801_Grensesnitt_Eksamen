@@ -63,6 +63,32 @@ function addItemToCart(){
   localStorage.setItem('cart', JSON.stringify(temp));
 }
 
+function setClickedSpan(e){
+  let span = document.getElementsByClassName("span-click");
+
+  console.log(span);
+  for(let i = 0; i < span.length; i++){
+    span[i].style = "color: black";
+  }
+
+  e.target.style = "color: white";
+  e.target.style.border = "1px solid white";
+  e.target.style.borderRadius = "5px";
+}
+
+function setClickedSpanMilk(e){
+  let span = document.getElementsByClassName("span-click-milk");
+
+  for(let i = 0; i < span.length; i++){
+    span[i].style = "color: black";
+  }
+
+  e.target.style.color = "white";
+  e.target.style.border = "1px solid white";
+  e.target.style.borderRadius = "5px";
+
+}
+
   return(
     <>
       {all != "single" ? filteredList.map((menuItem) => (
@@ -110,16 +136,35 @@ function addItemToCart(){
         : 
         <div>
           <div className="single-view-container" key={itemHolder[length].productId}>
-            <button className="return-button" onClick={handleSetBackToAll} alt="return to favorites button">⬅</button>
-            <img className="imgProduct" src={itemHolder[length].productImage} alt={itemHolder[length].productName} />
-            <h3 className="productName">{itemHolder[length].productName}</h3>
-            <p className="productDescription">{itemHolder[length].description}</p>
+              <button className="return-button" onClick={handleSetBackToAll} alt="return to favorites button">⬅</button>
+          <div className="product-info">
+              <img className="imgProduct" src={itemHolder[length].productImage} alt={itemHolder[length].productName} />
+              <h3 className="productName">{itemHolder[length].productName}</h3>
+              <p className="productDescription">{itemHolder[length].description}</p>
+          </div>
+          <div className="product-settings">
+              <div className="product-settings-specifics"><p>Quantity: </p><p>- 1 +</p></div>
+              <div className="product-settings-specifics"><p>Shots:</p><p>- 1 +</p></div>
+              <div className="product-settings-specifics-size">
+                  <p>Size:</p>
+                  <div>
+                    <p className="product-p"><span className="span-click" onClick={setClickedSpan}>S</span> <span className="span-click" onClick={setClickedSpan}>M</span> <span className="span-click" onClick={setClickedSpan}>XL</span></p>
 
+                  </div>
+              </div>
+              <div className="product-settings-specifics-size">
+                  <p>Milk:</p>
+                  <div>
+                    <p className="product-p"><span className="span-click-milk" onClick={setClickedSpanMilk}>No milk</span> <span className="span-click-milk" onClick={setClickedSpanMilk}>Lactose Free</span> <span className="span-click-milk" onClick={setClickedSpanMilk}>Regular milk</span></p>
 
-            {/* Buttons for Quantity/Shots/Size/Milk */}
-            <div className="tweakContainer">
-            </div>
+                  </div>
+              </div>
+              <div className="product-settings-specifics"><p>Total: </p><p>Kr {itemHolder[length].price[1] || itemHolder[length].price},-</p></div>
+              <div className="product-settings-specifics"></div>
             <button className="add-to-cart" onClick={addItemToCart}>add to cart</button>
+          </div>
+            {/* Buttons for Quantity/Shots/Size/Milk */}
+
           </div>
         </div>
       }
