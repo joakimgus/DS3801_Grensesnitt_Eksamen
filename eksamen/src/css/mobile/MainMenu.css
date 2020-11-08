@@ -30,6 +30,7 @@
         url(../../img/products/Hot-drinks.jpeg);
     grid-column: 1;
     grid-row: 1;
+    cursor: pointer;
   }
 
   #drinksContainer {
@@ -38,6 +39,7 @@
       url(../../img/products/Cold-drinks.jpeg);
     grid-column: 1;
     grid-row: 2;
+    cursor: pointer;
   }
 
   #foodContainer {
@@ -46,6 +48,7 @@
       url(../../img/products/food.jpeg);
     grid-column: 1;
     grid-row: 3;
+    cursor: pointer;
   }
 
   .mainMenuText {

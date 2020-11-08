@@ -4,7 +4,7 @@
     text-align: center;
     width: 80%;
     background-color: rgba(77, 77, 77, 0.244);
-    height: 100vh;
+    height: 100%;
     margin: auto;
     margin-top: 10px;
     border-radius: 10px;
@@ -41,12 +41,14 @@
     grid-row: 3;
     grid-column: 2;
     font-family: 'Montserrat';
-    width: 25em;
+    width: 80%;
     height: 3em;
     color: white;
     background-color: rgb(28, 28, 28);
     border-radius: 5px;
+    font-variant: small-caps;
     outline: none;
+    margin-bottom: 1em;
 }
 
 .product-settings-specifics {
@@ -128,4 +130,9 @@
     height: 1px;
     border: none;
     background-color: rgb(28, 28, 28);
+}
+
+div#moveFooter {
+    height: 50px;
+    visibility: hidden;
 }

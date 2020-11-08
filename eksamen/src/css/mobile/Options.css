@@ -46,7 +46,6 @@
         text-transform: capitalize;
         font-variant: normal;
         color: white;
-        outline: none;
         border: none;
         background-color: rgb(28, 28, 28);
         border-radius: 5px;
@@ -105,7 +104,6 @@
         font-variant: normal;
         color: white;
         outline: none;
-        border: none;
         background-color: rgb(28, 28, 28);
         border-radius: 5px;
         bottom: 0px;

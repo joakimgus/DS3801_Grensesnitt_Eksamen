@@ -289,6 +289,7 @@ const List = ({ list, setList, filteredList }) => {
               </div>
               : null
       }
+      <div id="moveFooter"></div>
     </>
   )
 }

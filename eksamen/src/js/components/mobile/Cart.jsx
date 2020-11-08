@@ -65,12 +65,6 @@ let id = 0;
                                     <li className="itemPrice">{item.price[1] === undefined ? item.price : item.price[1] /* * item.amount*/ },-</li>
                                 </ul>
                                 <div className='cartBtnContainer'>
-                                    <div className="addBtn" >
-                                        <img src={cartIcons[0].image} alt={cartIcons[0].name} onClick={handleCartClick} data-id={`${item.id}`} />
-                                    </div>
-                                    <div className="subBtn">
-                                        <img src={cartIcons[1].image} alt={cartIcons[1].name} onClick={handleCartClick} data-id={`${item.id}`} />
-                                    </div>
                                     <div className="discardBtn">
                                         <img src={cartIcons[2].image} alt={cartIcons[2].name} onClick={props.onClick} data-id={cartHolder.indexOf(item)} />
                                     </div>
