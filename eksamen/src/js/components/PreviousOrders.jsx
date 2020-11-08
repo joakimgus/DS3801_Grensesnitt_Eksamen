@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../../css/PreviousOrders.css';
 import { orderHistory } from '../database';
 
@@ -17,7 +17,7 @@ const PreviousOrders = () => {
                         return (
                             <>
                                 <div className="order-card">
-                                        <p className='receipt-nr'><span role='img'>🧾</span> Order number: <span>{order.number}</span></p>
+                                        <p className='receipt-nr'><span role='img' aria-label='emoji receipt'>🧾</span> Order number: <span>{order.number}</span></p>
                                         <div id='order-hr-container'>
                                             <hr  />
                                         </div>

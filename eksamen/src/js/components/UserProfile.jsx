@@ -20,7 +20,7 @@ const UserProfile = (props) => {
                     </div>
                     <div className="picture-container">
                         {/* <img></img> */}
-                        <img src={users[3].userimg} alt="Profile picture" />
+                        <img src={users[3].userimg} alt='profile-picture' />
                         {/* <div className="profile-picture"></div> { /*placeholder element for actual picture*/}
                     </div>
 
