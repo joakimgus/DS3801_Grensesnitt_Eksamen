@@ -10,7 +10,7 @@ const Checkout = (props) => {
             <div className="checkout">
                 <h3>Thank you!</h3>
                 <p>Your order is on the way!</p>
-                <button className="return-to-start" onClick={props.onClick} data-render="renderHome">Return to homepage</button>
+                <button className="return-to-start" onClick={props.onClick} data-render="renderHome" alt="return to homepage">Return to homepage</button>
             </div>
         </>
     );

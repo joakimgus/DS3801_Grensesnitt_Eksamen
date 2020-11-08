@@ -80,7 +80,7 @@ let id = 0;
                 <p className="mTotal">Total:
                     <span className="mTotal" id="mTotalSpan"> {total} </span>,-
                 </p>
-                <button className="mCheckoutBtn" onClick={props.checkout} data-render="checkout">Checkout</button>
+                <button className="mCheckoutBtn" onClick={props.checkout} data-render="checkout" alt="checkout button">Checkout</button>
             </div>
             <div id="moveFooter"></div>
         </>
