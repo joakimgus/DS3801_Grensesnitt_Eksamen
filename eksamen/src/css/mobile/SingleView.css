@@ -1,5 +1,5 @@
-.single-view-container{
-/*     display: grid;
+.single-view-container {
+    /*     display: grid;
     grid-template-columns: repeat(3, 1fr); */
     text-align: center;
     width: 95%;
@@ -21,8 +21,8 @@
 }
 
 
-    /* Styling for return-button on single product*/
-.return-button{
+/* Styling for return-button on single product*/
+.return-button {
     margin: 10px;
     border: solid 1px black;
     height: 25px;
@@ -31,7 +31,7 @@
     background-color: rgb(138, 115, 115);
 }
 
-.add-to-cart{
+.add-to-cart {
     grid-row: 3;
     grid-column: 2;
     font-family: 'Montserrat';
@@ -43,21 +43,19 @@
     outline: none;
 }
 
-.product-settings{
-    
-}
-.product-settings-specifics{
+.product-settings-specifics {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.product-settings-specifics-size{
+
+.product-settings-specifics-size {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
 }
 
-.product-settings-specifics-milk{
+.product-settings-specifics-milk {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -90,30 +88,31 @@
     transform: scale(1.5);
 }
 
-#small{
+#small {
     height: 30px;
     width: 30px;
 }
 
-#medium{
+#medium {
     height: 40px;
     width: 40px;
 }
 
-#large{
+#large {
     height: 50px;
     width: 50px;
 }
 
-#medium, #large{
+#medium,
+#large {
     margin-left: 5px;
 }
 
-.return-button{
+.return-button {
     width: 100px;
 }
 
-.single-view-divider{
+.single-view-divider {
     margin: 0 auto;
     width: 85%;
     border: 1px solid black;
