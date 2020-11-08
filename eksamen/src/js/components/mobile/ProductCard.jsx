@@ -1,10 +1,14 @@
 import React, { useState} from 'react';
-import { menuItems, singleItem } from '../../database.js';
+import { menuItems, singleItem, singleItemProperties } from '../../database.js';
 import '../../../css/mobile/ProductCard.css';
 import '../../../css/mobile/SingleView.css';
 import ProductView from './ProductView';
 
 
+const coffeIcon = {
+  src: require('../../../img/mobile-icons/Coffee-icon.png')
+}
+//"../../img/mobile-icons/Coffee-icon.png";
 
 
 
@@ -140,25 +144,43 @@ function setClickedSpanMilk(e){
           <div className="product-info">
               <img className="imgProduct" src={itemHolder[length].productImage} alt={itemHolder[length].productName} />
               <h3 className="productName">{itemHolder[length].productName}</h3>
+              <hr className="single-view-divider" />
+
               <p className="productDescription">{itemHolder[length].description}</p>
+              <hr className="single-view-divider" />
+
           </div>
           <div className="product-settings">
               <div className="product-settings-specifics"><p>Quantity: </p><p>- 1 +</p></div>
+              <hr className="single-view-divider" />
+
               <div className="product-settings-specifics"><p>Shots:</p><p>- 1 +</p></div>
+              <hr className="single-view-divider" />
+
               <div className="product-settings-specifics-size">
                   <p>Size:</p>
                   <div>
-                    <p className="product-p"><span className="span-click" onClick={setClickedSpan}>S</span> <span className="span-click" onClick={setClickedSpan}>M</span> <span className="span-click" onClick={setClickedSpan}>XL</span></p>
-
+                    <p className="product-p">
+                      <img src={singleItemProperties.coffe} id="small" alt="small size"className="span-click" onClick={setClickedSpan} /> 
+                      <img src={singleItemProperties.coffe} id="medium" alt="medium size"className="span-click" onClick={setClickedSpan} /> 
+                      <img src={singleItemProperties.coffe} id="large" alt="large size"className="span-click" onClick={setClickedSpan} /> 
+                    </p>
                   </div>
               </div>
-              <div className="product-settings-specifics-size">
+              <hr className="single-view-divider" />
+
+              <div className="product-settings-specifics-milk">
                   <p>Milk:</p>
                   <div>
-                    <p className="product-p"><span className="span-click-milk" onClick={setClickedSpanMilk}>No milk</span> <span className="span-click-milk" onClick={setClickedSpanMilk}>Lactose Free</span> <span className="span-click-milk" onClick={setClickedSpanMilk}>Regular milk</span></p>
-
+                    <p className="product-p">
+                      <span className="span-click-milk" onClick={setClickedSpanMilk}>🚫</span>
+                      <span className="span-click-milk" onClick={setClickedSpanMilk}>🆓</span> 
+                      <span className="span-click-milk" onClick={setClickedSpanMilk}>🥛</span>
+                    </p>
                   </div>
               </div>
+              <hr className="single-view-divider" />
+              
               <div className="product-settings-specifics"><p>Total: </p><p>Kr {itemHolder[length].price[1] || itemHolder[length].price},-</p></div>
               <div className="product-settings-specifics"></div>
             <button className="add-to-cart" onClick={addItemToCart}>add to cart</button>
