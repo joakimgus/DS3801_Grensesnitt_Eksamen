@@ -9,6 +9,7 @@ const Foods = (menuItem) => {
   const [list, setList] = useState(initialList);
 
   const filteredList = list.filter(menuItem => menuItem.category === "food");
+  filteredList.sort((a, b) => a.productName.localeCompare(b.productName, 'en', {'sensitivity': 'base'}));
 
   return(
     <>

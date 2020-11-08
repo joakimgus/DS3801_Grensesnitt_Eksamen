@@ -6,13 +6,14 @@ import '../css/POS/POS_ProductCard.css';
 import '../css/POS/POS_ShoppingCart.css';
 import '../css/POS/POS_WorkerSelect.css';
 import POS_Header from './components/POS/POS_Header.jsx';
-import POS_ColdCoffe from './components/POS/POS_ColdCoffee.jsx';
 import POS_Foods from './components/POS/POS_Foods.jsx';
 import POS_Footer from './components/POS/POS_Footer.jsx';
-import POS_HotCoffee from './components/POS/POS_HotCoffee.jsx';
+import POS_Coffee from './components/POS/POS_Coffee.jsx';
+import POS_Drinks from './components/POS/POS_Drinks';
 import POS_ProductCard from './components/POS/POS_ProductCard.jsx';
 import POS_ShoppingCart from './components/POS/POS_ShoppingCart.jsx';
 import POS_WorkerSelect from './components/POS/POS_WorkerSelect.jsx';
+
 
 
 
@@ -52,7 +53,7 @@ const Pos = (props) => {
         <POS_Header />
         <POS_WorkerSelect />
         <POS_ShoppingCart />
-        <POS_Foods />
+        <POS_Coffee />
         <POS_Footer />
       </div>
     </>

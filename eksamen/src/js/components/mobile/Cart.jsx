@@ -8,6 +8,7 @@ const Cart = (props) => {
 
     let cartHolder = JSON.parse(localStorage.getItem("cart")) || [];
 
+
     //Denne funker ikke gaddamn brainfarts
     let total = 0;
     let priceee = cartHolder.map((item => {
