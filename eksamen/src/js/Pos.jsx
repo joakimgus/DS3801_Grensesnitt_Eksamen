@@ -13,6 +13,7 @@ import POS_HotCoffee from './components/POS/POS_HotCoffee.jsx';
 import POS_ProductCard from './components/POS/POS_ProductCard.jsx';
 import POS_ShoppingCart from './components/POS/POS_ShoppingCart.jsx';
 import POS_WorkerSelect from './components/POS/POS_WorkerSelect.jsx';
+import POS_Calculator from './components/POS/POS_Calculator';
 
 
 
@@ -48,14 +49,15 @@ const Pos = (props) => {
 
   return (
     <>
-        <div data-windowSize={props.data}>
-            <POS_Header />
-            <POS_Foods />
-            <POS_HotCoffee />
+      <div data-windowSize={props.data}>
+        <POS_Header />
+        <POS_WorkerSelect />
+        <POS_Calculator />
 
-            <POS_ShoppingCart />
-            <POS_Footer />
-        </div>
+
+        <POS_ShoppingCart />
+        <POS_Footer />
+      </div>
     </>
   )
 }
