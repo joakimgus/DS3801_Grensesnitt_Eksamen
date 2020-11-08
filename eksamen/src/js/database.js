@@ -37,7 +37,7 @@ const menuItems = [
     {
         productId: 1,
         productName: "Black Coffee",
-        productImage: require("../img/app_POS/black-coffee.jpeg"),
+        productImage: require("../img/products/black-coffee.jpeg"),
         price: [28, 32, 36],
         allergies: "none",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also",
@@ -47,7 +47,7 @@ const menuItems = [
     {
         productId: 2,
         productName: "Americano",
-        productImage: require("../img/app_POS/americano.jpg"),
+        productImage: require("../img/products/americano.jpg"),
         price: [32, 36, 40],
         allergies: "none",
         description: "to be continued..",
@@ -57,7 +57,7 @@ const menuItems = [
     {
         productId: 3,
         productName: "Espresso",
-        productImage: require("../img/app_POS/espresso.jpg"),
+        productImage: require("../img/products/espresso.jpg"),
         price: [34, 38, 42],
         allergies: "none",
         description: "to be continued..",
@@ -67,7 +67,7 @@ const menuItems = [
     {
         productId: 4,
         productName: "Cortado",
-        productImage: require("../img/app_POS/cortado.jpg"),
+        productImage: require("../img/products/cortado.jpg"),
         price: [36, 40, 44],
         allergies: "none",
         description: "to be continued..",
@@ -77,7 +77,7 @@ const menuItems = [
     {
         productId: 5,
         productName: "Café Latte",
-        productImage: require("../img/app_POS/Café-Latte.jpeg"),
+        productImage: require("../img/products/Café-Latte.jpeg"),
         price: [38, 44, 48],
         allergies: "Milk",
         description: "to be continued..",
@@ -87,7 +87,7 @@ const menuItems = [
     {
         productId: 6,
         productName: "Cappuccino",
-        productImage: require("../img/app_POS/cappuccino.jpeg"),
+        productImage: require("../img/products/cappuccino.jpeg"),
         price: [38, 42, 46],
         allergies: "Milk",
         description: "to be continued..",
@@ -97,7 +97,7 @@ const menuItems = [
     {
         productId: 7,
         productName: "Café Mocha",
-        productImage: require("../img/app_POS/Café-Mocha.jpg"),
+        productImage: require("../img/products/Café-Mocha.jpg"),
         price: [38, 42, 46],
         allergies: "Milk, Cocoa powder",
         description: "to be continued..",
@@ -107,7 +107,7 @@ const menuItems = [
     {
         productId: 8,
         productName: "Caramel Macchiato",
-        productImage: require("../img/app_POS/Caramel-Macchiato.jpg"),
+        productImage: require("../img/products/Caramel-Macchiato.jpg"),
         price: [45, 48, 51],
         allergies: "Milk",
         description: "to be continued..",
@@ -117,7 +117,7 @@ const menuItems = [
     {
         productId: 9,
         productName: "Iced Coffee",
-        productImage: require("../img/app_POS/Iced-Coffee.jpg"),
+        productImage: require("../img/products/Iced-Coffee.jpg"),
         price: [36, 42, 50],
         allergies: "none",
         description: "to be continued..",
@@ -127,7 +127,7 @@ const menuItems = [
     {
         productId: 10,
         productName: "Iced Latte",
-        productImage: require("../img/app_POS/Iced-Latte.jpg"),
+        productImage: require("../img/products/Iced-Latte.jpg"),
         price: [38, 44, 48],
         allergies: "Milk",
         description: "to be continued..",
@@ -137,7 +137,7 @@ const menuItems = [
     {
         productId: 11,
         productName: "Iced Cappuccino",
-        productImage: require("../img/app_POS/Iced-cappuccino.jpg"),
+        productImage: require("../img/products/Iced-cappuccino.jpg"),
         price: [38, 42, 46],
         allergies: "Milk",
         description: "to be continued..",
@@ -147,7 +147,7 @@ const menuItems = [
     {
         productId: 12,
         productName: "Iced Mocha",
-        productImage: require("../img/app_POS/Iced-mocha.jpg"),
+        productImage: require("../img/products/Iced-mocha.jpg"),
         price: [38, 42, 46],
         allergies: "Milk, Cocoa powder",
         description: "to be continued..",
@@ -157,7 +157,7 @@ const menuItems = [
     {
         productId: 13,
         productName: "Iced Caramel Macchiato",
-        productImage: require("../img/app_POS/Iced-caramel-macchiato.jpg"),
+        productImage: require("../img/products/Iced-caramel-macchiato.jpg"),
         price: [45, 48, 51],
         allergies: "Milk",
         description: "to be continued..",
@@ -167,7 +167,7 @@ const menuItems = [
     {
         productId: 14,
         productName: "Lemon Iced Tea",
-        productImage: require("../img/app_POS/Lemon-Iced-Tea.jpg"),
+        productImage: require("../img/products/Lemon-Iced-Tea.jpg"),
         price: [38, 47, 55],
         allergies: "Lemon",
         description: "to be continued",
@@ -177,7 +177,7 @@ const menuItems = [
     {
         productId: 15,
         productName: "Peach Iced Tea",
-        productImage: require("../img/app_POS/Peach-Iced-tea.jpg"),
+        productImage: require("../img/products/Peach-Iced-tea.jpg"),
         price: [38, 47, 55],
         allergies: "Peach",
         description: "to be continued",
@@ -187,7 +187,7 @@ const menuItems = [
     {
         productId: 16,
         productName: "Raspberry Iced Tea",
-        productImage: require("../img/app_POS/Raspberry-Iced-Tea.jpg"),
+        productImage: require("../img/products/Raspberry-Iced-Tea.jpg"),
         price: [38, 47, 55],
         allergies: "Raspberry",
         description: "to be continued",
@@ -197,7 +197,7 @@ const menuItems = [
     {
         productId: 17,
         productName: "Pineapple Iced Tea",
-        productImage: require("../img/app_POS/Pineapple-Iced-Tea.jpg"),
+        productImage: require("../img/products/Pineapple-Iced-Tea.jpg"),
         price: [38, 47, 55],
         allergies: "Pineapple",
         description: "to be continued",
@@ -207,7 +207,7 @@ const menuItems = [
     {
         productId: 18,
         productName: "Scones",
-        productImage: require("../img/app_POS/scones.jpg"),
+        productImage: require("../img/products/scones.jpg"),
         price: 37,
         allergies: "Wheat, Milk, Eggs, Butter, Cocoa powder",
         description: "to be continued",
@@ -217,7 +217,7 @@ const menuItems = [
     {
         productId: 19,
         productName: "Croissant",
-        productImage: require("../img/app_POS/croissant.jpg"),
+        productImage: require("../img/products/croissant.jpg"),
         price: 38,
         allergies: "Wheat, Milk, Eggs, Butter",
         description: "to be continued",
@@ -227,7 +227,7 @@ const menuItems = [
     {
         productId: 20,
         productName: "Brioche",
-        productImage: require("../img/app_POS/brioche.jpg"),
+        productImage: require("../img/products/brioche.jpg"),
         price: 44,
         allergies: "Wheat, Milk, Eggs, Butter",
         description: "to be continued",
@@ -237,7 +237,7 @@ const menuItems = [
     {
         productId: 21,
         productName: "Cinnamon Bun",
-        productImage: require("../img/app_POS/Cinnamon-bun.jpg"),
+        productImage: require("../img/products/Cinnamon-bun.jpg"),
         price: 46,
         allergies: "Wheat, Milk, Eggs, Butter, Cinnamon",
         description: "to be continued",
@@ -247,7 +247,7 @@ const menuItems = [
     {
         productId: 22,
         productName: "Brownie",
-        productImage: require("../img/app_POS/brownie.jpg"),
+        productImage: require("../img/products/brownie.jpg"),
         price: 44,
         allergies: "Wheat, Milk, Eggs, Butter, Cocoa powder",
         description: "to be continued",
@@ -257,7 +257,7 @@ const menuItems = [
     {
         productId: 23,
         productName: "Oreo Slice",
-        productImage: require("../img/app_POS/oreo.jpg"),
+        productImage: require("../img/products/oreo.jpg"),
         price: 54,
         allergies: "Wheat, Milk, Eggs, Butter, but can also contain: Soy, Crustacean Shellfish, Peanuts, Tree nuts, Lupin, Mollusks, Sesame seeds",
         description: "to be continued",
@@ -267,7 +267,7 @@ const menuItems = [
     {
         productId: 24,
         productName: "Chia pudding",
-        productImage: require("../img/app_POS/Chia-pudding.jpg"),
+        productImage: require("../img/products/Chia-pudding.jpg"),
         price: 42,
         allergies: "Chia seeds, Coconut, Cocoa powder",
         description: "to be continued",
@@ -280,31 +280,31 @@ const footerIcons = [
     {
         id: 1,
         name: "home",
-        image: require("../img/footer_icons/home.png"),
+        image: require("../img/mobile-icons/home.png"),
         alt: "navigate home"
     },
     {
         id: 2,
         name: "user",
-        image: require("../img/footer_icons/user.png"),
+        image: require("../img/mobile-icons/user.png"),
         alt: "go to user profile"
     },
     {
         id: 3,
         name: "favorite",
-        image: require("../img/footer_icons/favorite.png"),
+        image: require("../img/mobile-icons/favorite.png"),
         alt: "show your favorite items"
     },
     {
         id: 4,
         name: "cart",
-        image: require("../img/footer_icons/cart.png"),
+        image: require("../img/mobile-icons/cart.png"),
         alt: "navigate to your shopping cart"
     },
     {
         id: 5,
         name: "options",
-        image: require("../img/footer_icons/more.png"),
+        image: require("../img/mobile-icons/more.png"),
         alt: "display your user settings"
     },
 ];
@@ -313,37 +313,37 @@ const posFooterIcons = [
     {
         id: 1,
         name: "Coffee",
-        image: require("../img/POS_footer_icons/Coffee-bean.png"),
+        image: require("../img/pos-icons/Coffee-bean.png"),
     },
     {
         id: 2,
         name: "Drinks",
-        image: require("../img/POS_footer_icons/Drinks.png"),
+        image: require("../img/pos-icons/Drinks.png"),
     },
     {
         id: 3,
         name: "Orders",
-        image: require("../img/POS_footer_icons/Orders.png"),
+        image: require("../img/pos-icons/Orders.png"),
     },
     {
         id: 4,
         name: "Food",
-        image: require("../img/POS_footer_icons/Croissant.png"),
+        image: require("../img/pos-icons/Croissant.png"),
     },
     {
         id: 5,
         name: "Calculator",
-        image: require("../img/POS_footer_icons/Calculator.png"),
+        image: require("../img/pos-icons/Calculator.png"),
     },
     {
         id: 6,
         name: "Receipts",
-        image: require("../img/POS_footer_icons/Receipt.png"),
+        image: require("../img/pos-icons/Receipt.png"),
     },
     {
         id: 7,
         name: 'Menu',
-        image: require("../img/POS_footer_icons/Menu.png"),
+        image: require("../img/pos-icons/Menu.png"),
     }
 ];
 
@@ -483,39 +483,39 @@ const cartIcons = [
     {
         id: 1,
         name: "Add",
-        image: require("../img/app_POS/add.png"),
+        image: require("../img/mobile-icons/add.png"),
     },
     {
         id: 2,
         name: "Subtract",
-        image: require("../img/app_POS/sub.png"),
+        image: require("../img/mobile-icons/sub.png"),
     },
     {
         id: 3,
         name: "Discard",
-        image: require("../img/app_POS/bin.png"),
+        image: require("../img/mobile-icons/bin.png"),
     }
 ];
 
 const posCartIcons = [
     {
         name: "Park",
-        image: require("../img/app_POS/parking.png"),
+        image: require("../img/pos-icons/parking.png"),
         alt: "Park Icon"
     },
     {
         name: "Checkout",
-        image: require("../img/app_POS/cashRegister.png"),
+        image: require("../img/pos-icons/cash-register.png"),
         alt: "Register Icon"
     },
     {
         name: "More",
-        image: require("../img/app_POS/more-alt.png"),
+        image: require("../img/mobile-icons/options.png"),
         alt: "More Icon"
     },
     {
         name: "Trash",
-        image: require('../img/app_POS/Trash.png'),
+        image: require('../img/pos-icons/trash.png'),
         alt: "Trash Icon"
     }
 ]
@@ -524,7 +524,7 @@ let singleItem =
 {
     productId: 1,
     productName: "Black Coffee",
-    productImage: require("../img/app_POS/black-coffee.jpeg"),
+    productImage: require("../img/products/black-coffee.jpeg"),
     price: [28, 32, 36],
     allergies: "none",
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also",

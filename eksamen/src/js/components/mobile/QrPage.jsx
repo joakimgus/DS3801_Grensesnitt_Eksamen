@@ -4,7 +4,7 @@ import Header from './Header';
 
 const QrPage = (props) => {
 
-    const qrCode = require("../../../img/app_POS/qr-code.png");
+    const qrCode = require("../../../img/mobile-icons/qr-code.png");
 
     return(
         <>

@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr 1fr 1fr;
     text-align: center;
-    height: 60px;
+    height: 17%;
     width: 100%;
     position: sticky;
     bottom: 0px;
