@@ -43,7 +43,7 @@ const List = ({ list, setList, filteredList }) => {
     setAll("single");
 
     filteredList.map((singleItem) =>
-      singleItem.productName.includes(productName) ?
+      singleItem.productName === productName ?
 
         itemHolder.push(singleItem)
 
