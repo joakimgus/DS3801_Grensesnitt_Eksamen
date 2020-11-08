@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './js/App';
+import Render from './js/Render';
 
 
 ReactDOM.render(
   <div>
-    <App />
+    <Render />
   </div>,
   document.getElementById('root')
 );

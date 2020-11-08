@@ -25,7 +25,7 @@ import QrPage from './components/mobile/QrPage';
 
 
 
-const App = () => {
+const App = (props) => {
 
   let target;
   function handleClick(e) {
@@ -56,6 +56,7 @@ const App = () => {
 
   return (
     <>
+    <div data-windowSize={props.data}>
       {where === 'renderFavorites' ? <Header /> : null} {/**Determines whether header should be rendered or not */}
 
       {
@@ -80,7 +81,7 @@ const App = () => {
         data={`${where}`}
         onClick={handleClick}
       />
-
+      </div>
     </>
   )
 }
