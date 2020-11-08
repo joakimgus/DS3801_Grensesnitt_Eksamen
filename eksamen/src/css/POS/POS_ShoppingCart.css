@@ -6,6 +6,7 @@
     display: grid;
     grid-template-rows: 12fr 1fr;
     background-color: white;
+    height: 100%;
     border-left: 1px solid black;
   }
 
