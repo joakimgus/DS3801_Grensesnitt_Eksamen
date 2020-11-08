@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {menuItems} from '../../database.js';
+import Header from './Header.jsx';
 import ProductCard from './ProductCard';
 
 const HotCoffee = (menuItem) => {
@@ -12,6 +13,7 @@ const HotCoffee = (menuItem) => {
 
   return(
     <>
+    <Header />
       <div>
         <ProductCard
         list={list}
