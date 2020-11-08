@@ -15,6 +15,7 @@ import PreviousOrders from './components/mobile/PreviousOrders';
 import QrPage from './components/mobile/QrPage';
 import Settings from './components/mobile/Settings';
 import UserProfile from './components/mobile/UserProfile';
+import Checkout from './components/mobile/Checkout';
 
 
 
@@ -24,8 +25,12 @@ const App = (props) => {
   let target;
   function handleClick(e) {
     target = e.target.getAttribute('data-render');
-    setTarget(target);
-    console.log(target + "skrevet fra app.jsx(handleClick()")
+
+    if(target === "checkout"){
+        localStorage.clear();
+    }
+      setTarget(target);
+      console.log(target + "skrevet fra app.jsx(handleClick()")
   }
 
   let [where, setWhere] = useState(target);
@@ -48,7 +53,6 @@ const App = (props) => {
     setUpdate("update");
   }
 
-
   /* {where === 'renderFavorites' ? <Header /> : null}  */
   return (
     <>
@@ -69,12 +73,13 @@ const App = (props) => {
                   (where) === 'personalQrRender' ? <QrPage /> :
                     (where) === 'placeholderRender' ? <Placeholder /> :
                       (where) === 'previousOrdersRender' ? <PreviousOrders /> :
-                        (where) === 'renderShoppingCart' ? <Cart onClick={removeItemFromCart} update={refresh} /> :
+                        (where) === 'renderShoppingCart' ? <Cart remove={removeItemFromCart} checkout={handleClick} update={refresh} /> :
                           (where) === 'renderFavorites' ? <FavoritesPage /> :
                             (where) === 'logoutRender' ? <Login /> :
                               (where) === 'coffee' ? <Coffee /> :
                                 (where) === 'drinks' ? <Drinks /> :
                                   (where) === 'baked-goods' ? <Foods /> :
+                                   (where) === 'checkout' ? <Checkout onClick={handleClick}/>:
                                     <MainMenu onClick={handleClick} />/*<-- standard render if nothing is selectes */
 
         }
