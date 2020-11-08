@@ -2,17 +2,16 @@ import React, { useState} from 'react';
 import { menuItems } from '../../database';
 import POS_ProductCard from './POS_ProductCard';
 
-const POS_Foods = (menuItem) => {
+const POS_Coffee = (menuItem) => {
 
-  const initialPosList = menuItems.filter(menuItem => menuItem.category === "food");
+  const initialPosList = menuItems.filter(menuItem => menuItem.category === "coffee");
 
   const [posList, setPosList] = useState(initialPosList);
 
-  const filteredPosList = posList.filter(menuItem => menuItem.category === "food");
+  const filteredPosList = posList.filter(menuItem => menuItem.category === "coffee");
   filteredPosList.sort((a, b) => a.productName.localeCompare(b.productName, 'en', {'sensitivity': 'base'}));
 
   return(
-    
     <POS_ProductCard
     posList={posList}
     setPosList={setPosList}
@@ -24,4 +23,4 @@ const POS_Foods = (menuItem) => {
 
 }
 
-export default POS_Foods;
+export default POS_Coffee;

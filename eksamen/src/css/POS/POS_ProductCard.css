@@ -1,18 +1,16 @@
 @media screen and (min-width: 813px) {
+    
     .posMainContainer {
-        margin: 0;
-        padding-top: 75px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         grid-template-rows: repeat(auto-fit, minmax(210px, 1fr));
-        max-width: 70%;
-        height: 602px;
-        overflow-y: scroll;
+        min-height: 210px;
+        grid-gap: 5px;
     }
-    
 
     .posProductCard {
-        display: grid; 
+        cursor: pointer;
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
         width: 140px;
@@ -22,6 +20,14 @@
         margin: 5px;
         text-align: center;
         border: 1px solid black;
+    }
+
+    .posProductCard:hover {
+        transform: scale(1.02);
+        -moz-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        -o-transform: scale(1.02);
+        -webkit-transform: scale(1.02);
     }
 
     .posProductImage {
@@ -36,12 +42,12 @@
 
     .posProductTitle {
         font-family: 'Playfair Display';
-        font-weight: 600;
         font-variant: small-caps;
-        font-size: large;
+        font-size: medium;
         grid-column: 1 / span 2;
         grid-row: 5;
-        margin: 0;
+        margin: 2px;
+        margin-bottom: 9px;
     }
 
     .posProductPrice {

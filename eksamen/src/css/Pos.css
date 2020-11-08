@@ -1,0 +1,51 @@
+@media screen and (min-width: 812px) {
+    button {
+        cursor: pointer;
+    }
+
+    .pos-container {
+        display: grid;
+        grid-template-columns: 8fr 2fr;
+        grid-template-rows: auto auto auto;
+        height: 100%;
+        width: 100%;
+    }
+
+    .pos-header-container {
+        background-color: #c39d7d;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .workerSelect {
+        min-width: 20em;
+        background-color: white;
+        border: 1px solid black;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .pos-cart-container {
+        min-width: 20em;
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .pos-action-window-container {
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+    }
+
+    .pos-footer-container {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 1px;
+        border: 1px solid black;
+        background-color: rgb(60, 60, 60);
+    }
+}

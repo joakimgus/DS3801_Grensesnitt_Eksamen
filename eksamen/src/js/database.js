@@ -42,7 +42,7 @@ const menuItems = [
         allergies: "none",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also",
         favourite: false,
-        category: "hotCoffee"
+        category: "coffee"
     },
     {
         productId: 2,
@@ -52,7 +52,7 @@ const menuItems = [
         allergies: "none",
         description: "to be continued..",
         favourite: false,
-        category: "hotCoffee"
+        category: "coffee"
     },
     {
         productId: 3,
@@ -62,7 +62,7 @@ const menuItems = [
         allergies: "none",
         description: "to be continued..",
         favourite: false,
-        category: "hotCoffee"
+        category: "coffee"
     },
     {
         productId: 4,
@@ -72,7 +72,7 @@ const menuItems = [
         allergies: "none",
         description: "to be continued..",
         favourite: false,
-        category: "hotCoffee"
+        category: "coffee"
     },
     {
         productId: 5,
@@ -82,7 +82,7 @@ const menuItems = [
         allergies: "Milk",
         description: "to be continued..",
         favourite: true,
-        category: "hotCoffee"
+        category: "coffee"
     },
     {
         productId: 6,
@@ -92,7 +92,7 @@ const menuItems = [
         allergies: "Milk",
         description: "to be continued..",
         favourite: false,
-        category: "hotCoffee"
+        category: "coffee"
     },
     {
         productId: 7,
@@ -102,7 +102,7 @@ const menuItems = [
         allergies: "Milk, Cocoa powder",
         description: "to be continued..",
         favourite: true,
-        category: "hotCoffee"
+        category: "coffee"
     },
     {
         productId: 8,
@@ -112,7 +112,7 @@ const menuItems = [
         allergies: "Milk",
         description: "to be continued..",
         favourite: true,
-        category: "hotCoffee"
+        category: "coffee"
     },
     {
         productId: 9,
@@ -122,7 +122,7 @@ const menuItems = [
         allergies: "none",
         description: "to be continued..",
         favourite: false,
-        category: "coldCoffee"
+        category: "coffee"
     },
     {
         productId: 10,
@@ -132,7 +132,7 @@ const menuItems = [
         allergies: "Milk",
         description: "to be continued..",
         favourite: false,
-        category: "coldCoffee"
+        category: "coffee"
     },
     {
         productId: 11,
@@ -142,7 +142,7 @@ const menuItems = [
         allergies: "Milk",
         description: "to be continued..",
         favourite: false,
-        category: "coldCoffee"
+        category: "coffee"
     },
     {
         productId: 12,
@@ -152,7 +152,7 @@ const menuItems = [
         allergies: "Milk, Cocoa powder",
         description: "to be continued..",
         favourite: true,
-        category: "coldCoffee"
+        category: "coffee"
     },
     {
         productId: 13,
@@ -162,7 +162,7 @@ const menuItems = [
         allergies: "Milk",
         description: "to be continued..",
         favourite: true,
-        category: "coldCoffee"
+        category: "coffee"
     },
     {
         productId: 14,
@@ -510,7 +510,7 @@ const posCartIcons = [
     },
     {
         name: "More",
-        image: require("../img/mobile-icons/options.png"),
+        image: require("../img/pos-icons/edit.png"),
         alt: "More Icon"
     },
     {
@@ -519,6 +519,7 @@ const posCartIcons = [
         alt: "Trash Icon"
     }
 ]
+
 
 const calcIcons = [
     {
@@ -551,6 +552,9 @@ const calcIcons = [
 
 let singleItem =
 {
+
+let singleItem = {
+
     productId: 1,
     productName: "Black Coffee",
     productImage: require("../img/products/black-coffee.jpeg"),
@@ -558,8 +562,8 @@ let singleItem =
     allergies: "none",
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also",
     favourite: false,
-    category: "hotCoffee"
-}
-    ;
+    category: "coffee"
+};
+
 
 export { users, menuItems, footerIcons, posFooterIcons, cartIcons, orderHistory, posCartIcons, singleItem, calcIcons };
