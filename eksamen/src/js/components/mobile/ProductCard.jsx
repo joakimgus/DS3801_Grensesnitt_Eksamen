@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { menuItems, singleItem, singleItemProperties } from '../../database.js';
 import '../../../css/mobile/ProductCard.css';
 import '../../../css/mobile/SingleView.css';
-import ProductView from './ProductView';
-import Header from './Header.jsx';
+//import ProductView from './ProductView';
+//import Header from './Header.jsx';
 
 
 
@@ -53,8 +53,6 @@ const List = ({ list, setList, filteredList }) => {
     
   }
 
-
-  let length = itemHolder.length - 1;
 
   function handleSetBackToAll() {
     setAll(false);
