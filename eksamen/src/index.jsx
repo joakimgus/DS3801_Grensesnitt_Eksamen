@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './js/App';
-import POS_App from './js/POS_App';
+import Render from './js/Render';
 
 
 ReactDOM.render(
   <div>
-    <POS_App />
+    <Render />
   </div>,
   document.getElementById('root')
 );

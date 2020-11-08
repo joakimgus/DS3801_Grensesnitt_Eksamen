@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../css/App.css';
+import '../css/Pos.css'
 import '../css/POS/POS_Footer.css';
 import '../css/POS/POS_Header.css';
 import '../css/POS/POS_ProductCard.css';
@@ -48,14 +48,13 @@ const Pos = (props) => {
 
   return (
     <>
-        <div data-windowSize={props.data}>
-            <POS_Header />
-            <POS_Foods />
-            <POS_HotCoffee />
-
-            <POS_ShoppingCart />
-            <POS_Footer />
-        </div>
+      <div className='pos-container' data-windowSize={props.data}>
+        <POS_Header />
+        <POS_WorkerSelect />
+        <POS_ShoppingCart />
+        <POS_Foods />
+        <POS_Footer />
+      </div>
     </>
   )
 }
