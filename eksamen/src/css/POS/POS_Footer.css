@@ -11,8 +11,6 @@
     text-align: center;
     height: 60px;
     width: 100%;
-    position: sticky;
-    bottom: 0px;
   }
 
   /* To arrange icons and text */
@@ -40,6 +38,7 @@
   nav>button:focus {
     outline: 0;
     background-color: rgb(24, 23, 23);
+    letter-spacing: 2px;
   }
 
   .POS_Footer>p {
