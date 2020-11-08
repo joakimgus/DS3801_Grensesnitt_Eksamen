@@ -92,6 +92,10 @@ function setClickedSpanMilk(e){
 
 }
 
+const milk = require('../../../img/mobile-icons/milk.png');
+const noMilk = require('../../../img/mobile-icons/no-milk.png');
+const lactoseFree = require('../../../img/mobile-icons/lactose-free.png');
+
   return(
     <>
       {all != "single" ? filteredList.map((menuItem) => (
@@ -172,9 +176,15 @@ function setClickedSpanMilk(e){
                   <p>Milk:</p>
                   <div>
                     <p className="product-p">
-                      <span className="span-click-milk" onClick={setClickedSpanMilk}>🚫</span>
-                      <span className="span-click-milk" onClick={setClickedSpanMilk}>🆓</span> 
-                      <span className="span-click-milk" onClick={setClickedSpanMilk}>🥛</span>
+                      <div className="div-click-milk" onClick={setClickedSpanMilk}>
+                        <img src={noMilk} alt='no milk icon' width='30px' />
+                      </div>
+                      <div className="div-click-milk" onClick={setClickedSpanMilk}>
+                        <img src={lactoseFree} alt='no milk icon' width='30px' />
+                      </div> 
+                      <div className="div-click-milk" onClick={setClickedSpanMilk}>
+                        <img src={milk} alt='no milk icon' width='30px' />
+                      </div>
                     </p>
                   </div>
               </div>
