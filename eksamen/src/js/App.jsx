@@ -16,13 +16,15 @@ import FavoritesPage from './components/FavoritesPage';
 import POS_Header from './components/POS_Header';
 import POS_ShoppingCart from './components/POS_ShoppingCart';
 import POS_HotCoffee from './components/POS_HotCoffee';
+import POS_ColdCoffee from './components/POS_ColdCoffee';
+import POS_Foods from './components/POS_Foods';
 
 const App = () => {
 
 return(
   <>
   <POS_Header />
-  <POS_HotCoffee />
+  <POS_Foods />
   <POS_ShoppingCart />
   <POS_Footer />
   </>

@@ -1,39 +1,56 @@
-.posProductCard {
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    width: 140px;
-    height: 210px;
-    background-color: white;
-    border-radius: 5px;
-    margin: 5px;
-    text-align: center;
-}
+@media screen and (min-width: 813px) {
+    .posMainContainer {
+        margin: 0;
+        padding-top: 75px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(210px, 1fr));
+        max-width: 70%;
+        height: 602px;
+        overflow-y: scroll;
+    }
+    
 
-.posProductImage {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 4;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
+    .posProductCard {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        width: 140px;
+        height: 210px;
+        background-color: white;
+        border-radius: 5px;
+        margin: 5px;
+        text-align: center;
+        border: 1px solid black;
+    }
 
-.posProductTitle {
-    font-family: 'Playfair Display';
-    font-weight: 600;
-    font-variant: small-caps;
-    font-size: large;
-    grid-column: 1 / span 2;
-    grid-row: 5;
-    margin: 0;
-}
+    .posProductImage {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 4;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
 
-.posProductPrice {
-    font-weight: 300;
-    font-family: 'Montserrat';
-    font-size: medium;
-    text-transform: capitalize;
-    grid-column: 1 / span 2;
-    grid-row: 6;
-    margin: 0;
+    .posProductTitle {
+        font-family: 'Playfair Display';
+        font-weight: 600;
+        font-variant: small-caps;
+        font-size: large;
+        grid-column: 1 / span 2;
+        grid-row: 5;
+        margin: 0;
+    }
+
+    .posProductPrice {
+        font-weight: 300;
+        font-family: 'Montserrat';
+        font-size: medium;
+        text-transform: capitalize;
+        grid-column: 1 / span 2;
+        grid-row: 6;
+        margin: 0;
+    }
 }
