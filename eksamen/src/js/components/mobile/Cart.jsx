@@ -102,8 +102,8 @@ let id = 0;
                         console.log(item.price[1]);
                         return (
 
-                            <div className="prodCard" key={item.productId + " " + id}>
-                            <p>{props.update}</p>
+                            <div className="prodCard" key={item.productId + " " + id} data-update={props.update}>
+
                                 <div className="itemQ">
                                     <span>x</span>{item.amount} 1
                                 </div>
