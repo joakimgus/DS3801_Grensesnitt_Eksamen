@@ -12,7 +12,7 @@ const QrPage = (props) => {
         <div className="qr-page-container">
             <div className="qr-page">
                 <h3 className="page-title">QR</h3>
-                <hr className="page-title-hr" /><br />
+                <hr className="page-title-hr-qr" /><br />
                 <p className="page-description">Your personal QR code to register purchases made in store in app.</p>
                 <div className="qr-container">
                     <img id='qr-code-img' src={qrCode} alt="QR Code" width="80%" />
