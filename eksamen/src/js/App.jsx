@@ -48,10 +48,17 @@ const App = (props) => {
     setUpdate("update");
   }
 
+
+  /* {where === 'renderFavorites' ? <Header /> : null}  */
   return (
     <>
-      <div data-windowSize={props.data}>
-        {where === 'renderFavorites' ? <Header /> : null} {/**Determines whether header should be rendered or not */}
+
+    <div data-windowSize={props.data}>
+      {where === 'previousOrdersRender' ? <Header name="Previous Orders" onClick={handleClick} /> : null}  
+      {where === 'coffee' ? <Header name="Coffee" onClick={handleClick} /> : null}  
+      {where === 'drinks' ? <Header name="Drinks" onClick={handleClick}/> : null}  
+      {where === 'baked-goods' ? <Header name="Pasteries" onClick={handleClick}/> : null}  
+      {where === 'renderFavorites' ? <Header name="Favorites" onClick={handleClick}/> : null}  
 
         {
 

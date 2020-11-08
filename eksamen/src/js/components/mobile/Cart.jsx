@@ -7,52 +7,6 @@ import { menuItems, cartIcons } from '../../database.js';
 const Cart = (props) => {
 
     let cartHolder = JSON.parse(localStorage.getItem("cart")) || [];
-    /*   menuItems = [
-          {
-              productId: 1,
-              productName: "Black Coffee",
-              productImage: require("../img/app_POS/black-coffee.jpeg"),
-              price: [28, 32, 36],
-              allergies: "none",
-              description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also",
-              favourite: false,   ../img/app_POS/black-coffee.jpeg
-              category: "Coffee"
-          }, */
-
-
-    let itemsArray = [];
-
-    let product = {
-        id: 1,
-        productName: "Black Coffee",
-        amount: 1,
-        price: 32,
-        image: require("../../../img/products/black-coffee.jpeg"),
-        size: "XL",
-        extra: "milk"
-    }
-
-    itemsArray.push(product);
-    let product2 = {
-        id: 2,
-        productName: "Cafe au latee",
-        amount: 2,
-        price: 66,
-        image: require("../../../img/products/black-coffee.jpeg"),
-        size: "M",
-        extra: "sukker"
-    }
-    itemsArray.push(product2);
-    let product3 = {
-        id: 3,
-        productName: "Gul saft",
-        amount: 1,
-        price: 12,
-        image: require("../../../img/products/black-coffee.jpeg"),
-        size: "XL",
-        extra: "isbiter"
-    }
-    itemsArray.push(product3);
 
 
     //Denne funker ikke gaddamn brainfarts
@@ -72,24 +26,21 @@ const Cart = (props) => {
         //Alle disse fungerer - i consollen - men de blir ikke rendret på nytt. Burde vel bruke useState([]), men det har jeg ikke fått til. 
         switch (action) {
             case "Add":
-                itemsArray[target].amount++;
+                //itemsArray[target].amount++;
                 //console.log(this.state);
                 break;
             case "Subtract":
-                itemsArray[target].amount--;
+                //itemsArray[target].amount--;
                 break;
             case "Discard":
                 //Elementet blir slettet, som man ser i consollen - men elementet blir ikke rendret på nytt. 
-                itemsArray.splice(target, 1);
+                //itemsArray.splice(target, 1);
                 let temp = JSON.parse(localStorage.getItem('cart'));
                 temp.splice(target, 1);
                 localStorage.setItem('cart', JSON.stringify(temp));
                 break;
         }
     }
-
-
-   let [state, setState] = useState("refresh");
 
 
 let id = 0;
@@ -148,14 +99,3 @@ let id = 0;
 
 
 export default Cart;
-
-/* return(
-    <div>
-        {itemsArray.map((item) => {
-            return(
-
-
-                )
-        })}
-    </div>
-); */

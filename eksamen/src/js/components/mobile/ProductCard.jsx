@@ -2,19 +2,17 @@ import React, { useState } from 'react';
 import { menuItems, singleItem, singleItemProperties } from '../../database.js';
 import '../../../css/mobile/ProductCard.css';
 import '../../../css/mobile/SingleView.css';
+//import ProductView from './ProductView';
+//import Header from './Header.jsx';
 
 
-const coffeIcon = {
-  src: require('../../../img/mobile-icons/Coffee-icon.png')
-}
-//"../../img/mobile-icons/Coffee-icon.png";
 
 
 
 let itemHolder = [];
 const List = ({ list, setList, filteredList }) => {
 
-  let [all, setAll] = useState(false);
+  let [all, setAll] = useState("all");
 
   function handleToggleComplete(id) {
 
@@ -33,11 +31,15 @@ const List = ({ list, setList, filteredList }) => {
     setList(newList);
   }
 
+  let length = itemHolder.length-1;
+
 
   function handleProductView(e) {
     itemHolder = [];
+    console.log(itemHolder + "should be empty");
     const productName = e.target.getAttribute('data-product');
     const productList = e.target.getAttribute('data-list');
+
     setAll("single");
 
     filteredList.map((singleItem) =>
@@ -47,9 +49,10 @@ const List = ({ list, setList, filteredList }) => {
 
         : null);
 
+    setAll("single");
+    
   }
 
-  let length = itemHolder.length - 1;
 
   function handleSetBackToAll() {
     setAll(false);
@@ -98,6 +101,8 @@ const List = ({ list, setList, filteredList }) => {
 
   return (
     <>
+
+    {console.log(all)}
       {all != "single" ? filteredList.map((menuItem) => (
         (menuItem.category != "food" ?
           <div className="productCard" key={menuItem.productId}>
@@ -139,6 +144,7 @@ const List = ({ list, setList, filteredList }) => {
               onClick={() => handleToggleComplete(menuItem.productId)}
             />
           </div>
+
         )))
         : itemHolder[length].category === "coffee" ?
           <div>

@@ -1,31 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../../css/mobile/Header.css';
+import { singleItemProperties } from '../../database';
 
-class Header extends React.Component {
-
-  constructor(){
-    super()
-
-    this.state = {
-      light: true
-    }
-  }
-
-  changeColor(){
-    this.setState({light: !this.state.light})
-  }
-
-  render(){
-    let btnId = this.state.light ? "lightBtn" : "darkBtn";
-    let btnId2 = this.state.light ? "darkBtn" : "lightBtn";
+const Header = (props) => {
 
     return(
       <div id="mHeaderContainer">
-        <button id={btnId} className="headerBtn" onClick={this.changeColor.bind(this)}>HOT</button>
-        <button id={btnId2} className="headerBtn" onClick={this.changeColor.bind(this)}>ICED</button>
+        <button id="lightBtn" className="headerBtn" onClick={props.onClick}>Back</button>
+        <button id="darkBtn" className="headerBtn">{props.name}</button>
       </div>
     )
-  }
 }
+
 
 export default Header;
