@@ -20,7 +20,7 @@
     .prodCard {
         display: grid;
         grid-template-columns: 70px 4fr 1fr 2fr;
-        grid-template-rows: 2em 1fr 1em 2em;
+        grid-template-rows: 2em 1fr 1em;
         width: 96%;
         min-height: 150px;
         background-color: rgba(77, 77, 77, 0.244);
@@ -87,56 +87,20 @@
         grid-column: 4;
         grid-row: 1 / span 4;
         display: grid;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         text-align: center;
         cursor: pointer;
     }
 
-    div.cartBtnContainer>.addBtn {
-        grid-row: 1;
-        border-radius: 5px;
-        background-color: rgb(28, 28, 28);
-        margin: 3px;
-    }
-
-    div.cartBtnContainer>.addBtn:hover>img {
-        transform: scale(1.1);
-        -o-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-    }
-
-    .addBtn>img {
-        width: 30px;
-        padding-top: 8px;
-    }
-
-    div.cartBtnContainer>.subBtn {
-        grid-row: 2;
-        border-radius: 5px;
-        background-color: rgb(28, 28, 28);
-        margin: 3px;
-    }
-
-    div.cartBtnContainer>.subBtn:hover>img {
-        transform: scale(1.1);
-        -o-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-    }
-
-    .subBtn>img {
-        width: 30px;
-        padding-top: 8px;
-    }
-
     div.cartBtnContainer>.discardBtn {
-        grid-row: 3;
-        border-radius: 5px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        grid-row: 1 / 3;
         background-color: rgb(28, 28, 28);
         margin: 3px;
+        margin-left: 30%;
+        margin-top: 70%;
     }
 
     div.cartBtnContainer>.discardBtn:hover>img {
@@ -149,7 +113,7 @@
 
     .discardBtn>img {
         width: 27px;
-        padding-top: 8px;
+        margin-top: 10px;
     }
 
     .mTotal {

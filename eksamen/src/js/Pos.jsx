@@ -59,5 +59,4 @@ const Pos = (props) => {
     </>
   )
 }
-
 export default Pos;
