@@ -4,7 +4,12 @@ import '../../../css/POS/POS_ProductCard.css';
 
 const POS_ProductCard = ({ posList, setPosList, filteredPosList }) => {
 
+
+
+
   return (
+
+
     <>
       <div className="pos-action-window-container">
         <div className="posMainContainer">

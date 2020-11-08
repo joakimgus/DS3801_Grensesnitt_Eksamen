@@ -4,6 +4,9 @@ import { posCartIcons, cartIcons } from '../../database';
 
 let POS_ShoppingCart = () => {
 
+    
+
+
     return (
         <div className="pos-cart-container">
             <div id="shoppingCartContainer">

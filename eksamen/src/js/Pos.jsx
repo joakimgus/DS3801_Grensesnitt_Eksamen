@@ -23,8 +23,8 @@ const Pos = (props) => {
   let target;
   function handleClick(e) {
     target = e.target.getAttribute('data-render');
+    console.log(target + "skrevet fra Pos.jsx (handleclick())")
     setTarget(target);
-    console.log(target + "skrevet fra app.jsx(handleClick()")
   }
 
   let [where, setWhere] = useState(target);
@@ -53,8 +53,16 @@ const Pos = (props) => {
         <POS_Header />
         <POS_WorkerSelect />
         <POS_ShoppingCart />
-        <POS_Coffee />
-        <POS_Footer />
+          {
+            (where) === 'renderCoffee' ? <POS_Coffee /> :
+            (where) === 'renderDrinks' ? <POS_Drinks /> : 
+            (where) === 'renderFood' ? <POS_Foods /> : 
+            <POS_Coffee />
+          }
+
+
+
+        <POS_Footer onClick={handleClick}/>
       </div>
     </>
   )
