@@ -11,6 +11,7 @@ const POS_Foods = (menuItem) => {
   const filteredPosList = posList.filter(menuItem => menuItem.category === "food");
 
   return(
+    
     <POS_ProductCard
     posList={posList}
     setPosList={setPosList}

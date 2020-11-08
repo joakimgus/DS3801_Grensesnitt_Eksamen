@@ -1,13 +1,5 @@
-#headerContainer {
-  position: sticky;
-  top: 0px;
-}
-
 #headerMainBar {
-  background-color: #c39d7d;
-  border: 1px solid black;
-  height: 5em;
-  width: 70%;
+  border-bottom: 1px solid black;
 }
 
 #currentPageText {
@@ -15,8 +7,9 @@
   display: grid;
   place-items: center;
   font-family: "Montserrat";
-  font-weight: normal;
-  font-size: 30pt;
-  letter-spacing: 3px;
-  margin-top: 15px;
+  font-variant: small-caps;
+  font-size: xx-large;
+  font-weight: 600;
+  letter-spacing: 5px;
+  margin: 14.5px;
 }

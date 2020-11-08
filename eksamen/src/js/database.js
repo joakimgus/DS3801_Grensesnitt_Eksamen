@@ -510,7 +510,7 @@ const posCartIcons = [
     },
     {
         name: "More",
-        image: require("../img/mobile-icons/options.png"),
+        image: require("../img/pos-icons/edit.png"),
         alt: "More Icon"
     },
     {
