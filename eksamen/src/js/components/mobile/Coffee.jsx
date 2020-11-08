@@ -3,13 +3,13 @@ import {menuItems} from '../../database.js';
 import Header from './Header.jsx';
 import ProductCard from './ProductCard';
 
-const HotCoffee = (menuItem) => {
+const Coffee = (menuItem) => {
 
-  const initialList = menuItems.filter(menuItem => menuItem.category === "hotCoffee");
+  const initialList = menuItems.filter(menuItem => menuItem.category === "coffee");
 
   const [list, setList] = useState(initialList);
 
-  const filteredList = list.filter(menuItem => menuItem.category === "hotCoffee");
+  const filteredList = list.filter(menuItem => menuItem.category === "coffee");
 
   return(
     <>
@@ -28,4 +28,4 @@ const HotCoffee = (menuItem) => {
     )
   }
 
-export default HotCoffee;
+export default Coffee;

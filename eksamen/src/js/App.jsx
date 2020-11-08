@@ -6,7 +6,7 @@ import FavoritesPage from './components/mobile/FavoritesPage';
 import Foods from './components/mobile/Foods';
 import Footer from './components/mobile/Footer';
 import Header from './components/mobile/Header';
-import HotCoffee from './components/mobile/HotCoffee';
+import Coffee from './components/mobile/Coffee';
 import Login from './components/mobile/Login';
 import MainMenu from './components/mobile/MainMenu';
 import Options from './components/mobile/Options';
@@ -65,7 +65,7 @@ const App = (props) => {
                         (where) === 'renderShoppingCart' ? <Cart onClick={removeItemFromCart} update={refresh} /> :
                           (where) === 'renderFavorites' ? <FavoritesPage /> :
                             (where) === 'logoutRender' ? <Login /> :
-                              (where) === 'coffee' ? <HotCoffee /> :
+                              (where) === 'coffee' ? <Coffee /> :
                                 (where) === 'drinks' ? <Drinks /> :
                                   (where) === 'baked-goods' ? <Foods /> :
                                     <MainMenu onClick={handleClick} />/*<-- standard render if nothing is selectes */

@@ -140,7 +140,7 @@ const List = ({ list, setList, filteredList }) => {
             />
           </div>
         )))
-        : itemHolder[length].category === "hotCoffee" ?
+        : itemHolder[length].category === "coffee" ?
           <div>
             <div className="single-view-container" key={itemHolder[length].productId}>
               <button className="return-button" onClick={handleSetBackToAll} alt="return to favorites button">⬅</button>

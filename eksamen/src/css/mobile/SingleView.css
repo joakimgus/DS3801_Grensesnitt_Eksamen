@@ -2,12 +2,18 @@
     /*     display: grid;
     grid-template-columns: repeat(3, 1fr); */
     text-align: center;
-    width: 95%;
+    width: 80%;
     background-color: rgba(77, 77, 77, 0.244);
     height: 100vh;
     margin: auto;
     margin-top: 10px;
     border-radius: 10px;
+    font-family: 'Montserrat';
+    font-variant: small-caps;
+}
+
+.productName {
+    font-family: 'Playfair Display';
 }
 
 .imgProduct {
@@ -114,6 +120,8 @@
 
 .single-view-divider {
     margin: 0 auto;
-    width: 85%;
-    border: 1px solid black;
+    width: 80%;
+    height: 1px;
+    border: none;
+    background-color: rgb(28, 28, 28);
 }
