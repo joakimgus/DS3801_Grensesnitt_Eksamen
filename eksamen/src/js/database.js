@@ -532,10 +532,10 @@ let singleItem = {
 };
 
 let singleItemProperties = {
-    coffe: require("../img/mobile-icons/Coffee-icon.png")
-    /* lactoseFree: require(""),
-    milk: require(""),
-    noMilk: require("") */
+    coffe: require("../img/mobile-icons/Coffee-icon.png"),
+    milk: require('../img/mobile-icons/milk.png'),
+    noMilk: require('../img/mobile-icons/no-milk.png'),
+    lactoseFree: require('../img/mobile-icons/lactose-free.png'),
 };
 
 export { users, menuItems, footerIcons, posFooterIcons, cartIcons, orderHistory, posCartIcons, singleItem, singleItemProperties };

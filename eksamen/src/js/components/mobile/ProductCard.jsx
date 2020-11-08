@@ -95,10 +95,6 @@ const List = ({ list, setList, filteredList }) => {
 
   }
 
-  const milk = require('../../../img/mobile-icons/milk.png');
-  const noMilk = require('../../../img/mobile-icons/no-milk.png');
-  const lactoseFree = require('../../../img/mobile-icons/lactose-free.png');
-
   return (
     <>
 
@@ -183,13 +179,13 @@ const List = ({ list, setList, filteredList }) => {
                   <div>
                     <p className="product-p">
                       <div className="div-click-milk" onClick={setClickedSpanMilk}>
-                        <img src={noMilk} alt='no milk icon' width='30px' />
+                        <img src={singleItemProperties.noMilk} alt='no milk icon' width='30px' />
                       </div>
                       <div className="div-click-milk" onClick={setClickedSpanMilk}>
-                        <img src={lactoseFree} alt='no milk icon' width='30px' />
+                        <img src={singleItemProperties.lactoseFree} alt='no milk icon' width='30px' />
                       </div>
                       <div className="div-click-milk" onClick={setClickedSpanMilk}>
-                        <img src={milk} alt='no milk icon' width='30px' />
+                        <img src={singleItemProperties.milk} alt='no milk icon' width='30px' />
                       </div>
                     </p>
                   </div>
