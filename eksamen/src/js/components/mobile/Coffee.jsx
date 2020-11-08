@@ -14,7 +14,6 @@ const Coffee = (menuItem) => {
 
   return(
     <>
-    <Header />
       <div>
         <ProductCard
         list={list}
