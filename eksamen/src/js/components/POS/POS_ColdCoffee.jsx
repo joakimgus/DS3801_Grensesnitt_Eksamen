@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import { menuItems } from '../../database';
 import POS_ProductCard from './POS_ProductCard';
 

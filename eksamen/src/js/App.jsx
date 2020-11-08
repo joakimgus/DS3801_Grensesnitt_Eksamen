@@ -62,7 +62,7 @@ const App = () => {
 
         (where) === 'renderProfile' ? <UserProfile /> :
           (where) === 'renderHome' ? <MainMenu onClick={handleClick} /> :
-            (where) === 'renderMore' ? <More onClick={handleClick} /> :
+            (where) === 'renderMore' ? <Options onClick={handleClick} /> :
               (where) === 'settingsRender' ? <Settings /> :
                 (where) === 'personalQrRender' ? <QrPage /> :
                   (where) === 'placeholderRender' ? <Placeholder /> :
