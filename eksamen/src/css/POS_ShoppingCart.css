@@ -6,11 +6,13 @@
     display: grid;
     grid-template-rows: 12fr 1fr;
     width: 30%;
-    height: 885px;
+    height: 83%;
+    max-height: 677px;
     /* For ipad Pro */
-    position: sticky;
+    position: fixed;
     background-color: white;
-    float: right;
+    right: 0px;
+    bottom: 60px;
     border-left: 2px solid black;
   }
 
@@ -19,7 +21,7 @@
     background-color: white;
     font-family: "Montserrat";
     font-weight: normal;
-    overflow: scroll;
+    overflow: auto;
   }
 
   /* Park and CHeckout Butoons */
@@ -72,7 +74,7 @@
     margin-top: -10px;
   }
 
-  *#orderSum {
+  #orderSum {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     padding: 5px;
