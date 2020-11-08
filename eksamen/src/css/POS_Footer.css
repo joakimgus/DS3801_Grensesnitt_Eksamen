@@ -1,5 +1,6 @@
 /* For iPad Pro - POS solution */
 @media screen and (min-width: 813px) {
+
   /* Styles for the main bar */
   nav {
     font-family: "Montserrat";
@@ -8,13 +9,14 @@
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr 1fr 1fr;
     text-align: center;
+    height: 60px;
     width: 100%;
     position: sticky;
-    bottom: 0;
+    bottom: 0px;
   }
 
   /* To arrange icons and text */
-  nav > button {
+  nav>button {
     background-color: rgb(60, 60, 60);
     color: white;
     border: none;
@@ -27,26 +29,25 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: left;
-    font-size: 16pt;
   }
 
-  #food > img,
-  #drinks > img,
-  #coffee > img {
-    margin-top: 15px;
+  #food>img,
+  #drinks>img,
+  #coffee>img {
+    margin-top: 10px;
   }
 
-  nav > button:focus {
+  nav>button:focus {
     outline: 0;
     background-color: rgb(24, 23, 23);
   }
 
-  .POS_Footer > p {
+  .POS_Footer>p {
     margin-top: 25px;
   }
 
   /* Icon Customization */
-  nav > button.POS_Footer > img {
+  nav>button.POS_Footer>img {
     height: 32px;
     justify-self: center;
   }
