@@ -5,7 +5,6 @@
         grid-template-rows: repeat(auto-fit, minmax(210px, 1fr));
         min-height: 39.8em;
         overflow-x: scroll;
-        overflow-y: scroll;
     }
 
     .posProductCard {
