@@ -72,7 +72,7 @@ let id = 0;
                                         <img src={cartIcons[1].image} alt={cartIcons[1].name} onClick={handleCartClick} data-id={`${item.id}`} />
                                     </div>
                                     <div className="discardBtn">
-                                        <img src={cartIcons[2].image} alt={cartIcons[2].name} onClick={props.onClick} data-id={cartHolder.indexOf(item)} />
+                                        <img src={cartIcons[2].image} alt={cartIcons[2].name} onClick={props.remove} data-id={cartHolder.indexOf(item)} />
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +86,7 @@ let id = 0;
                 <p className="mTotal">Total:
                     <span className="mTotal" id="mTotalSpan"> {total} </span>,-
                 </p>
-                <button className="mCheckoutBtn">Checkout</button>
+                <button className="mCheckoutBtn" onClick={props.checkout} data-render="checkout">Checkout</button>
             </div>
             <div id="moveFooter"></div>
         </>
