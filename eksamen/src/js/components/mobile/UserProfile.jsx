@@ -5,8 +5,8 @@ import { users } from '../../database.js';
 
 const UserProfile = (props) => {
     //console.log(icons);
-    const couponCoffee = require("../../../img/app_POS/free-coffee.png");
-    const couponDessert = require('../../../img/app_POS/free-dessert.png');
+    const couponCoffee = require("../../../img/mobile-icons/coupon-coffee.png");
+    const couponDessert = require('../../../img/mobile-icons/coupon-dessert.png');
 
     return (
         <>

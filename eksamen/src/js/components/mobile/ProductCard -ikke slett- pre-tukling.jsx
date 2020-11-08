@@ -42,7 +42,7 @@ const List = ({list, setList, filteredList}) => {
           <img 
             id="arrow" 
             alt="arrow" 
-            src={require("../../img/app_POS/arrow.png")} 
+            src={require("../../img/mobile-icons/arrow.png")} 
             data-product={menuItem.productName} 
             data-list={menuItem.category}
             onClick={handleProductView} 
@@ -50,7 +50,7 @@ const List = ({list, setList, filteredList}) => {
           <img 
             id="favorite"
             alt="favorite"
-            src={menuItem.favourite ? require("../../img/app_POS/favoriteTrue.png") : require("../../img/app_POS/favoriteFalse.png")}
+            src={menuItem.favourite ? require("../../img/mobile-icons/favourite-true.png") : require("../../img/mobile-icons/favourite-false.png")}
             onClick={() => handleToggleComplete(menuItem.productId)}
           />
         </div>

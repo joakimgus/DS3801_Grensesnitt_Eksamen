@@ -2,7 +2,7 @@ import React from 'react';
 import '../../../css/mobile/Login.css';
 
 const Login = () => {
-  const imgPath = require("../../../img/app_POS/logo.png");
+  const imgPath = require("../../../img/mobile-icons/logo.png");
   return(
     <div className="loginpage">
       <img className="loginpage" id="logo" src={imgPath} alt="Logo" />

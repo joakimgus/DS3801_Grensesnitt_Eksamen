@@ -11,7 +11,7 @@ import '../../../css/mobile/Options.css';
 
 const Options = (props) =>{
 
-    const settingsicon = require("../../../img/app_POS/settingsicon.png");
+    const settingsicon = require("../../../img/mobile-icons/settings.png");
 
     return(
         <div className="morepage">
