@@ -1,11 +1,17 @@
 @media screen and (min-width: 813px) {
   .posMainContainer {
     font-family: 'Montserrat';
-      margin: 0;
-      padding-top: 75px;
-      max-width: 70%;
-      height: 60em;
-      overflow-y: scroll;    
+    width: 85%;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translate3d(-20%, -20%, 0);
+    -moz-transform: translate3d(-20%, -20%, 0);
+    transform: translate3d(-63.4%, -50%, 0);
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Playfair Display';
+    color: rgb(37, 37, 37);
   }
 
   .posCalcContainer {
@@ -14,7 +20,7 @@
     border: 3px solid black;
     width: 80%;
     height: 60%;
-    margin-left: 10%; 
+    margin-left: 10%;
   }
 
   #leftDiv {
@@ -25,7 +31,7 @@
     place-items: center;
   }
 
-  .posMainContainer > .posCalcContainer > #leftDiv > p {
+  .posMainContainer>.posCalcContainer>#leftDiv>p {
     font-size: 25pt;
     font-weight: bold;
   }
@@ -38,16 +44,16 @@
     background-color: #c39d7d;
   }
 
-  .posMainContainer > .posCalcContainer > #rightDiv > p {
+  .posMainContainer>.posCalcContainer>#rightDiv>p {
     position: inline;
     font-size: 40pt;
-    
-    
+
+
   }
 
   .rightBtnContainer {
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     width: 300px;
@@ -57,7 +63,7 @@
 
   .leftBtnContainer {
     display: grid;
-    grid-template-columns:  1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 20px;
     width: 200px;
