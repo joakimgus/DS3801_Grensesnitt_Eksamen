@@ -5,7 +5,6 @@ import { users } from '../database.js';
 
 const UserProfile = (props) => {
     //console.log(icons);
-    const arrowimg = require("../../img/app_POS/arrow.png");
     const couponCoffee = require("../../img/app_POS/free-coffee.png");
     const couponDessert = require('../../img/app_POS/free-dessert.png');
 
@@ -21,7 +20,7 @@ const UserProfile = (props) => {
                     </div>
                     <div className="picture-container">
                         {/* <img></img> */}
-                        <img src={users[3].userimg} alt="Profile picture" />
+                        <img src={users[3].userimg} alt='profile-picture' />
                         {/* <div className="profile-picture"></div> { /*placeholder element for actual picture*/}
                     </div>
 

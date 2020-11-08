@@ -4,9 +4,9 @@ import { menuItems, cartIcons } from '../database.js';
 
 //import { cartItemsArray } from '../database';
 
-const Cart = () => {
+const Cart = (props) => {
 
-
+    let cartHolder = JSON.parse(localStorage.getItem("cart")) || [];
     /*   menuItems = [
           {
               productId: 1,
@@ -19,9 +19,6 @@ const Cart = () => {
               category: "hotCoffee"
           }, */
 
-
-    /*get item array - cartItemsArray - produkter må pushes til det arrayet fra handlesiden; så denne "arrayen" er en dud */
-    const [items, setItems] = useState([]);
 
     let itemsArray = [];
 
@@ -60,15 +57,14 @@ const Cart = () => {
 
     //Denne funker ikke gaddamn brainfarts
     let total = 0;
-    let priceee = itemsArray.map((item => {
-        total = total + (item.price * item.amount);
-        console.log(total);
+    let priceee = cartHolder.map((item => {
+        total = total + (item.price[1] === undefined ? item.price : item.price[1]);
         return total;
     }))
 
 
     function handleCartClick(e) {
-        console.log(e.target);
+        //console.log(e.target);
         const target = e.target.getAttribute('data-id') - 1;
         const action = e.target.getAttribute('alt')
 
@@ -76,43 +72,46 @@ const Cart = () => {
         //Alle disse fungerer - i consollen - men de blir ikke rendret på nytt. Burde vel bruke useState([]), men det har jeg ikke fått til. 
         switch (action) {
             case "Add":
-                console.log("Add item " + target);
                 itemsArray[target].amount++;
                 //console.log(this.state);
-                console.log(itemsArray[target]);
                 break;
             case "Subtract":
-                console.log("Subtract item " + target);
                 itemsArray[target].amount--;
-                console.log(itemsArray[target]);
                 break;
             case "Discard":
-                console.log("Discard item " + target);
                 //Elementet blir slettet, som man ser i consollen - men elementet blir ikke rendret på nytt. 
-                console.log(itemsArray);
                 itemsArray.splice(target, 1);
-                console.log(itemsArray);
+                let temp = JSON.parse(localStorage.getItem('cart'));
+                temp.splice(target, 1);
+                localStorage.setItem('cart', JSON.stringify(temp));
                 break;
         }
     }
 
+
+   let [state, setState] = useState("refresh");
+
+
+let id = 0;
     return (
         <>
             <div className="cart">
                 <div className="productCartContainer">
-                    {itemsArray.map((item) => {
-
+                    {cartHolder.map((item) => {
+                        id++;
+                        console.log(item.price[1]);
                         return (
 
-                            <div className="prodCard" key={item.id}>
+                            <div className="prodCard" key={item.productId + " " + id}>
+                            <p>{props.update}</p>
                                 <div className="itemQ">
-                                    <span>x</span>{item.amount}
+                                    <span>x</span>{item.amount} 1
                                 </div>
-                                <img className="itemImage" src={item.image} alt={item.productName + " image"} />
+                                <img className="itemImage" src={item.productImage} alt={item.productName + " image"} />
                                 <ul className="itemName">{item.productName}
-                                    <li className="itemSize">Size: {item.size}</li>
-                                    <li className="addOns">Extras: {item.extra}sss</li>
-                                    <li className="itemPrice">{item.price * item.amount},-</li>
+                                    <li className="itemSize">Size: XL {item.size}</li>
+                                    <li className="addOns">Extras: {item.extra}none</li>
+                                    <li className="itemPrice">{item.price[1] === undefined ? item.price : item.price[1] /* * item.amount*/ },-</li>
                                 </ul>
                                 <div className='cartBtnContainer'>
                                     <div className="addBtn" >
@@ -122,7 +121,7 @@ const Cart = () => {
                                         <img src={cartIcons[1].image} alt={cartIcons[1].name} onClick={handleCartClick} data-id={`${item.id}`} />
                                     </div>
                                     <div className="discardBtn">
-                                        <img src={cartIcons[2].image} alt={cartIcons[2].name} onClick={handleCartClick} data-id={`${item.id}`} />
+                                        <img src={cartIcons[2].image} alt={cartIcons[2].name} onClick={props.onClick} data-id={cartHolder.indexOf(item)} />
                                     </div>
                                 </div>
                             </div>
