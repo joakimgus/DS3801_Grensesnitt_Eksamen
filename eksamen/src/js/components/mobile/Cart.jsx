@@ -27,7 +27,7 @@ const Cart = (props) => {
         productName: "Black Coffee",
         amount: 1,
         price: 32,
-        image: require("../../img/app_POS/black-coffee.jpeg"),
+        image: require("../../../img/app_POS/black-coffee.jpeg"),
         size: "XL",
         extra: "milk"
     }
@@ -38,7 +38,7 @@ const Cart = (props) => {
         productName: "Cafe au latee",
         amount: 2,
         price: 66,
-        image: require("../../img/app_POS/black-coffee.jpeg"),
+        image: require("../../../img/app_POS/black-coffee.jpeg"),
         size: "M",
         extra: "sukker"
     }
@@ -48,7 +48,7 @@ const Cart = (props) => {
         productName: "Gul saft",
         amount: 1,
         price: 12,
-        image: require("../../img/app_POS/black-coffee.jpeg"),
+        image: require("../../../img/app_POS/black-coffee.jpeg"),
         size: "XL",
         extra: "isbiter"
     }

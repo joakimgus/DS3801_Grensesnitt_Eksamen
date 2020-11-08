@@ -515,7 +515,7 @@ const posCartIcons = [
     },
     {
         name: "Trash",
-        image: require("../img/app_POS/Trash.png"),
+        image: require('../img/app_POS/trash.png'),
         alt: "Trash Icon"
     }
 ]

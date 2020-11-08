@@ -2,7 +2,7 @@ import React, { useState} from 'react';
 import { menuItems, singleItem } from '../../database.js';
 import '../../../css/mobile/ProductCard.css';
 import '../../../css/mobile/SingleView.css';
-import ProductView from '../components/mobile/ProductView';
+import ProductView from './ProductView';
 
 
 
@@ -73,7 +73,7 @@ function addItemToCart(){
           <img 
             id="arrow" 
             alt="arrow" 
-            src={require("../../img/app_POS/arrow.png")} 
+            src={require("../../../img/app_POS/arrow.png")} 
             data-product={menuItem.productName} 
             data-list={menuItem.category}
             onClick={handleProductView} 
@@ -81,7 +81,7 @@ function addItemToCart(){
           <img 
             id="favorite"
             alt="favorite"
-            src={menuItem.favourite ? require("../../img/app_POS/favoriteTrue.png") : require("../../img/app_POS/favoriteFalse.png")}
+            src={menuItem.favourite ? require("../../../img/app_POS/favoriteTrue.png") : require('../../../img/app_POS/favoriteFalse.png')}
             onClick={() => handleToggleComplete(menuItem.productId)}
           />
         </div>

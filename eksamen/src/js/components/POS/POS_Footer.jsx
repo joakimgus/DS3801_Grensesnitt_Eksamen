@@ -1,6 +1,6 @@
 import React from 'react';
 import {posFooterIcons} from '../../database';
-import '../../../css/POS/POS_Footer';
+import '../../../css/POS/POS_Footer.css';
 
 
 function POS_Footer() {

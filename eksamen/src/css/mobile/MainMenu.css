@@ -27,7 +27,7 @@
   #coffeeContainer {
     background-image: linear-gradient(rgba(255, 255, 255, 0.45),
         rgba(255, 255, 255, 0.45)),
-      url(../img/app_POS/Hot-drinks.jpeg);
+        url(../../img/app_POS/Hot-drinks.jpeg);
     grid-column: 1;
     grid-row: 1;
   }
@@ -35,7 +35,7 @@
   #drinksContainer {
     background-image: linear-gradient(rgba(255, 255, 255, 0.45),
         rgba(255, 255, 255, 0.45)),
-      url(../img/app_POS/Cold-drinks.jpeg);
+      url(../../img/app_POS/Cold-drinks.jpeg);
     grid-column: 1;
     grid-row: 2;
   }
@@ -43,7 +43,7 @@
   #foodContainer {
     background-image: linear-gradient(rgba(255, 255, 255, 0.45),
         rgba(255, 255, 255, 0.45)),
-      url(../img/app_POS/food.jpeg);
+      url(../../img/app_POS/food.jpeg);
     grid-column: 1;
     grid-row: 3;
   }

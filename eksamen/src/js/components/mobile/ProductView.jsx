@@ -1,5 +1,5 @@
 import React from 'react';
-import {menuItems, singleItem} from '../database.js';
+import {menuItems, singleItem} from '../../database';
 import '../../../css/mobile/ProductView.css';
 
 //Denne er ikke i bruk
