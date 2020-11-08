@@ -57,7 +57,7 @@
     }
 }
 
-@media screen and (min-width: 377px) {
+@media screen and (min-width: 377px) and (max-width: 812px) {
     .morepage {
         min-height: 44.5em;
         position: relative;
