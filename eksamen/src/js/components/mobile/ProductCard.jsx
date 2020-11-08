@@ -2,7 +2,6 @@ import React, { useState} from 'react';
 import { menuItems, singleItem, singleItemProperties } from '../../database.js';
 import '../../../css/mobile/ProductCard.css';
 import '../../../css/mobile/SingleView.css';
-import ProductView from './ProductView';
 
 
 const coffeIcon = {
