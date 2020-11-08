@@ -3,19 +3,13 @@ import { menuItems, singleItem, singleItemProperties } from '../../database.js';
 import '../../../css/mobile/ProductCard.css';
 import '../../../css/mobile/SingleView.css';
 import ProductView from './ProductView';
-
-
-const coffeIcon = {
-  src: require('../../../img/mobile-icons/Coffee-icon.png')
-}
-//"../../img/mobile-icons/Coffee-icon.png";
-
+import Header from './Header.jsx';
 
 
 let itemHolder = [];
 const List = ({list, setList, filteredList}) => { 
 
-  let [all, setAll] = useState(false);
+  let [all, setAll] = useState("all");
 
   function handleToggleComplete(id) {
 
@@ -34,23 +28,25 @@ const List = ({list, setList, filteredList}) => {
     setList(newList);
   }
 
+  let length = itemHolder.length-1;
 
   function handleProductView(e){
+
     itemHolder = [];
+    console.log(itemHolder + "should be empty");
     const productName = e.target.getAttribute('data-product');
     const productList = e.target.getAttribute('data-list');
+    filteredList.map((singleItem) =>
+    singleItem.productName === productName ?
+    
+    itemHolder.push(singleItem)
+    
+    : null)
+
     setAll("single");
     
-      filteredList.map((singleItem) => 
-        singleItem.productName.includes(productName) ? 
-
-        itemHolder.push(singleItem)
-        
-        : null);
-
   }
 
-  let length = itemHolder.length-1;
 
   function handleSetBackToAll(){
     setAll(false);
@@ -95,6 +91,8 @@ function setClickedSpanMilk(e){
 
   return(
     <>
+
+    {console.log(all)}
       {all != "single" ? filteredList.map((menuItem) => (
         (menuItem.category != "food" ? 
           <div className="productCard" key={menuItem.productId}>
@@ -137,7 +135,7 @@ function setClickedSpanMilk(e){
             />
           </div>
         ))) 
-        : itemHolder[length].category === "hotCoffee" ?
+        : itemHolder[length].category === "hotCoffee" ? 
         <div>
           <div className="single-view-container" key={itemHolder[length].productId}>
               <button className="return-button" onClick={handleSetBackToAll} alt="return to favorites button">⬅</button>
