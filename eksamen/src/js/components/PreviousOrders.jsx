@@ -11,12 +11,13 @@ const PreviousOrders = () => {
         <>
             <div className="previous-orders-page">
                 <h3 className="previous-order-title">Previous orders</h3>
+                <hr className="page-title-hr" />
                 <div className="orders-container">
                     {orderHistory.map(order => {
                         return (
                             <>
                                 <div className="order-card">
-                                        <p className='receipt-nr'>🧾 Order number: <span>{order.number}</span></p>
+                                        <p className='receipt-nr'><span role='img'>🧾</span> Order number: <span>{order.number}</span></p>
                                         <div id='order-hr-container'>
                                             <hr  />
                                         </div>

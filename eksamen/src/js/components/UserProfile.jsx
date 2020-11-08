@@ -5,7 +5,6 @@ import { users } from '../database.js';
 
 const UserProfile = (props) => {
     //console.log(icons);
-    const arrowimg = require("../../img/app_POS/arrow.png");
     const couponCoffee = require("../../img/app_POS/free-coffee.png");
     const couponDessert = require('../../img/app_POS/free-dessert.png');
 

@@ -12,9 +12,18 @@
         font-size: larger;
     }
 
+    hr.page-title-hr {
+        width: 50%;
+        height: 1px;
+        border: none;
+        margin-top: 1em;
+        background-color: rgb(28, 28, 28);
+    }
+
     .orders-container {
         display: grid;
         grid-template-columns: 5px 1fr 1fr 5px;
+        margin-top: -1em;
     }
 
     #card-order-ul {
