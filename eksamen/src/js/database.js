@@ -351,44 +351,131 @@ const orderHistory = [
     {
         id: 1,
         number: 1001,
-        items: ["Cafe latée", "Bagel", "Ice Tea"],
-        total: 144
+        items: [
+            {
+                name: "Café Latte",
+                quantity: 1,
+                size: "Small",
+            },
+            {
+                name: "Iced Cappuccino",
+                quantity: 1,
+                size: "Medium",
+            },
+            {
+                name: "Scones",
+                quantity: 1,
+                size: "One size"
+            }
+        ],
+        total: 117
     },
     {
         id: 2,
         number: 1002,
-        items: ["Brownies", "Bagel", "Black Coffee", "U.S.A."],
-        total: 124
+        items: [
+            {
+                name: "Black Coffee",
+                quantity: 1,
+                size: "Medium",
+            },
+            {
+                name: "Cappuccino",
+                quantity: 1,
+                size: "Large",
+            },
+            {
+                name: "Brownie",
+                quantity: 2,
+                size: "One size"
+            }
+        ],
+        total: 122
     },
     {
         id: 3,
         number: 1003,
-        items: ["Cafe mocca", "Toast with cheese", "Hot Chocolate"],
-        total: 314
+        items: [
+            {
+                name: "Café Mocha",
+                quantity: 2,
+                size: "Medium",
+            },
+            {
+                name: "Cinnamon Bun",
+                quantity: 1,
+                size: "One size",
+            },
+            {
+                name: "Oreo Slice",
+                quantity: 1,
+                size: "One size"
+            }
+        ],
+        total: 184
     },
     {
         id: 4,
         number: 1004,
-        items: ["placeholde4r", "Bagel4", "Ice Tea4"],
-        total: 44
+        items: [
+            {
+                name: "Black Coffee",
+                quantity: 2,
+                size: "Medium",
+            },
+            {
+                name: "Brioche",
+                quantity: 2,
+                size: "One size"
+            }
+        ],
+        total: 152
     },
     {
         id: 5,
         number: 1005,
-        items: ["Cafe latée5", "Bagel5", "Ice5 Tea"],
-        total: 145
+        items: [
+            {
+                name: "Raspberry Iced Tea",
+                quantity: 1,
+                size: "Medium",
+            },
+            {
+                name: "Cinnamon Bun",
+                quantity: 1,
+                size: "One size"
+            }
+        ],
+        total: 93
     },
     {
         id: 6,
         number: 1006,
-        items: ["Cafe 6latée", "Bage6l", "I6ce Tea"],
-        total: 55
+        items: [
+            {
+                name: "Iced Caramel Macchiato",
+                quantity: 1,
+                size: "Large"
+            }
+        ],
+        total: 51
     },
     {
         id: 7,
         number: 1007,
-        items: ["Cafe laté7e", "Bag7el", "Ice7 Tea"],
-        total: 99
+        items: [
+            {
+                name: "Espresso",
+                quantity: 1,
+                size: "Small",
+            },
+            {
+                name: "Chia pudding",
+                quantity: 1,
+                size: "One size"
+            }
+        ],
+        total: 76
     }
 ];
 
@@ -433,4 +520,17 @@ const posCartIcons = [
     }
 ]
 
-export {users, menuItems, footerIcons, posFooterIcons, cartIcons, orderHistory, posCartIcons};
+let singleItem =
+{
+    productId: 1,
+    productName: "Black Coffee",
+    productImage: require("../img/app_POS/black-coffee.jpeg"),
+    price: [28, 32, 36],
+    allergies: "none",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also",
+    favourite: false,
+    category: "hotCoffee"
+}
+    ;
+
+export { users, menuItems, footerIcons, posFooterIcons, cartIcons, orderHistory, posCartIcons, singleItem };

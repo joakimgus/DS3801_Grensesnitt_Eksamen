@@ -11,6 +11,7 @@ const Foods = (menuItem) => {
   const filteredList = list.filter(menuItem => menuItem.category === "food");
 
   return(
+    <>
       <div>
         <ProductCard
         list={list}
@@ -20,6 +21,8 @@ const Foods = (menuItem) => {
         filteredList={filteredList}
         />
       </div>
+      <div id="moveFooter"></div>
+      </>
     )
   }
 

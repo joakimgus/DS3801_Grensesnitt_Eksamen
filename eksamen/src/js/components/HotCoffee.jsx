@@ -11,6 +11,7 @@ const HotCoffee = (menuItem) => {
   const filteredList = list.filter(menuItem => menuItem.category === "hotCoffee");
 
   return(
+    <>
       <div>
         <ProductCard
         list={list}
@@ -20,6 +21,8 @@ const HotCoffee = (menuItem) => {
         filteredList={filteredList}
         />
       </div>
+      <div id="moveFooter"></div>
+      </>
     )
   }
 

@@ -2,9 +2,10 @@
 @media screen and (max-width : 812px) {
 
     /* Style for ProductRender.jsx */
+
     .productCard {
         display: grid;
-        grid-template-columns: 3fr 5fr 2fr;
+        grid-template-columns: 3fr 4fr 2fr;
         grid-template-rows: repeat(4, 1fr);
         width: 97%;
         height: 150px;
@@ -25,6 +26,7 @@
 
     h1.productTitle {
         font-family: 'Playfair Display';
+        color: rgb(37, 37, 37);
         font-weight: 600;
         font-variant: small-caps;
         font-size: large;
@@ -38,6 +40,7 @@
     .productPrice {
         font-weight: 300;
         font-family: 'Montserrat';
+        color: rgb(37, 37, 37);
         font-weight: 300;
         font-size: medium;
         text-transform: capitalize;
@@ -63,6 +66,15 @@
         width: 30px;
         margin-top: 5px;
         padding-left: 20px;
+    }
+
+    /* Styling for return-button on single product*/
+    .return-button{
+        margin: 10px;
+        border: solid 1px black;
+        height: 25px;
+        border-radius: 5px;
+        background-color: rgb(138, 115, 115);
     }
 
     div#moveFooter {

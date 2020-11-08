@@ -4,10 +4,12 @@
     div.cart {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto 3.5em 3.5em;
+        grid-template-rows: 1fr 3.5em 3.5em;
         margin: 0;
         padding: 0;
         width: 100%;
+        min-height: 44.5em;
+        color: rgb(37, 37, 37);
     }
 
     div.productCartContainer {
@@ -173,8 +175,11 @@
         background-color: rgb(28, 28, 28);
         border-radius: 5px;
         outline: none;
+        border: none;
     }
 
-
-
+    div#moveFooter {
+        height: 50px;
+        visibility: hidden;
+    }
 }
