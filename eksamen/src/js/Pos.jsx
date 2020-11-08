@@ -13,6 +13,7 @@ import POS_Drinks from './components/POS/POS_Drinks';
 import POS_ProductCard from './components/POS/POS_ProductCard.jsx';
 import POS_ShoppingCart from './components/POS/POS_ShoppingCart.jsx';
 import POS_WorkerSelect from './components/POS/POS_WorkerSelect.jsx';
+
 import POS_Calculator from './components/POS/POS_Calculator';
 
 
@@ -24,11 +25,11 @@ const Pos = (props) => {
   let target;
   function handleClick(e) {
     target = e.target.getAttribute('data-render');
+    console.log(target + "skrevet fra Pos.jsx (handleclick())")
     setTarget(target);
-    console.log(target + "skrevet fra app.jsx(handleClick()")
   }
 
-  let [where, setWhere] = useState(target);
+  let [where, setWhere] = useState("renderCoffee");
   function setTarget() {
     setWhere(target);
   }
@@ -42,9 +43,9 @@ const Pos = (props) => {
   function removeItemFromCart(e) {
     target = e.target.getAttribute('data-id');
 
-    let temp = JSON.parse(localStorage.getItem('cart'));
+    let temp = JSON.parse(localStorage.getItem('POS_cart'));
     temp.splice(target, 1);
-    localStorage.setItem('cart', JSON.stringify(temp));
+    localStorage.setItem('POS_cart', JSON.stringify(temp));
     setUpdate("update");
   }
 
@@ -54,8 +55,14 @@ const Pos = (props) => {
         <POS_Header />
         <POS_WorkerSelect />
         <POS_ShoppingCart />
-        <POS_Calculator />
-        <POS_Footer />
+          {
+            (where) === 'renderCoffee' ? <POS_Coffee /> :
+            (where) === 'renderDrinks' ? <POS_Drinks /> : 
+            (where) === 'renderFood' ? <POS_Foods /> : 
+            <POS_Coffee />
+          }
+
+        <POS_Footer onClick={handleClick}/>
       </div>
     </>
   )
