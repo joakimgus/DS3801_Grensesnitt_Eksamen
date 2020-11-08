@@ -71,11 +71,12 @@
 }
 
 .span-click {
-    width: 32px;
-    height: 32px;
     border: 1px solid black;
     border-radius: 50%;
-    margin-left: 10px;
+}
+
+.product-p {
+    margin-left: -40%;
 }
 
 .div-click-milk {
@@ -100,24 +101,19 @@
     -webkit-transform: scale(1.5);
 }
 
-#small {
-    height: 30px;
-    width: 30px;
-}
 
-#medium {
-    height: 40px;
-    width: 40px;
-}
-
-#large {
-    height: 50px;
-    width: 50px;
-}
-
+#small,
 #medium,
 #large {
-    margin-left: 5px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.span-click>p {
+    margin: 10px;
 }
 
 .return-button {

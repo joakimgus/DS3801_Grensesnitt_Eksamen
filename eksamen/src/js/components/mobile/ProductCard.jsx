@@ -166,9 +166,15 @@ const List = ({ list, setList, filteredList }) => {
                   <p>Size:</p>
                   <div>
                     <p className="product-p">
-                      <img src={singleItemProperties.coffe} id="small" alt="small size" className="span-click" onClick={setClickedSpan} />
-                      <img src={singleItemProperties.coffe} id="medium" alt="medium size" className="span-click" onClick={setClickedSpan} />
-                      <img src={singleItemProperties.coffe} id="large" alt="large size" className="span-click" onClick={setClickedSpan} />
+                      <div id="small" alt="small size" className="span-click" onClick={setClickedSpan}>
+                        <p>S</p>
+                        </div>
+                      <div id="medium" alt="medium size" className="span-click" onClick={setClickedSpan}>
+                        <p>M</p>
+                        </div>
+                      <div id="large" alt="large size" className="span-click" onClick={setClickedSpan}>
+                        <p>L</p>
+                      </div>
                     </p>
                   </div>
                 </div>
