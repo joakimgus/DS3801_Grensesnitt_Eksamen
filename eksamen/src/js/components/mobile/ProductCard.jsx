@@ -137,7 +137,7 @@ function setClickedSpanMilk(e){
             />
           </div>
         ))) 
-        : 
+        : itemHolder[length].category === "hotCoffee" ?
         <div>
           <div className="single-view-container" key={itemHolder[length].productId}>
               <button className="return-button" onClick={handleSetBackToAll} alt="return to favorites button">⬅</button>
@@ -189,6 +189,90 @@ function setClickedSpanMilk(e){
 
           </div>
         </div>
+        : itemHolder[length].category === "drink" ?
+
+        <div>
+          <div className="single-view-container" key={itemHolder[length].productId}>
+              <button className="return-button" onClick={handleSetBackToAll} alt="return to favorites button">⬅</button>
+          <div className="product-info">
+              <img className="imgProduct" src={itemHolder[length].productImage} alt={itemHolder[length].productName} />
+              <h3 className="productName">{itemHolder[length].productName}</h3>
+              <hr className="single-view-divider" />
+
+              <p className="productDescription">{itemHolder[length].description}</p>
+              <hr className="single-view-divider" />
+
+          </div>
+          <div className="product-settings">
+              <div className="product-settings-specifics"><p>Quantity: </p><p>- 1 +</p></div>
+              <hr className="single-view-divider" />
+
+              <div className="product-settings-specifics-size">
+                  <p>Size:</p>
+                  <div>
+                    <p className="product-p">
+                      <img src={singleItemProperties.coffe} id="small" alt="small size"className="span-click" onClick={setClickedSpan} /> 
+                      <img src={singleItemProperties.coffe} id="medium" alt="medium size"className="span-click" onClick={setClickedSpan} /> 
+                      <img src={singleItemProperties.coffe} id="large" alt="large size"className="span-click" onClick={setClickedSpan} /> 
+                    </p>
+                  </div>
+              </div>
+              <hr className="single-view-divider" />
+
+              <div className="product-settings-specifics-milk">
+                  <p>Allergies:</p>
+                  <div>
+                    <p className="product-p">
+                      {itemHolder[length].allergies}
+                    </p>
+                  </div>
+              </div>
+              <hr className="single-view-divider" />
+              
+              <div className="product-settings-specifics"><p>Total: </p><p>Kr {itemHolder[length].price[1] || itemHolder[length].price},-</p></div>
+              <div className="product-settings-specifics"></div>
+            <button className="add-to-cart" onClick={addItemToCart}>add to cart</button>
+          </div>
+            {/* Buttons for Quantity/Shots/Size/Milk */}
+
+          </div>
+        </div>
+        : itemHolder[length].category === "food" ? 
+        <div>
+          <div className="single-view-container" key={itemHolder[length].productId}>
+              <button className="return-button" onClick={handleSetBackToAll} alt="return to favorites button">⬅</button>
+          <div className="product-info">
+              <img className="imgProduct" src={itemHolder[length].productImage} alt={itemHolder[length].productName} />
+              <h3 className="productName">{itemHolder[length].productName}</h3>
+              <hr className="single-view-divider" />
+
+              <p className="productDescription">{itemHolder[length].description}</p>
+              <hr className="single-view-divider" />
+
+          </div>
+          <div className="product-settings">
+              <div className="product-settings-specifics"><p>Quantity: </p><p>- 1 +</p></div>
+              <hr className="single-view-divider" />
+
+              <div className="product-settings-specifics-milk">
+                  <p>Allergies:</p>
+                  <div>
+                    <p className="product-p">
+                      {itemHolder[length].allergies}
+                    </p>
+                  </div>
+              </div>
+              <hr className="single-view-divider" />
+              
+              <div className="product-settings-specifics"><p>Total: </p><p>Kr {itemHolder[length].price[1] || itemHolder[length].price},-</p></div>
+              <div className="product-settings-specifics"></div>
+            <button className="add-to-cart" onClick={addItemToCart}>add to cart</button>
+          </div>
+            {/* Buttons for Quantity/Shots/Size/Milk */}
+
+          </div>
+        </div>
+         : null
       }
     </>
     )
