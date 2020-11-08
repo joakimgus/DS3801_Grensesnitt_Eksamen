@@ -368,7 +368,7 @@ const orderHistory = [
                 size: "One size"
             }
         ],
-        total: 144
+        total: 117
     },
     {
         id: 2,
@@ -390,7 +390,7 @@ const orderHistory = [
                 size: "One size"
             }
         ],
-        total: 124
+        total: 122
     },
     {
         id: 3,
@@ -412,7 +412,7 @@ const orderHistory = [
                 size: "One size"
             }
         ],
-        total: 314
+        total: 184
     },
     {
         id: 4,
@@ -429,7 +429,7 @@ const orderHistory = [
                 size: "One size"
             }
         ],
-        total: 44
+        total: 152
     },
     {
         id: 5,
@@ -446,7 +446,7 @@ const orderHistory = [
                 size: "One size"
             }
         ],
-        total: 145
+        total: 93
     },
     {
         id: 6,
@@ -458,7 +458,7 @@ const orderHistory = [
                 size: "Large"
             }
         ],
-        total: 55
+        total: 51
     },
     {
         id: 7,
@@ -467,7 +467,7 @@ const orderHistory = [
             {
                 name: "Espresso",
                 quantity: 1,
-                size: "One size",
+                size: "Small",
             },
             {
                 name: "Chia pudding",
@@ -475,7 +475,7 @@ const orderHistory = [
                 size: "One size"
             }
         ],
-        total: 99
+        total: 76
     }
 ];
 
