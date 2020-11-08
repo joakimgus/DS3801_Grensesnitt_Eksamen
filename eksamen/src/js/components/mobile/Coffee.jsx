@@ -10,6 +10,7 @@ const Coffee = (menuItem) => {
   const [list, setList] = useState(initialList);
 
   const filteredList = list.filter(menuItem => menuItem.category === "coffee");
+  filteredList.sort((a, b) => a.productName.localeCompare(b.productName, 'en', {'sensitivity': 'base'}));
 
   return(
     <>

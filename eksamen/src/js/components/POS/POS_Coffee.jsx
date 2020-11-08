@@ -9,6 +9,7 @@ const POS_Coffee = (menuItem) => {
   const [posList, setPosList] = useState(initialPosList);
 
   const filteredPosList = posList.filter(menuItem => menuItem.category === "coffee");
+  filteredPosList.sort((a, b) => a.productName.localeCompare(b.productName, 'en', {'sensitivity': 'base'}));
 
   return(
     <POS_ProductCard
