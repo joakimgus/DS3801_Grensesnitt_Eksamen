@@ -55,18 +55,18 @@ let id = 0;
 
                             <div className="prodCard" key={item.productId + " " + id} data-update={props.update}>
 
-                                <div className="itemQ">
+                                <div className="itemQ" alt="amount">
                                     <span>x</span>{item.amount} 1
                                 </div>
                                 <img className="itemImage" src={item.productImage} alt={item.productName + " image"} />
                                 <ul className="itemName">{item.productName}
-                                    <li className="itemSize">Size: XL {item.size}</li>
-                                    <li className="addOns">Extras: {item.extra}none</li>
-                                    <li className="itemPrice">{item.price[1] === undefined ? item.price : item.price[1] /* * item.amount*/ },-</li>
+                                    <li className="itemSize" alt="size">Size: XL {item.size}</li>
+                                    <li className="addOns" alt="extras">Extras: {item.extra}none</li>
+                                    <li className="itemPrice" alt="price">{item.price[1] === undefined ? item.price : item.price[1] /* * item.amount*/ },-</li>
                                 </ul>
                                 <div className='cartBtnContainer'>
                                     <div className="discardBtn">
-                                        <img src={cartIcons[2].image} alt={cartIcons[2].name} onClick={props.remove} data-id={cartHolder.indexOf(item)} />
+                                        <img src={cartIcons[2].image} alt={cartIcons[2].name} alt="remove item" onClick={props.remove} data-id={cartHolder.indexOf(item)} />
                                     </div>
                                 </div>
                             </div>
