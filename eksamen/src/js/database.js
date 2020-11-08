@@ -520,6 +520,33 @@ const posCartIcons = [
     }
 ]
 
+const calcIcons = [
+    {
+
+        name: "exchange",
+        image: require('../img/pos-icons/exchange.png'),
+        alt: "Exchange Icon"
+    },
+    {
+
+        name: "graph",
+        image: require('../img/pos-icons/linegraph.png'),
+        alt: "Graph Icon"
+    },
+    {
+
+        name: "square",
+        image: require('../img/pos-icons/square-sign.png'),
+        alt: "Square Icon"
+    },
+    {
+
+        name: "science",
+        image: require('../img/pos-icons/science.png'),
+        alt: "Science Icon"
+    }
+]
+
 let singleItem = {
     productId: 1,
     productName: "Black Coffee",
@@ -538,4 +565,4 @@ let singleItemProperties = {
     noMilk: require("") */
 };
 
-export { users, menuItems, footerIcons, posFooterIcons, cartIcons, orderHistory, posCartIcons, singleItem, singleItemProperties };
+export { users, menuItems, footerIcons, posFooterIcons, cartIcons, orderHistory, posCartIcons, singleItem, singleItemProperties, calcIcons };
