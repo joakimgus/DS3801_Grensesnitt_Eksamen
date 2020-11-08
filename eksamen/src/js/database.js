@@ -122,7 +122,7 @@ const menuItems = [
         allergies: "none",
         description: "to be continued..",
         favourite: false,
-        category: "coldCoffee"
+        category: "coffee"
     },
     {
         productId: 10,
@@ -132,7 +132,7 @@ const menuItems = [
         allergies: "Milk",
         description: "to be continued..",
         favourite: false,
-        category: "coldCoffee"
+        category: "coffee"
     },
     {
         productId: 11,
@@ -142,7 +142,7 @@ const menuItems = [
         allergies: "Milk",
         description: "to be continued..",
         favourite: false,
-        category: "coldCoffee"
+        category: "coffee"
     },
     {
         productId: 12,
@@ -152,7 +152,7 @@ const menuItems = [
         allergies: "Milk, Cocoa powder",
         description: "to be continued..",
         favourite: true,
-        category: "coldCoffee"
+        category: "coffee"
     },
     {
         productId: 13,
@@ -162,7 +162,7 @@ const menuItems = [
         allergies: "Milk",
         description: "to be continued..",
         favourite: true,
-        category: "coldCoffee"
+        category: "coffee"
     },
     {
         productId: 14,
