@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import {footerIcons} from '../database.js';
-import '../../css/Footer.css';
+import {footerIcons} from '../../database.js';
+import '../../../css/mobile/Footer.css';
 
 
 let Footer = (props) =>{

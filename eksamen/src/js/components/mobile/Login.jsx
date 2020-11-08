@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/Login.css';
+import '../../../css/mobile/Login.css';
 
 const Login = () => {
   const imgPath = require("../../img/app_POS/logo.png");

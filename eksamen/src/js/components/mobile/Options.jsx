@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/More.css';
+import '../../../css/mobile/Options.css';
 
 
 /*
@@ -9,7 +9,7 @@ import '../../css/More.css';
 
 */
 
-const More = (props) =>{
+const Options = (props) =>{
 
     const settingsicon = require("../../img/app_POS/settingsicon.png");
 
@@ -45,4 +45,4 @@ const More = (props) =>{
 }
 
 
-export default More;
+export default Options;

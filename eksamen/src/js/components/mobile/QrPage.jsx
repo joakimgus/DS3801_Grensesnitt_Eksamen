@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/QrPage.css';
+import '../../../css/mobile/QrPage.css';
 import Header from './Header';
 
 const QrPage = (props) => {

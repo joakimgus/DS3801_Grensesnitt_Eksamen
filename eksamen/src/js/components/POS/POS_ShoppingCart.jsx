@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import '../../css/POS_ShoppingCart.css';
-import {posCartIcons} from '../database.js';
-import {cartIcons} from '../database.js';
+import '../../../css/POS/POS_ShoppingCart.css';
+import {posCartIcons, cartIcons} from '../../database';
 
 let POS_ShoppingCart = () =>{
     

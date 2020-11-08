@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/MainMenu.css';
+import '../../../css/mobile/MainMenu.css';
 
 const MainMenu = (props) => {
 

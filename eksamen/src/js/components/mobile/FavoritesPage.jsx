@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { menuItems } from '../database';
+import { menuItems } from '../../database.js';
 import ProductCard from './ProductCard';
 
     const FavoritesPage = (menuItem) => {

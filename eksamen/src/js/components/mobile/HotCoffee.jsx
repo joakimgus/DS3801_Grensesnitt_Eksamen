@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {menuItems} from '../database.js';
+import {menuItems} from '../../database.js';
 import ProductCard from './ProductCard';
 
 const HotCoffee = (menuItem) => {

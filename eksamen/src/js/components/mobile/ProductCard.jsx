@@ -1,8 +1,8 @@
 import React, { useState} from 'react';
-import { menuItems, singleItem } from '../database';
-import '../../css/ProductCard.css';
-import '../../css/SingleView.css';
-import ProductView from '../components/ProductView';
+import { menuItems, singleItem } from '../../database.js';
+import '../../../css/mobile/ProductCard.css';
+import '../../../css/mobile/SingleView.css';
+import ProductView from '../components/mobile/ProductView';
 
 
 

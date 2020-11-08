@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
-import { menuItems } from '../database';
-import '../../css/ProductCard.css';
+import { menuItems } from '../../database.js';
+import '../../../css/mobile/ProductCard.css';
 
 
 const List = ({list, setList, filteredList}) => { 

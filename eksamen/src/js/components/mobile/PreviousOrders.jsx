@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../css/PreviousOrders.css';
-import { orderHistory } from '../database';
+import '../../../css/mobile/PreviousOrders.css';
+import { orderHistory } from '../../database.js';
 
 const PreviousOrders = () => {
 

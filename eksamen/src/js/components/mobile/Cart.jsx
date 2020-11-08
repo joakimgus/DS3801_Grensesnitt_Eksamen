@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../../css/Cart.css';
-import { menuItems, cartIcons } from '../database.js';
+import '../../../css/mobile/Cart.css';
+import { menuItems, cartIcons } from '../../database.js';
 
 //import { cartItemsArray } from '../database';
 

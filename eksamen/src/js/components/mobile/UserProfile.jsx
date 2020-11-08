@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../css/UserProfile.css';
-import { users } from '../database.js';
+import '../../../css/mobile/UserProfile.css';
+import { users } from '../../database.js';
 
 
 const UserProfile = (props) => {

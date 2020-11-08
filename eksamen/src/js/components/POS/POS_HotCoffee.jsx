@@ -1,14 +1,14 @@
 import React, { useState} from 'react';
-import { menuItems } from '../database';
+import { menuItems } from '../../database';
 import POS_ProductCard from './POS_ProductCard';
 
-const POS_Foods = (menuItem) => {
+const POS_HotCoffee = (menuItem) => {
 
-  const initialPosList = menuItems.filter(menuItem => menuItem.category === "food");
+  const initialPosList = menuItems.filter(menuItem => menuItem.category === "hotCoffee");
 
   const [posList, setPosList] = useState(initialPosList);
 
-  const filteredPosList = posList.filter(menuItem => menuItem.category === "food");
+  const filteredPosList = posList.filter(menuItem => menuItem.category === "hotCoffee");
 
   return(
     <POS_ProductCard
@@ -22,4 +22,4 @@ const POS_Foods = (menuItem) => {
 
 }
 
-export default POS_Foods;
+export default POS_HotCoffee;

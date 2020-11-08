@@ -1,6 +1,6 @@
-import { menuItems } from '../database';
+import { menuItems } from '../../database';
 import React from 'react';
-import '../../css/POS_ProductCard.css';
+import '../../../css/POS/POS_ProductCard.css';
 
 const POS_ProductCard = ({posList, setPosList, filteredPosList}) => {
 

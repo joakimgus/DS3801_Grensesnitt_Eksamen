@@ -1,5 +1,6 @@
 import React from 'react';
-import '../../css/More.css';
+import '../../../css/mobile/Options.css';
+
 
 
 /**
