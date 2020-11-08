@@ -35,7 +35,6 @@
         grid-column: 1;
         grid-row: 2;
         width: 100%;
-        background-color: green;
         height: 100%;
         overflow-y: scroll;
     }
