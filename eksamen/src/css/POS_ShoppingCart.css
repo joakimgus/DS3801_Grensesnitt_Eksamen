@@ -1,13 +1,12 @@
 /* For iPad Pro - POS solution */
 @media screen and (min-width: 813px) {
-
   /* Main Container */
   #shoppingCartContainer {
     display: grid;
     grid-template-rows: 12fr 1fr;
     width: 30%;
-    height: 885px;
     /* For ipad Pro */
+    height: 870px;
     position: sticky;
     background-color: white;
     float: right;
@@ -41,7 +40,7 @@
     background-color: #a3734b;
   }
 
-  button.cartButton>img {
+  button.cartButton > img {
     justify-self: center;
     margin: 0;
     height: 40px;
@@ -56,7 +55,7 @@
     font-weight: normal;
   }
 
-  #cartTextContainer>p {
+  #cartTextContainer > p {
     margin-left: 15px;
     font-size: 16pt;
   }
@@ -68,7 +67,7 @@
     margin-top: -20px;
   }
 
-  #orderCustomDiv>p {
+  #orderCustomDiv > p {
     margin-top: -10px;
   }
 
