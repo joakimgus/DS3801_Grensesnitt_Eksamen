@@ -104,7 +104,7 @@ const List = ({ list, setList, filteredList }) => {
           <div className="productCard" key={menuItem.productId}>
             <img className="productImage" src={menuItem.productImage} alt={menuItem.productName} />
             <h1 className="productTitle">{menuItem.productName}</h1>
-            <p className="productPrice">From {menuItem.price[0]},-</p>
+            <p className="productPrice" alt="price">From {menuItem.price[0]},-</p>
             <img
               id="arrow"
               alt="arrow"
@@ -116,6 +116,7 @@ const List = ({ list, setList, filteredList }) => {
             <img
               id="favorite"
               alt="favorite"
+              alt="favorite status"
               src={menuItem.favourite ? require("../../../img/mobile-icons/favourite-true.png") : require('../../../img/mobile-icons/favourite-false.png')}
               onClick={() => handleToggleComplete(menuItem.productId)}
             />
@@ -124,7 +125,7 @@ const List = ({ list, setList, filteredList }) => {
           <div className="productCard" key={menuItem.productId}>
             <img className="productImage" src={menuItem.productImage} alt={menuItem.productName} />
             <h1 className="productTitle">{menuItem.productName}</h1>
-            <p className="productPrice">From {menuItem.price},-</p>
+            <p className="productPrice" alt="price">From {menuItem.price},-</p>
             <img
               id="arrow"
               alt="arrow"
@@ -148,18 +149,18 @@ const List = ({ list, setList, filteredList }) => {
               <button className="return-button" onClick={handleSetBackToAll} alt="return to favorites button">⬅</button>
               <div className="product-info">
                 <img className="imgProduct" src={itemHolder[length].productImage} alt={itemHolder[length].productName} />
-                <h3 className="productName">{itemHolder[length].productName}</h3>
+                <h3 className="productName" alt={itemHolder[length].productName}>{itemHolder[length].productName}</h3>
                 <hr className="single-view-divider" />
 
-                <p className="productDescription">{itemHolder[length].description}</p>
+                <p className="productDescription" alt="description">{itemHolder[length].description}</p>
                 <hr className="single-view-divider" />
 
               </div>
               <div className="product-settings">
-                <div className="product-settings-specifics"><p>Quantity: </p><p>- 1 +</p></div>
+                <div className="product-settings-specifics" alt="Quantity"><p>Quantity: </p><p>- 1 +</p></div>
                 <hr className="single-view-divider" />
 
-                <div className="product-settings-specifics"><p>Shots:</p><p>- 1 +</p></div>
+                <div className="product-settings-specifics" alt="shots"><p>Shots:</p><p>- 1 +</p></div>
                 <hr className="single-view-divider" />
 
                 <div className="product-settings-specifics-size">
@@ -185,13 +186,13 @@ const List = ({ list, setList, filteredList }) => {
                   <div>
                     <p className="product-p">
                       <div className="div-click-milk" onClick={setClickedSpanMilk}>
-                        <img src={singleItemProperties.noMilk} alt='no milk icon' width='30px' />
+                        <img src={singleItemProperties.noMilk} alt='no milk selection' width='30px' />
                       </div>
                       <div className="div-click-milk" onClick={setClickedSpanMilk}>
-                        <img src={singleItemProperties.lactoseFree} alt='no milk icon' width='30px' />
+                        <img src={singleItemProperties.lactoseFree} alt='lactose free selection' width='30px' />
                       </div>
                       <div className="div-click-milk" onClick={setClickedSpanMilk}>
-                        <img src={singleItemProperties.milk} alt='no milk icon' width='30px' />
+                        <img src={singleItemProperties.milk} alt='extra milk selection' width='30px' />
                       </div>
                     </p>
                   </div>
@@ -200,7 +201,7 @@ const List = ({ list, setList, filteredList }) => {
 
                 <div className="product-settings-specifics"><p>Total: </p><p>Kr {itemHolder[length].price[1] || itemHolder[length].price},-</p></div>
                 <div className="product-settings-specifics"></div>
-                <button className="add-to-cart" onClick={addItemToCart}>add to cart</button>
+                <button className="add-to-cart" onClick={addItemToCart} alt="add item to cart">add to cart</button>
               </div>
               {/* Buttons for Quantity/Shots/Size/Milk */}
 
@@ -216,16 +217,16 @@ const List = ({ list, setList, filteredList }) => {
                   <h3 className="productName">{itemHolder[length].productName}</h3>
                   <hr className="single-view-divider" />
 
-                  <p className="productDescription">{itemHolder[length].description}</p>
+                  <p className="productDescription" alt="description">{itemHolder[length].description}</p>
                   <hr className="single-view-divider" />
 
                 </div>
                 <div className="product-settings">
-                  <div className="product-settings-specifics"><p>Quantity: </p><p>- 1 +</p></div>
+                  <div className="product-settings-specifics" alt="quantity"><p>Quantity: </p><p>- 1 +</p></div>
                   <hr className="single-view-divider" />
 
                   <div className="product-settings-specifics-size">
-                    <p>Size:</p>
+                    <p alt="size">Size:</p>
                     <div>
                       <p className="product-p">
                         <img src={singleItemProperties.coffe} id="small" alt="small size" className="span-click" onClick={setClickedSpan} />
@@ -263,12 +264,12 @@ const List = ({ list, setList, filteredList }) => {
                     <h3 className="productName">{itemHolder[length].productName}</h3>
                     <hr className="single-view-divider" />
 
-                    <p className="productDescription">{itemHolder[length].description}</p>
+                    <p className="productDescription" alt="description">{itemHolder[length].description}</p>
                     <hr className="single-view-divider" />
 
                   </div>
                   <div className="product-settings">
-                    <div className="product-settings-specifics"><p>Quantity: </p><p>- 1 +</p></div>
+                    <div className="product-settings-specifics" alt="quantity"><p>Quantity: </p><p>- 1 +</p></div>
                     <hr className="single-view-divider" />
 
                     <div className="product-settings-specifics-milk">
