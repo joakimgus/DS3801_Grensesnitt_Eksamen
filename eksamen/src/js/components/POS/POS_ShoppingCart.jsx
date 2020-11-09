@@ -19,14 +19,14 @@ let POS_ShoppingCart = (props) => {
                 {counter++}
                    console.log(item);
                    return(
-                       <div data-update={props.update}>
+                       <div className='buy-card' data-update={props.update}>
                             <h2 id="orderNumber">Order {counter}</h2>
-                            <p>1 x {item.productName}</p>
+                            <p className="cart-p"> 1 x {item.productName}</p>
                             <div id="orderCustomDiv">
                                 <div id="orderCustomText">
-                                    <p className="orderSpecs">+ Large</p>
-                                    <p className="orderSpecs">+ 2 x Shots</p>
-                                    <p className="orderSpecs">+ Lactose Free Milk</p>
+                                    <p className="orderSpecs">+ Small</p>
+                                    <p className="orderSpecs">+ 1 x Shots</p>
+                                    <p className="orderSpecs">+ Milk</p>
                                     <p id="orderSum">Total: <strong id="amount">{item.price[0]}</strong></p>
                                 </div>
                                 <div id="orderCustomButtonContainer">
