@@ -2,24 +2,27 @@ import React, { useState } from 'react';
 import '../../../css/POS/POS_ShoppingCart.css';
 import { posCartIcons, cartIcons } from '../../database';
 
+
+
+
 let POS_ShoppingCart = (props) => {
 
     let cartHolder = JSON.parse(localStorage.getItem("POS_cart")) || [];
 
     let counter = 0;
 
-    
     return (
 
         <div className="pos-cart-container">
             <div id="shoppingCartContainer">
-                <div id="cartTextContainer">
-
+                <div id="cartTextContainer" data-update-holder="0">
                {cartHolder.map((item) =>{
-                {counter++}
                    console.log(item);
+                   {counter++}
                    return(
-                       <div className='buy-card' data-update={props.update}>
+
+                       <div data-update={props.updatee}>
+
                             <h2 id="orderNumber">Order {counter}</h2>
                             <p className="cart-p"> 1 x {item.productName}</p>
                             <div id="orderCustomDiv">
@@ -29,9 +32,9 @@ let POS_ShoppingCart = (props) => {
                                     <p className="orderSpecs">+ Milk</p>
                                     <p id="orderSum">Total: <strong id="amount">{item.price[0]}</strong></p>
                                 </div>
-                                <div id="orderCustomButtonContainer">
-                                    <button className="orderCustomButton" id="trashButton">
-                                        <img src={posCartIcons[3].image} width="20px" alt={posCartIcons[3].alt} />
+                                <div id="orderCustomButtonContainer" data-id={cartHolder.indexOf(item)}>
+                                    <button className="orderCustomButton" id="trashButton" data-id={cartHolder.indexOf(item)}>
+                                        <img src={posCartIcons[3].image} width="20px" alt={posCartIcons[3].alt} onClick={props.removeItemFromCart} data-id={cartHolder.indexOf(item)}/>
                                     </button>
                                     <button className="orderCustomButton">
                                         <img src={posCartIcons[2].image} width='40px' alt={posCartIcons[2].alt} />
@@ -39,6 +42,7 @@ let POS_ShoppingCart = (props) => {
                                 </div>
                             </div>
                         </div>
+
                    )}
                    )
                }
