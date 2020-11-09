@@ -100,8 +100,7 @@
 
     .more-options>button {
         font-family: 'Montserrat';
-        text-transform: capitalize;
-        font-variant: normal;
+        font-variant: small-caps;
         color: white;
         outline: none;
         background-color: rgb(28, 28, 28);

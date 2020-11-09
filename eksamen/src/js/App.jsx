@@ -26,11 +26,11 @@ const App = (props) => {
   function handleClick(e) {
     target = e.target.getAttribute('data-render');
 
-    if(target === "checkout"){
-        localStorage.clear();
+    if (target === "checkout") {
+      localStorage.clear();
     }
-      setTarget(target);
-      console.log(target + "skrevet fra app.jsx(handleClick()")
+    setTarget(target);
+    console.log(target + "skrevet fra app.jsx(handleClick()")
   }
 
   let [where, setWhere] = useState(target);
@@ -57,12 +57,16 @@ const App = (props) => {
   return (
     <>
 
-    <div data-windowSize={props.data}>
-      {where === 'previousOrdersRender' ? <Header name="Previous Orders" onClick={handleClick} /> : null}  
-      {where === 'coffee' ? <Header name="Coffee" onClick={handleClick} /> : null}  
-      {where === 'drinks' ? <Header name="Drinks" onClick={handleClick}/> : null}  
-      {where === 'baked-goods' ? <Header name="Pasteries" onClick={handleClick}/> : null}  
-      {where === 'renderFavorites' ? <Header name="Favorites" onClick={handleClick}/> : null}  
+      <div data-windowSize={props.data}>
+        {where === 'previousOrdersRender' ? <Header name="Previous Orders" onClick={handleClick} /> : null}
+        {where === 'coffee' ? <Header name="Coffee" onClick={handleClick} /> : null}
+        {where === 'drinks' ? <Header name="Drinks" onClick={handleClick} /> : null}
+        {where === 'baked-goods' ? <Header name="Pasteries" onClick={handleClick} /> : null}
+        {where === 'renderFavorites' ? <Header name="Favorites" onClick={handleClick} /> : null}
+        {where === 'renderProfile' ? <Header name='Profile' onClick={handleClick} /> : null}
+        {where === 'renderShoppingCart' ? <Header name='Cart' onClick={handleClick} /> : null}
+        {where === 'renderMore' ? <Header name='Options' onClick={handleClick} /> : null}
+        {where === 'personalQrRender' ? <Header name='Qr' onClick={handleClick} /> : null}
 
         {
 
@@ -79,8 +83,8 @@ const App = (props) => {
                               (where) === 'coffee' ? <Coffee /> :
                                 (where) === 'drinks' ? <Drinks /> :
                                   (where) === 'baked-goods' ? <Foods /> :
-                                   (where) === 'checkout' ? <Checkout onClick={handleClick}/>:
-                                    <MainMenu onClick={handleClick} />/*<-- standard render if nothing is selectes */
+                                    (where) === 'checkout' ? <Checkout onClick={handleClick} /> :
+                                      <MainMenu onClick={handleClick} />/*<-- standard render if nothing is selectes */
 
         }
         <Footer

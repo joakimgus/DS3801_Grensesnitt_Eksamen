@@ -8,7 +8,6 @@ const QrPage = (props) => {
 
     return(
         <>
-        <Header />
         <div className="qr-page-container">
             <div className="qr-page">
                 <h3 className="page-title">QR</h3>

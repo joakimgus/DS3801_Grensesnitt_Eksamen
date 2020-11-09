@@ -16,7 +16,9 @@
     background-color: white;
     font-family: "Montserrat";
     font-weight: normal;
-    overflow: auto;
+    margin-left: 2px;
+    height: 36.5em;
+    overflow: scroll;
   }
 
   /* Park and CHeckout Butoons */
@@ -53,11 +55,17 @@
   }
 
   #cartTextContainer > p {
-    margin-left: 15px;
+    margin-left: 10px;
     font-size: large;
     font-variant: small-caps;
-    letter-spacing: 2px;
     overflow-wrap: break-word;
+  }
+
+  .cart-p {
+    margin-left: 15px;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    font-weight: 600;
   }
 
   #orderCustomDiv {

@@ -27,14 +27,14 @@ const POS_ProductCard = ({ posList, setPosList, filteredPosList}) => {
                 <img className="posProductImage" src={menuItem.productImage} />
                 <h1 className="posProductTitle">{menuItem.productName}</h1>
                 <p className="posProductPrice">From {menuItem.price[0]}.-</p>
-                <button onClick={addItemToCart} data-item={menuItem.productName}>Add to cart</button>
+                <button onClick={addItemToCart} data-item={menuItem.productName}>add</button>
               </div>
               :
               <div className="posProductCard">
                 <img className="posProductImage" src={menuItem.productImage} />
                 <h1 className="posProductTitle">{menuItem.productName}</h1>
                 <p className="posProductPrice">{menuItem.price}.-</p>
-                <button onClick={addItemToCart} data-item={menuItem.productName}>Add to cart</button>
+                <button onClick={addItemToCart} data-item={menuItem.productName}>add</button>
               </div>
           ))}
         </div>
