@@ -20,7 +20,7 @@ const POS_Coffee = (menuItem) => {
     filteredPosList={filteredPosList} />
   )
 
-
+  
 }
 
 export default POS_Coffee;
