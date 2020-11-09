@@ -5,7 +5,8 @@
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         grid-template-rows: repeat(auto-fit, minmax(210px, 1fr));
         max-height: 35em;
-        grid-gap: 5px;
+        gap: 2px;
+        row-gap: 20px;
     }
 
     .posProductCard {
