@@ -18,8 +18,6 @@ import POS_Calculator from './components/POS/POS_Calculator';
 
 
 
-
-
 const Pos = (props) => {
 
   let target;
@@ -40,23 +38,33 @@ const Pos = (props) => {
   let [refresh, setRefresh] = useState(Math.floor(Math.random() * 100));
   function setUpdate() {
     setRefresh(Math.floor(Math.random() * 100));
+    console.log("setUpdate called");
   }
   
-  document.addEventListener("click", function() {
-    {setUpdate()}
-  });
+
+
+  function removeItemFromCart(e) {
+      target = e.target.getAttribute('data-id');
+      console.log(e.target);
+      console.log(target + " <----");
+      let temp = JSON.parse(localStorage.getItem('POS_cart'));
+      temp.splice(parseInt(target), 1);
+      localStorage.setItem('POS_cart', JSON.stringify(temp));
+      setUpdate();
+    }
+
 
   return (
     <>
       <div className='pos-container' data-windowSize={props.data}>
         <POS_Header />
         <POS_WorkerSelect />
-        <POS_ShoppingCart  update={refresh} />
+        <POS_ShoppingCart  update={refresh} removeItemFromCart={removeItemFromCart}/>
           {
             (where) === 'renderCoffee' ? <POS_Coffee /> :
             (where) === 'renderDrinks' ? <POS_Drinks /> : 
             (where) === 'renderFood' ? <POS_Foods /> : 
-            <POS_Coffee />
+            <POS_Coffee  />
           }
 
         <POS_Footer onClick={handleClick}/>

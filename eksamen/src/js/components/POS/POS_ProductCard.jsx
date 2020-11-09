@@ -2,15 +2,13 @@ import { menuItems } from '../../database';
 import React from 'react';
 import '../../../css/POS/POS_ProductCard.css';
 
-const POS_ProductCard = ({ posList, setPosList, filteredPosList }, props) => {
 
-
+const POS_ProductCard = ({ posList, setPosList, filteredPosList}) => {
 
 
   function addItemToCart(e){
     let target = e.target.getAttribute('data-item');
     let temp = JSON.parse(localStorage.getItem('POS_cart')) || [];
-  
     filteredPosList.map(
       (singleItem) => singleItem.productName === target ? temp.push(singleItem) : null
     );
@@ -19,7 +17,6 @@ const POS_ProductCard = ({ posList, setPosList, filteredPosList }, props) => {
   }
 
   return (
-
 
     <>
       <div className="pos-action-window-container">
