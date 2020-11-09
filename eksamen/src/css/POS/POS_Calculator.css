@@ -1,5 +1,5 @@
 @media screen and (min-width: 813px) {
-  .posMainContainer {
+  .pos-main-calculator-container {
     font-family: 'Montserrat';
     width: 50%;
     left: 50%;
@@ -94,7 +94,7 @@
     border-radius: 5px;
   }
 
-  .calculatorButton>p{
+  .calculatorButton>p {
     font-size: x-small;
     font-variant: small-caps;
   }

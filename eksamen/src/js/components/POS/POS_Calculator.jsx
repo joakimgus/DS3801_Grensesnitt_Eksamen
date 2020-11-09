@@ -6,7 +6,7 @@ const POS_Calculator = () => {
 
   return (
     <>
-      <div className="posMainContainer">
+      <div className="pos-main-calculator-container">
         <div className="posCalcContainer">
           <div className="calculatorDiv" id="leftDiv">
             <p id='calculator-title'>Calculator</p>
