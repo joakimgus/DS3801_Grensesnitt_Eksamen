@@ -7,7 +7,7 @@ const MainMenu = (props) => {
 
   return(
     <>
-    <div className="homepage" id="menuCardContainer">
+    <div className="homepage" id="menuCardContainer" data-render='mainMenu'>
 
       <div className="homepage" id="coffeeContainer" onClick={props.onClick} data-render="coffee">
         <p className="mainMenuText" onClick={props.onClick} data-render="coffee">COFFEE</p>

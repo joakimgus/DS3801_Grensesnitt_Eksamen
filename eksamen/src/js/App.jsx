@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import '../css/App.css';
 import Cart from './components/mobile/Cart';
+import Checkout from './components/mobile/Checkout';
+import Coffee from './components/mobile/Coffee';
 import Drinks from './components/mobile/Drinks';
 import FavoritesPage from './components/mobile/FavoritesPage';
 import Foods from './components/mobile/Foods';
 import Footer from './components/mobile/Footer';
 import Header from './components/mobile/Header';
-import Coffee from './components/mobile/Coffee';
 import Login from './components/mobile/Login';
 import MainMenu from './components/mobile/MainMenu';
 import Options from './components/mobile/Options';
@@ -15,7 +16,6 @@ import PreviousOrders from './components/mobile/PreviousOrders';
 import QrPage from './components/mobile/QrPage';
 import Settings from './components/mobile/Settings';
 import UserProfile from './components/mobile/UserProfile';
-import Checkout from './components/mobile/Checkout';
 
 
 
@@ -67,6 +67,7 @@ const App = (props) => {
         {where === 'renderShoppingCart' ? <Header name='Cart' onClick={handleClick} /> : null}
         {where === 'renderMore' ? <Header name='Options' onClick={handleClick} /> : null}
         {where === 'personalQrRender' ? <Header name='Qr' onClick={handleClick} /> : null}
+        
 
         {
 
@@ -87,10 +88,24 @@ const App = (props) => {
                                       <MainMenu onClick={handleClick} />/*<-- standard render if nothing is selectes */
 
         }
-        <Footer
-          data={`${where}`}
-          onClick={handleClick}
-        />
+
+        {/* Footer */}
+        {where === 'coffee' ? <Footer data={`${where}`} onClick={handleClick} /> : null}
+        {where === 'previousOrdersRender' ? <Footer data={`${where}`} onClick={handleClick} /> : null}
+        {where === 'coffee' ? <Footer data={`${where}`} onClick={handleClick} /> : null}
+        {where === 'drinks' ? <Footer data={`${where}`} onClick={handleClick} /> : null}
+        {where === 'baked-goods' ? <Footer data={`${where}`} onClick={handleClick} /> : null}
+        {where === 'renderFavorites' ? <Footer data={`${where}`} onClick={handleClick} /> : null}
+        {where === 'renderProfile' ? <Footer data={`${where}`} onClick={handleClick} />: null}
+        {where === 'renderShoppingCart' ? <Footer data={`${where}`} onClick={handleClick} /> : null}
+        {where === 'renderMore' ? <Footer data={`${where}`} onClick={handleClick} /> : null}
+        {where === 'personalQrRender' ? <Footer data={`${where}`} onClick={handleClick} /> : null}
+        {where === 'renderHome' ? <Footer data={`${where}`} onClick={handleClick} /> : null}
+        {where === 'settingsRender' ? <Footer data={`${where}`} onClick={handleClick} /> : null}
+        {where === 'placeholderRender' ? <Footer data={`${where}`} onClick={handleClick} /> : null}
+        {where === 'checkout' ? <Footer data={`${where}`} onClick={handleClick} /> : null}
+        {where === 'mainMenu' ? <Footer data={`${where}`} onClick={handleClick} /> : null}
+        
       </div>
     </>
   )
