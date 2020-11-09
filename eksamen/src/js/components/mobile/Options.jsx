@@ -33,7 +33,7 @@ const Options = (props) =>{
                     </div>
 
                     <div className="more-options">
-                        <button onClick={props.onClick} data-render="placeholderRender">Placeholder</button>
+                        <button onClick={props.onClick} data-render="placeholderRender">Locations</button>
                     </div>
                     <div className="more-options">
                         <button onClick={props.onClick} data-render="logoutRender">Log out</button>
