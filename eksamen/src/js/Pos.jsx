@@ -13,6 +13,7 @@ import POS_Drinks from './components/POS/POS_Drinks';
 import POS_ProductCard from './components/POS/POS_ProductCard.jsx';
 import POS_ShoppingCart from './components/POS/POS_ShoppingCart.jsx';
 import POS_WorkerSelect from './components/POS/POS_WorkerSelect.jsx';
+import POS_OrderType from './components/POS/POS_OrderType.jsx';
 
 import POS_Calculator from './components/POS/POS_Calculator';
 
