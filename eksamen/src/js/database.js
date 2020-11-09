@@ -547,6 +547,19 @@ const calcIcons = [
     }
 ]
 
+const orderTypeIcons = [
+    {
+        name: "tableCup",
+        image: require('../img/pos-icons/coffee.png'),
+        alt: "Table Option Icon"
+    },
+    {
+        name: "takeAwayCup",
+        image: require('../img/pos-icons/coffeecupalt.png'),
+        alt: "Take Away Icon"
+    }
+]
+
 let singleItem = {
     productId: 1,
     productName: "Black Coffee",
@@ -565,4 +578,4 @@ let singleItemProperties = {
     lactoseFree: require('../img/mobile-icons/lactose-free.png'),
 };
 
-export { users, menuItems, footerIcons, posFooterIcons, cartIcons, orderHistory, posCartIcons, singleItem, singleItemProperties, calcIcons };
+export { users, menuItems, footerIcons, posFooterIcons, cartIcons, orderHistory, posCartIcons, singleItem, singleItemProperties, calcIcons, orderTypeIcons };
