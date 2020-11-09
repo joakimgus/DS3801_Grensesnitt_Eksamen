@@ -42,7 +42,9 @@ const Pos = (props) => {
     setRefresh(Math.floor(Math.random() * 100));
   }
   
-  document.addEventListener('click', setUpdate);
+  document.addEventListener("click", function() {
+    {setUpdate()}
+  });
 
   return (
     <>
