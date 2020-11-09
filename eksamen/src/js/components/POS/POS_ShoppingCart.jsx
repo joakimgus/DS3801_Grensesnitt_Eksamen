@@ -6,13 +6,12 @@ let POS_ShoppingCart = (props) => {
 
     let cartHolder = JSON.parse(localStorage.getItem("POS_cart")) || [];
 
-    function getLocalStorageItems(){
-
-    }
     let counter = 0;
+
+    
     return (
-<>
-        <div className="pos-cart-container" data-update={props.data}>
+
+        <div className="pos-cart-container">
             <div id="shoppingCartContainer">
                 <div id="cartTextContainer">
 
@@ -20,7 +19,7 @@ let POS_ShoppingCart = (props) => {
                 {counter++}
                    console.log(item);
                    return(
-                       <div>
+                       <div data-update={props.update}>
                             <h2 id="orderNumber">Order {counter}</h2>
                             <p>1 x {item.productName}</p>
                             <div id="orderCustomDiv">
@@ -54,7 +53,7 @@ let POS_ShoppingCart = (props) => {
                 </div>
             </div>
         </div>
-    </>
+
     );
 }
 

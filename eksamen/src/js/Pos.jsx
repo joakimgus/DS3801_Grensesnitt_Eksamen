@@ -27,6 +27,7 @@ const Pos = (props) => {
     target = e.target.getAttribute('data-render');
     console.log(target + "skrevet fra Pos.jsx (handleclick())")
     setTarget(target);
+    setUpdate();
   }
 
   let [where, setWhere] = useState("renderCoffee");
@@ -34,27 +35,21 @@ const Pos = (props) => {
     setWhere(target);
   }
 
-
+  
+  
   let [refresh, setRefresh] = useState(Math.floor(Math.random() * 100));
   function setUpdate() {
     setRefresh(Math.floor(Math.random() * 100));
   }
-
-  function removeItemFromCart(e) {
-    target = e.target.getAttribute('data-id');
-
-    let temp = JSON.parse(localStorage.getItem('POS_cart'));
-    temp.splice(target, 1);
-    localStorage.setItem('POS_cart', JSON.stringify(temp));
-    setUpdate("update");
-  }
+  
+  document.addEventListener('click', setUpdate);
 
   return (
     <>
       <div className='pos-container' data-windowSize={props.data}>
         <POS_Header />
         <POS_WorkerSelect />
-        <POS_ShoppingCart />
+        <POS_ShoppingCart  update={refresh} />
           {
             (where) === 'renderCoffee' ? <POS_Coffee /> :
             (where) === 'renderDrinks' ? <POS_Drinks /> : 

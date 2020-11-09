@@ -7,16 +7,16 @@ const POS_ProductCard = ({ posList, setPosList, filteredPosList }, props) => {
 
 
 
-function addItemToCart(e){
-  let target = e.target.getAttribute('data-item');
-  let temp = JSON.parse(localStorage.getItem('POS_cart')) || [];
-
-  filteredPosList.map(
-    (singleItem) => singleItem.productName === target ? temp.push(singleItem) : null
-  );
-
-  localStorage.setItem('POS_cart', JSON.stringify(temp));
-}
+  function addItemToCart(e){
+    let target = e.target.getAttribute('data-item');
+    let temp = JSON.parse(localStorage.getItem('POS_cart')) || [];
+  
+    filteredPosList.map(
+      (singleItem) => singleItem.productName === target ? temp.push(singleItem) : null
+    );
+  
+    localStorage.setItem('POS_cart', JSON.stringify(temp));
+  }
 
   return (
 
