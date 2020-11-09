@@ -43,10 +43,11 @@ const Pos = (props) => {
     setRefresh(Math.floor(Math.random() * 100));
   }
   
+  {/*
   document.addEventListener("click", function() {
     {setUpdate()}
-  });
-
+  }) */}
+  
   return (
     <>
       <div className='pos-container' data-windowSize={props.data}>
