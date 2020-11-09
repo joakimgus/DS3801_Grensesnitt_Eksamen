@@ -132,3 +132,16 @@ div#moveFooter {
     height: 50px;
     visibility: hidden;
 }
+
+#popup {
+    position: absolute;
+    grid-row: 3;
+    grid-column: 2;
+    color: black;
+    width: 65%;
+    height: 6%;
+    right: 18%;
+    background-color: #C7F6B6;
+    border-radius: 5px;
+    text-align: center;   
+}

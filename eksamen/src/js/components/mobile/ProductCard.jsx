@@ -14,6 +14,10 @@ const List = ({ list, setList, filteredList }) => {
 
   let [all, setAll] = useState("all");
 
+  const popupStyle = {
+    display: "none"
+  }
+
   function handleToggleComplete(id) {
 
     const newList = list.map((menuItem) => {
@@ -67,6 +71,13 @@ const List = ({ list, setList, filteredList }) => {
     //temp.push(itemHolder);
     //console.log(temp);
     localStorage.setItem('cart', JSON.stringify(temp));
+
+    let popup = document.getElementById("popup");
+    if (popup.style.display === "none") {
+      popup.style.display = "block";
+    } else {
+      popup.style.display = "none";
+    }
   }
 
   function setClickedSpan(e) {
@@ -201,6 +212,9 @@ const List = ({ list, setList, filteredList }) => {
 
                 <div className="product-settings-specifics"><p>Total: </p><p>Kr {itemHolder[length].price[1] || itemHolder[length].price},-</p></div>
                 <div className="product-settings-specifics"></div>
+                <div id="popup" style={popupStyle}>
+                  Product Added To Cart!
+                </div>
                 <button className="add-to-cart" onClick={addItemToCart} alt="add item to cart">add to cart</button>
               </div>
               {/* Buttons for Quantity/Shots/Size/Milk */}
@@ -249,6 +263,9 @@ const List = ({ list, setList, filteredList }) => {
 
                   <div className="product-settings-specifics"><p>Total: </p><p>Kr {itemHolder[length].price[1] || itemHolder[length].price},-</p></div>
                   <div className="product-settings-specifics"></div>
+                  <div id="popup" style={popupStyle}>
+                    Product Added To Cart!
+                  </div>
                   <button className="add-to-cart" onClick={addItemToCart}>add to cart</button>
                 </div>
                 {/* Buttons for Quantity/Shots/Size/Milk */}
@@ -284,6 +301,9 @@ const List = ({ list, setList, filteredList }) => {
 
                     <div className="product-settings-specifics"><p>Total: </p><p>Kr {itemHolder[length].price[1] || itemHolder[length].price},-</p></div>
                     <div className="product-settings-specifics"></div>
+                    <div id="popup" style={popupStyle}>
+                      Product Added To Cart!
+                    </div>
                     <button className="add-to-cart" onClick={addItemToCart}>add to cart</button>
                   </div>
                   {/* Buttons for Quantity/Shots/Size/Milk */}
